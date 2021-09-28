@@ -2,7 +2,7 @@
   "name": "toxin",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
@@ -22,9 +22,17 @@
   },
   "homepage": "https://github.com/Anareony/Toxin#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.3.0",
     "del-cli": "^4.0.1",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "node-sass": "^6.0.1",
-    "sass-loader": "^12.1.0"
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0"
   }
 }
