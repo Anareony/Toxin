@@ -2,11 +2,10 @@
   "name": "toxin",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/index.js",
+  "main": "./src/pages/uikit/uikit.js",
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
-    "watch": "webpack --mode development",
     "start": "webpack serve --mode development --open"
   },
   "repository": {
