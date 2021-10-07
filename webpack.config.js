@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        'uikit': './src/pages/uikit/uikit.js'
+        'uikit': './src/pages/ui-kit/ui-kit.js'
     },
     output: {
         filename: '[name].js',
@@ -15,12 +15,8 @@ module.exports = {
     module:{
         rules:[
             {
-                test:/\.css$/,
-                use:['style-loader', 'css-loader']
-            },
-            {
-                test:/\.s[ac]css$/,
-                use:['css-loader', 'sass-loader']
+                test:/\.{sa|sc|c}ss$/,
+                use:['style-loader', 'css-loader','sass-loader']
             },
             {
                 test:/\.pug$/,
@@ -38,8 +34,8 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            filename: "uikit.html",
-            template: './src/pages/uikit/uikit.pug'
+            filename: "ui-kit.html",
+            template: './src/pages/ui-kit/ui-kit.pug'
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({patterns:[
