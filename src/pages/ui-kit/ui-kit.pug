@@ -1,0 +1,24 @@
+extends ../base/base
+mixin colors(items=[])
+    .colors
+    each item in items
+        .colors__item
+            .colors__box(class=item.class)
+            .colors__info
+                p.colors__title=item.name
+                span.colors__hex=item.hex
+
+block title  
+    title ui kit
+
+block main
+    body 
+        +colors([
+                {name: "Dark shade 100%",hex:"#1F2041",class:"colors__item_color-ds100"},
+                {name: "Dark shade 75%",hex:"#1F2041",class:"colors__item_color-ds100"},
+                {name: "Dark shade 50%",hex:"#1F2041",class:"colors__item_color-ds100"},
+                {name: "Dark shade 25%",hex:"#1F2041",class:"colors__item_color-ds100"},
+                {name: "Dark shade 5%",hex:"#1F2041",class:"colors__item_color-ds100"},
+                {name: "Purple",hex:"#BC9CFF",class:"colors__item_color-ds100"},
+                {name: "Green",hex:"#6FCF97",class:"colors__item_color-ds100"}
+        ])
