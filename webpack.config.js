@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        'uikit': './src/pages/ui-kit/ui-kit.js'
+        'uikit': './src/ui-kit.js'
     },
     output: {
         filename: '[name].js',
@@ -40,7 +40,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({patterns:[
             {
-                from: path.resolve(__dirname,'./src/favicon'),
+                from: path.resolve(__dirname,'./src/pages/ui-kit/img/'),
                 to: path.resolve(__dirname,'./dist')
             }]
         })
