@@ -1,0 +1,55 @@
+@import '../../scss/vars.scss';
+@import '../../scss/fonts.scss';
+
+.type__heading{
+    color: $dark25;
+}
+.type_body{
+    line-height: 24px;
+    .type__description{
+        color: $dark75;
+    }
+}
+.type__heading{
+    text-align: right;
+}
+.type{
+    width: 436px;
+    margin-right:150px;
+
+    &_h1{
+        color:$dark100;
+        line-height: 29.26px;
+        font-size:24px;
+        .type__description{
+            font-weight: bold;
+        }
+    }
+    &_h2{
+        line-height: 23.16px;
+        color:$dark100;
+        font-size:19px;
+        .type__description{
+            font-weight: bold;
+        }
+    }
+    &_h3{
+        color:$dark100;
+        line-height: 14.26px;
+        font-size:12px;
+        .type__description{
+            font-weight: bold;
+        }
+    }
+    &__item{
+        margin-top:51px;
+    }
+    &__heading{
+        text-align: right;
+    }
+    &__description{
+        width: 369px;
+        float:right;
+    }
+
+}

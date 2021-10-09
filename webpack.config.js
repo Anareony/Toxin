@@ -6,7 +6,7 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        'uikit': './src/ui-kit.js'
+        'uikit': './src/pages/ui-kit/ui-kit.js'
     },
     output: {
         filename: '[name].js',
