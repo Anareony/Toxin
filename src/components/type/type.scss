@@ -10,41 +10,22 @@
     &__type-h1{
         display:flex;
         gap:30px;
-        color:$dark100;
-        line-height: 29px;
-        font-size:24px;
-        .type__description{
-            font-weight: 700;
-        }
+        @include h1;
     }
     &__type-h2{
         display:flex;
         gap:30px;
-        line-height: 23.16px;
-        color:$dark100;
-        font-size:19px;
-        .type__description{
-            font-weight: 700;
-        }
+        @include h2;
     }
     &__type-h3{
         @include h3;
         display:flex;
         gap:30px;
-        .type__description{
-            font-weight: 700;
-            text-transform: uppercase;
-        }
     }
     &__type-body{
         display:flex;
         gap:30px;
-        font-size:14px;
-        line-height: 24px;
         width: 370px;
-        .type__description{
-            color: $dark75;
-        }
     }
     &__heading{
         color: $dark25;
