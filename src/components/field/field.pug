@@ -1,0 +1,6 @@
+mixin field({title,type,name,placeholder,value,disabled})
+    .field
+        .field__item
+            h3.field__title= title 
+            .field__container
+                input(type=type,name=name,placeholder=placeholder,value=value,disabled=disabled)
