@@ -11,18 +11,21 @@
     &__box{
         height:70px;
         width: 70px;
-        margin-right:20px;
+        margin-right:40px;
         border-radius: 6px;
     }
     &__item{
-        padding-top:30px;
+        margin-top:20px;
         display:flex;
         align-items: center;
     }
     &__title{
-        padding-bottom: 5px;
         font-weight: 700;
     }
+    &__item:first-child{
+        margin-top:0;
+    }
+
 }
 
 .colors__item{
