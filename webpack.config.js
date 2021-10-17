@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const HTMLWebpackPlugin = require ('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require ('copy-webpack-plugin')
@@ -6,7 +7,7 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        'uikit': './src/pages/ui-kit/ui-kit.js'
+        'ui-kit': './src/pages/ui-kit/ui-kit.js'
     },
     output: {
         filename: '[name].js',
@@ -14,6 +15,15 @@ module.exports = {
     },
     module:{
         rules:[
+            {
+                test: /\.js$/,
+                enforce: 'pre',
+                use: ['source-map-loader'],
+            },
+            {
+                test:/\.css$/,
+                use:['style-loader', 'css-loader']
+            },
             {
                 test:/\.{sa|sc|c}ss$/,
                 use:['style-loader', 'css-loader','sass-loader']
@@ -23,13 +33,9 @@ module.exports = {
                 use:['pug-loader']
             },
             {
-                test:/\.(png|jpg|svg)$/,
+                test:/\.(png|jpg|svg|ttf|woff|svg)$/,
                 use:['file-loader']
             },
-            {
-                test:/\.(ttf|woff|svg)$/,
-                use:['file-loader']
-            }
         ]
     },
     plugins: [
@@ -43,6 +49,11 @@ module.exports = {
                 from: path.resolve(__dirname,'./src/pages/ui-kit/img/'),
                 to: path.resolve(__dirname,'./dist')
             }]
+        }),
+        new webpack.ProvidePlugin({
+            $:'jquery',
+            jQuery:'jquery',
+            'window.jQuery':'jquery'
         })
     ]
 }
