@@ -1,55 +1,58 @@
 @import '../../scss/vars.scss';
 @import '../../scss/fonts.scss';
+@import '../../scss/mixin.scss';
 
-.type__heading{
-    color: $dark25;
-}
-.type_body{
-    line-height: 24px;
-    .type__description{
-        color: $dark75;
-    }
-}
-.type__heading{
-    text-align: right;
-}
+
 .type{
-    width: 436px;
-    margin-right:150px;
+    margin-right: 151px;
+    width: 431px;
 
-    &_h1{
+    &__type-h1{
+        display:flex;
+        gap:30px;
         color:$dark100;
-        line-height: 29.26px;
+        line-height: 29px;
         font-size:24px;
         .type__description{
-            font-weight: bold;
+            font-weight: 700;
         }
     }
-    &_h2{
+    &__type-h2{
+        display:flex;
+        gap:30px;
         line-height: 23.16px;
         color:$dark100;
         font-size:19px;
         .type__description{
-            font-weight: bold;
+            font-weight: 700;
         }
     }
-    &_h3{
-        color:$dark100;
-        line-height: 14.26px;
-        font-size:12px;
+    &__type-h3{
+        @include h3;
+        display:flex;
+        gap:30px;
         .type__description{
-            font-weight: bold;
+            font-weight: 700;
+            text-transform: uppercase;
         }
     }
-    &__item{
-        margin-top:51px;
+    &__type-body{
+        display:flex;
+        gap:30px;
+        font-size:14px;
+        line-height: 24px;
+        width: 370px;
+        .type__description{
+            color: $dark75;
+        }
     }
     &__heading{
+        color: $dark25;
         text-align: right;
+        width: 31px;
+        font-weight:400;
     }
-    &__description{
-        width: 369px;
-        float:right;
+    &__item{
+        margin-bottom:51px;
     }
-
 }
