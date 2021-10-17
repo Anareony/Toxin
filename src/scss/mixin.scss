@@ -1,3 +1,16 @@
+
+@mixin h1{
+    color:$dark100;
+    line-height: 29px;
+    font-size:24px;
+    font-weight: 700;
+}
+@mixin h2{
+    color:$dark100;
+    line-height: 23.16px;
+    font-size:19px;
+    font-weight: 700;
+}
 @mixin h3{
     color:$dark100;
     line-height: 14.63px;
