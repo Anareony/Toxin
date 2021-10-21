@@ -1,10 +1,41 @@
+@import '../../scss/reset.scss';
 @import '../../scss/vars.scss';
 @import '../../scss/fonts.scss';
+@import '../../components/type/type.scss';
+@import '../../components/colors/colors.scss';
+@import '../../components/field/field.scss';
+@import '../../scss/styles.scss';
+@import '../../components/toggle/toggle.scss';
+@import '../../components/checkbox/checkbox.scss';
+@import '../../components/checkbox-list/checkbox-list.scss';
+@import '../../components/radio/radio.scss';
+@import '../../components/toggle/toggle.scss';
 
-html,body{
-    font-family: $default-font;
-    color: $dark100;
-    margin:0 auto;
-    width: 100%;
-    min-height: 100vh;
+
+h3{
+    @include h3;
+}
+.colors-type{
+    margin: 67px 0 151px 0;
+}
+.ui-kit__img{
+    margin: 30px 0 0 30px;
+}
+.form-elements{
+    margin: 65px 10px 131px 141px;
+    display:flex;
+    justify-content: space-between;
+    &__item{
+        margin-bottom: 20px;
+    }
+    &__item.date-dropdown{
+        display: flex;
+        max-width: 320px;
+    }
+    &__slider{
+        width: 320px;
+    }
+}
+.elem__title{
+    padding-bottom: 16px;
 }
