@@ -7,19 +7,33 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        'ui-kit': './src/pages/ui-kit/ui-kit.js'
+        uikit: './src/pages/ui-kit/ui-kit.js'
     },
     output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist')
+        filename: '[name].[contenthash].js',
+        path: path.resolve(__dirname, 'dist'),
     },
+    plugins: [
+        new HTMLWebpackPlugin({
+            filename: "ui-kit.html",
+            template: './src/pages/ui-kit/ui-kit.pug'
+        }),
+        new CleanWebpackPlugin(),
+        new CopyWebpackPlugin({patterns:[
+            {
+                from: path.resolve(__dirname,'./src/pages/ui-kit/img/'),
+                to: path.resolve(__dirname,'./dist')
+            }
+        ]
+        }),
+        new webpack.ProvidePlugin({
+            $:'jquery',
+            jQuery:'jquery',
+            'window.jQuery':'jquery'
+        })
+    ],
     module:{
         rules:[
-            {
-                test: /\.js$/,
-                enforce: 'pre',
-                use: ['source-map-loader'],
-            },
             {
                 test:/\.css$/,
                 use:['style-loader', 'css-loader']
@@ -33,27 +47,20 @@ module.exports = {
                 use:['pug-loader']
             },
             {
-                test:/\.(png|jpg|svg|ttf|woff|svg)$/,
-                use:['file-loader']
+                test:/\.(|woff|woff2|eot|ttf|otf|svg)$/,
+                type: 'asset',
+                generator: {
+                  filename: '[name][ext]'
+                }
+            
+            },
+            {
+                test:/\.(png|jpg|svg|gif|ico)$/,
+                type: 'asset/resource',
+                generator: {
+                  filename: '[name][ext]'
+                }
             },
         ]
     },
-    plugins: [
-        new HTMLWebpackPlugin({
-            filename: "ui-kit.html",
-            template: './src/pages/ui-kit/ui-kit.pug'
-        }),
-        new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({patterns:[
-            {
-                from: path.resolve(__dirname,'./src/pages/ui-kit/img/'),
-                to: path.resolve(__dirname,'./dist')
-            }]
-        }),
-        new webpack.ProvidePlugin({
-            $:'jquery',
-            jQuery:'jquery',
-            'window.jQuery':'jquery'
-        })
-    ]
 }
