@@ -1,0 +1,48 @@
+@import '../../scss/vars.scss';
+@import '../../scss/mixin.scss';
+
+
+.air-datepicker{
+      font-family: $first-font;
+      background: #fff;
+      padding: 20px;
+      border: 0.0714rem solid $dark25;
+      box-shadow: 0 0.7143rem 1.4286rem $dark5;
+      border-radius: 0.2857rem;
+      z-index: 999;
+      width: 320px;
+
+      &--navigation{
+        &-nav{
+          &--title{
+            i {
+              color: $dark100;
+            } 
+          }
+        }
+      }
+      &-body--day-name{
+        @include h3;
+        text-transform: none;
+        color: $purple;
+      }
+      &-cell{
+        font-size: 12px;
+        color: $dark50;
+        .-current-{
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        }
+        &:active{
+          font-weight: bold;
+          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+          border-radius: 22px;
+          color: white;
+        }
+      }
+      &-nav--title{
+        @include h2;
+      }
+}
+.-year{
+  background-color: $dark100;
+}
