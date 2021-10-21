@@ -1,0 +1,8 @@
+include ../checkbox/checkbox
+
+mixin checkbox-list({title,items})
+    h3.checkbox-list__title=title
+    ul.checkbox-list__list
+        each item in items
+            li.checkbox-list__starege
+                +checkbox(item)
