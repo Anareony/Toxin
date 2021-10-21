@@ -1,6 +1,18 @@
-mixin field({title,type,name,placeholder,value,disabled})
-    .field
-        .field__item
-            h3.field__title= title 
-            .field__container
-                input(type=type,name=name,placeholder=placeholder,value=value,disabled=disabled)
+mixin field({variables,title,type,name,placeholder,value,disabled,id,classes,readonly})
+    case variables
+        default
+            .field
+                .field__item(class = classes)
+                    h3.field__title=title 
+                    label.field__container
+                        input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id)
+        when "with-dropdown"
+            .field
+                .field__dropdown
+                    h3.field__title=title 
+                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,id=id,class=classes)
+        when "with-arrow"
+            .field
+                .field__arrow
+                    h3.field__title=title 
+                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id)
