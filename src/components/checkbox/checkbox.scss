@@ -1,0 +1,28 @@
+.checkbox{
+    padding-left: 30px;
+    position: relative;
+    &__label{
+        cursor: pointer;
+    }
+    &__input{
+        -webkit-appearance: none;
+        &::before{
+            cursor: pointer;
+            position: absolute;
+            top:3px;
+            left:1px;
+            content: '';
+            width: 20px;
+            height: 20px;
+            border: 1px solid $dark25;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &:checked::before{
+            content: url('../../components/checkbox/img/vector.svg');
+            border: 1px solid $purple;
+        }
+    }
+}
