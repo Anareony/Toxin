@@ -1,0 +1,44 @@
+.toggle {
+    position: relative;
+    display: inline-block;
+    padding-left: 50px;
+    cursor: pointer;
+    color: $dark75;
+
+    &__input {
+        -webkit-appearance: none;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 0;
+            width: 40px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid $dark25;
+            transition-duration: .5s;
+        }
+  
+        &::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 10px;
+            background: $dark25;
+            transition-duration: .5s;
+        }
+  
+        &:checked::before {
+            border: 1px solid $purple;
+        }
+  
+        &:checked::after {
+            left: 24px;
+            background: $gradient-purple;
+        }
+    }
+}
+
