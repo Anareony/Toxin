@@ -1,0 +1,66 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
+.range-slider {
+    &__title {
+        @include h3;
+    }
+
+    .irs--flat {
+        max-width: 266px;
+        height: 30px;
+        margin-bottom: 10px;
+    
+        .irs-line {
+            height: 6px;
+            border-radius: 3px;
+            border: 1px solid $dark25;
+            background-color: #fff;
+            top: 22px;
+        }
+  
+        .irs-bar {
+            background: $gradient-green;
+            height: 6px;
+            top: 22px;
+        }
+    
+        .irs-handle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            background: $gradient-green;
+            box-sizing: content-box;
+            top: 16px;
+            cursor: pointer;
+        }
+    
+        .irs-from,
+        .irs-to,
+        .irs-single {
+            visibility: hidden !important;
+            
+            &::before {
+                display: none;
+            }
+        }
+    
+        .irs-single {
+            visibility: visible !important;
+            left: auto !important;
+            right: 0;
+            padding: 0;
+            padding-right: 3px;
+            top: -15px;
+            font: 400 12px $first-font;
+            color: $dark50;
+            text-transform: uppercase;
+            background-color: transparent;
+        }
+    }
+}
+.irs--flat .irs-handle > i:first-child{
+    display: none;
+}
+
