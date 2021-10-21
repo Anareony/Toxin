@@ -1,7 +1,7 @@
 
 @mixin h1{
     color:$dark100;
-    line-height: 29px;
+    line-height: 29.26px;
     font-size:24px;
     font-weight: 700;
 }
@@ -16,5 +16,6 @@
     line-height: 14.63px;
     font-size:12px;
     font-weight: 700;
+    font-style: normal;
     text-transform: uppercase;
 }
