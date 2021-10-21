@@ -2,16 +2,21 @@ extends ../base/base
 include ../../components/colors/colors
 include ../../components/type/type
 include ../../components/field/field
-
+include ../../components/checkbox/checkbox
+include ../../components/radio/radio
+include ../../components/toggle/toggle
+include ../../components/checkbox-list/checkbox-list
+include ../../components/dropdown/dropdown
+include ../../components/range-slider/range-slider
 
 block title  
     title Toxin | Ui kit
 
 block main
-    body 
+    body
         .ui-kit
             .ui-kit_section-colors-type
-                img.ui-kit__img(src="./Group.svg")
+                img.ui-kit__img(src="Group.svg")
                 .colors-type
                     +colors([
                         {class:"colors__item_color-ds100",name: "Dark Shade 100%",hex:"#1F2041"},
@@ -29,16 +34,54 @@ block main
                         {class:"type__type-body",heading: "Body",description:"This is the body text which is used for most of the design, like paragraphs, lists, etc."},
                     ])
             .ui-kit__section-form-elements
-                img.ui-kit__img(src="./Group.svg")
+                img.ui-kit__img(src="Group.svg")
                 .form-elements
                     .form-elements__column
                         .form-elements__container
                             .form-elements__item
                                 +field({title:"Text field",placeholder:"Email"})
+                            .form-elements__item
                                 +field({title:"Text field",value:"This is pretty awesome"})
-                                +field({title:"Dropdown",value:"Сколько гостей"})
-                                +field({title:"Masket text field",placeholder:"ДД.ММ.ГГГГ"})
-        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
-        script(src="ui-kit.js")
-        script(src="../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js")
-        script(src="../src/pages/ui-kit/script.js")
+                            .form-elements__item
+                                +field({variables:"with-dropdown",title:"Dropdown",value:"Сколько гостей"})
+                            .form-elements__item
+                                +field({title:"Masked text field",placeholder:"ДД.ММ.ГГГГ"})
+                            .form-elements__item.date-dropdown
+                                +field({variables:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ"})
+                                +field({variables:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ"})
+                            .form-elements__item
+                                +field({variables:"with-dropdown",title:"filter date dropdown",placeholder:"ДД.ММ.ГГГГ"})
+                            .form-elements__item
+                                +field({variables:"with-arrow",title:"subscription text field",placeholder:"ДД.ММ.ГГГГ"})
+                    .form-elements__column
+                        .form-elements__container
+                            .form-elements__item
+                                +checkbox-list({
+                                    title:"checkbox buttons",
+                                    items:[
+                                    {description:"Можно курить"},
+                                    {description:"Можно с питомцами",checked:"checked"},
+                                    {description:"Можно пригласить гостей (до 10 человек)",checked:"checked"}
+                                    ]})
+                            .form-elements__item
+                                .radio_butt
+                                    h3.elem__title radio buttons
+                                    +radio({description:"Мужчина",name:"sex",checked:"checked"})
+                                    +radio({description:"Женщина",name:"sex"})
+                            .form-elements__item   
+                                .toggle__butt
+                                    h3.elem__title toggle
+                                    .togglick
+                                        +toggle({text:"Получать спецпредложения",checked:"checked"})
+                                    .togglick
+                                        +toggle({text:"Получать спецпредложения"})
+                            .fort-elemets__item
+                                .like_butt
+                    .form-elements__column
+                        .form-elements__container
+                            .form-elements__item
+                                .form-elements__slider
+                                    +range-slider({title:"range slider"})
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js")
+    script(src="../src/pages/ui-kit/script.js")
