@@ -8,6 +8,7 @@ include ../../components/toggle/toggle
 include ../../components/checkbox-list/checkbox-list
 include ../../components/dropdown/dropdown
 include ../../components/range-slider/range-slider
+include ../../components/rating/rating
 
 block title  
     title Toxin | Ui kit
@@ -35,53 +36,69 @@ block main
                     ])
             .ui-kit__section-form-elements
                 img.ui-kit__img(src="Group.svg")
-                .form-elements
+                .form-elements__container
                     .form-elements__column
-                        .form-elements__container
-                            .form-elements__item
-                                +field({title:"Text field",placeholder:"Email"})
-                            .form-elements__item
-                                +field({title:"Text field",value:"This is pretty awesome"})
-                            .form-elements__item
-                                +field({variables:"with-dropdown",title:"Dropdown",value:"Сколько гостей"})
-                            .form-elements__item
-                                +field({title:"Masked text field",placeholder:"ДД.ММ.ГГГГ"})
-                            .form-elements__item.date-dropdown
+                        .form-elements__item
+                            +field({title:"Text field",placeholder:"Email"})
+                        .form-elements__item
+                            +field({title:"Text field",value:"This is pretty awesome"})
+                        .form-elements__item
+                            +field({variables:"with-dropdown",title:"Dropdown",value:"Сколько гостей"})
+                        .form-elements__item
+                            +field({title:"Masked text field",placeholder:"ДД.ММ.ГГГГ",disabled:"disabled"})
+                        .form-elements__item.date-dropdown
+                            .form-elements__item_arrival
                                 +field({variables:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ"})
+                            .form-elements__item_departure
                                 +field({variables:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ"})
+                        .form-elements__width
                             .form-elements__item
                                 +field({variables:"with-dropdown",title:"filter date dropdown",placeholder:"ДД.ММ.ГГГГ"})
                             .form-elements__item
-                                +field({variables:"with-arrow",title:"subscription text field",placeholder:"ДД.ММ.ГГГГ"})
+                                +field({variables:"with-arrow",title:"subscription text field",placeholder:"Email"})
+                    .form-elements__column_radio
+                        .form-elements__item
+                            +checkbox-list({
+                                title:"checkbox buttons",
+                                items:[
+                                {description:"Можно курить"},
+                                {description:"Можно с питомцами",checked:"checked"},
+                                {description:"Можно пригласить гостей (до 10 человек)",checked:"checked"}
+                                ]})
+                        .form-elements__item
+                            .radio_butt
+                                h3.elem__title radio buttons
+                                +radio({description:"Мужчина",name:"sex",checked:"checked"})
+                                +radio({description:"Женщина",name:"sex"})
+                        .form-elements__item   
+                            .toggle__butt
+                                h3.elem__title toggle
+                                .togglick
+                                    +toggle({text:"Получать спецпредложения",checked:"checked"})
+                                .togglick
+                                    +toggle({text:"Получать спецпредложения"})
+                        .form-elemets__item
+                            .like_button
+                                h3.elem__title like button
+                        .form-elemets__item
+                            .rating_button
+                                +rating({title:"Rate button"})
                     .form-elements__column
-                        .form-elements__container
-                            .form-elements__item
-                                +checkbox-list({
-                                    title:"checkbox buttons",
-                                    items:[
-                                    {description:"Можно курить"},
-                                    {description:"Можно с питомцами",checked:"checked"},
-                                    {description:"Можно пригласить гостей (до 10 человек)",checked:"checked"}
-                                    ]})
-                            .form-elements__item
-                                .radio_butt
-                                    h3.elem__title radio buttons
-                                    +radio({description:"Мужчина",name:"sex",checked:"checked"})
-                                    +radio({description:"Женщина",name:"sex"})
-                            .form-elements__item   
-                                .toggle__butt
-                                    h3.elem__title toggle
-                                    .togglick
-                                        +toggle({text:"Получать спецпредложения",checked:"checked"})
-                                    .togglick
-                                        +toggle({text:"Получать спецпредложения"})
-                            .fort-elemets__item
-                                .like_butt
+                        .form-elements__item
+                            .form-elements__slider
+                                +range-slider({title:"range slider"})
+                        .form-elements__item
+                            .form-elements__buttons
+                                h3.elem__title buttons
+                        .form-elements__item
+                            .form-elements__buttons
+                                h3.elem__title pagination
+                .form-elements__container
                     .form-elements__column
-                        .form-elements__container
-                            .form-elements__item
-                                .form-elements__slider
-                                    +range-slider({title:"range slider"})
+                        +dropdown({title:"dropdown"})
+                    .form-elements__column
+                        +dropdown({title:"dropdown"})
+                .form-elements__container
+                    .form-elements__column
+                .form-elements__container
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
-    script(src="../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js")
-    script(src="../src/pages/ui-kit/script.js")
