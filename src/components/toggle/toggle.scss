@@ -17,6 +17,7 @@
             border-radius: 10px;
             border: 1px solid $dark25;
             transition-duration: .5s;
+            cursor: pointer;
         }
   
         &::after {
@@ -29,6 +30,7 @@
             border-radius: 10px;
             background: $dark25;
             transition-duration: .5s;
+            cursor: pointer;
         }
   
         &:checked::before {
