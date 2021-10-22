@@ -25,25 +25,19 @@
         }
         &::after{
             content: url('../../assets/expand_more.svg');
-            width: 44px;
-            height: 44px;
             position: absolute;
-            top: 27px;
-            right: 0;
-            text-align: center;
+            top: 25px;
+            right: 16px;
             cursor: pointer;
         }
     }
     &__arrow{
         position: relative;
         &::after{
-            content: url('../../assets/arrow_forward.png');
-            width: 44px;
-            height: 44px;
+            content: url('../../assets/arrow-forward.svg');
             position: absolute;
             top: 31px;
-            right: 0;
-            text-align: center;
+            right: 15px;
             cursor: pointer;
         }
     }

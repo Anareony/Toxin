@@ -5,12 +5,12 @@ mixin field({variables,title,type,name,placeholder,value,disabled,id,classes,rea
                 .field__item(class = classes)
                     h3.field__title=title 
                     label.field__container
-                        input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id)
+                        input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled)
         when "with-dropdown"
-            .field
+            .field(class=classes)
                 .field__dropdown
                     h3.field__title=title 
-                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,id=id,class=classes)
+                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value)
         when "with-arrow"
             .field
                 .field__arrow
