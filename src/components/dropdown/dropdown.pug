@@ -1,19 +1,16 @@
 mixin dropdown({title})
-    h3.title=title
-    .no-config.iqdropdown
-        p.iqdropdown-selection
-        .iqdropdown-menu
-            <div class="iqdropdown-menu-option" data-id="item1">
-                .div
-                    p.iqdropdown-item Спальни
-            </div>
-            <div class="iqdropdown-menu-option" data-id="item2">
-                .div
-                    p.iqdropdown-item Кровати
-            </div>
-            <div class="iqdropdown-menu-option" data-id="item3">
-                .div
-                    p.iqdropdown-item Комнаты
-            </div>
-            .iqdropdown-menu-close Применить
+    .dropdown
+        h3.title=title
+        .rooms.iqdropdown
+            p.iqdropdown-selection
+            .iqdropdown-menu
+                .iqdropdown-menu-option(data-id="item1")
+                    .iqdropdown-content
+                        p.iqdropdown-item Спальни
+                .iqdropdown-menu-option(data-id="item2")
+                    .iqdropdown-content
+                        p.iqdropdown-item Кровати
+                .iqdropdown-menu-option(data-id="item3")
+                    .iqdropdown-content
+                        p.iqdropdown-item Комнаты
 
