@@ -7,10 +7,10 @@ mixin field({variables,title,type,name,placeholder,value,disabled,id,classes,rea
                     label.field__container
                         input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled)
         when "with-dropdown"
-            .field(class=classes)
-                .field__dropdown
+            .field
+                label.field__dropdown
                     h3.field__title=title 
-                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value)
+                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,class=classes)
         when "with-arrow"
             .field
                 .field__arrow
