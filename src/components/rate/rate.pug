@@ -1,0 +1,5 @@
+mixin rate({rate})
+    .rate
+        - for(var i = 0; i < 5; i++)
+            - var outline = i >= rate ? 'rate__star_outline' : '';
+            span.rate__star(class=outline)

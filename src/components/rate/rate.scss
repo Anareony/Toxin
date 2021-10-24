@@ -1,0 +1,16 @@
+.rate {
+    display: inline-block;
+
+    &__star {
+        cursor: default;
+        display: inline-block;
+        color: $purple;
+        height: 24px;
+        width: 24px;
+        background: url('../../assets/star.svg') no-repeat;
+
+        &_outline {
+            background: url('../../assets/star-border.svg') no-repeat;
+        }
+    }
+}
