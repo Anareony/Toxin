@@ -4,4 +4,9 @@ import './dropdown.scss'
 
 $(document).ready(function() {
     $(".rooms").iqDropdown();
+    $(".guests").iqDropdown({
+        selectionText: "гость",
+        textPlural: "гостя",
+    });
 });
+
