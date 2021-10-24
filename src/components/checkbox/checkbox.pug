@@ -1,4 +1,11 @@
-mixin checkbox({description,checked})
-    .checkbox
-        label.checkbox__label=description
-            input.checkbox__input(type="checkbox" checked=checked)
+mixin checkbox({theme,label,description,checked})
+    case theme
+        default
+            .checkbox
+                label.checkbox__label=label
+                    input.checkbox__input(type="checkbox" checked=checked)
+        when "rich"
+            .checkbox.rich
+                label.checkbox__label_rich=label
+                    input.checkbox__input(type="checkbox" checked=checked)
+                p.checkbox__description=description
