@@ -1,0 +1,19 @@
+.advantage{
+    display: flex;
+    gap:10px;
+    margin-bottom: 41px;
+
+    &__icon{
+        font-size: 48px;
+        background: $gradient-purple;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__items{
+        color: $dark75;
+    }
+    &__title{
+        font-weight: 700;
+    }
+}
