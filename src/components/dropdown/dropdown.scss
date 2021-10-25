@@ -1,3 +1,101 @@
-.dropdown{
-    min-width: 267px;
+@import '../../scss/vars.scss';
+@import '../../scss/mixin.scss';
+
+.iqdropdown{
+    height: 44px;
+    &-selection{
+        font-family: $first-font !important;
+        font-size: 14px !important;
+    }
+    &-menu{
+        border: 1px solid $dark50;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        top: 44px !important; 
+
+        &-option{
+            height: 30px !important;
+            margin: 7px 0;
+            padding: 0 7px 0 15px !important;
+        }
+    }
+    &-item{
+        font-family: $first-font !important;
+        @include h3;
+    }
+    .iqdropdown-item-controls button{
+        border: none;
+        padding: 0px;
+    }
+}
+.button-decrement{
+    border: 1px solid #1F204140;
+}
+.iqdropdown .iqdropdown-item-controls button.button-decrement {
+    border: 1px solid #1F204140;
+    border-radius: 22px;
+    width: 30px;
+    height: 30px;
+}
+.iqdropdown .iqdropdown-item-controls button.button-increment {
+    border: 1px solid #1F204140;
+    border-radius: 22px;
+    width: 30px;
+    height: 30px;
+}
+.iqdropdown .iqdropdown-item-controls .counter{
+    padding: 0px 11px 0 13px;
+    font-family: $first-font ;
+    font-size: 12px ;
+    font-weight: 700;
+    border: none;
+}
+.iqdropdown .iqdropdown-item-controls{
+    align-items: center;
+}
+.rooms, .guests{
+    border: 1px solid $dark25;
+    font-family: $first-font ;
+    border-radius: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.iqdropdown .icon-decrement::after{
+    content:'-';
+    background: none;
+    top: -4px;
+    right: 1px;
+    font-family: $first-font;
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark50;
+}
+.iqdropdown .icon-decrement.icon-increment::before{
+    content: '+';
+    font-style: normal;
+    font-family: $first-font;
+    font-size: 18px;
+    font-weight: 400;
+    color: $dark50;
+    display: inline-block;
+    background: none;
+    top: 6px;
+    left: 9px;
+}
+.iqdropdown .icon-decrement.icon-increment::after{
+    content: '';
+    font-style: normal;
+}
+.iqdropdown.menu-open{
+    border-color: $dark50;
+}
+.iqdropdown.menu-open .iqdropdown-selection::after,.iqdropdown .iqdropdown-selection::after{
+    background: none;
+    font-family: "Material Icons";
+    content: "expand_more";
+    font-size: 24px;
+    position: absolute;
+    color: $dark75;
+    right: 7px;
+    top: 0px;
 }
