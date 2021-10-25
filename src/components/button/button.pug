@@ -1,0 +1,14 @@
+mixin button({theme,text,arrow})
+    case theme
+        default
+            button.button-with-background
+                span.button-with-background__text=text
+
+        when "without-background"
+            button.button-without-background
+                span.button-without-background__text=text
+
+        when "with-arrow"
+            button.button-with-arrow
+                span.button-with-arrow__text=text
+                span.button-with-arrow__arrow.material-icons=arrow

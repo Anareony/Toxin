@@ -1,0 +1,54 @@
+@import '../../scss/mixin.scss';
+
+.button-with-background{
+    display: block;
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+    background: $gradient-purple;
+
+    &__text{
+        @include h3;
+        color: #FFFFFF;
+    }
+    &:hover{
+        opacity: 50%;
+    }
+}
+.button-without-background{
+    display: block;
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+    border: 1px solid $gradient-purple;
+
+    &__text{
+        @include h3;
+        color: #BC9CFF;
+    }
+    &:hover{
+        border: 1px solid linear-gradient(#BC9CFF 0%, #8BA4F9 100%, 0.5);
+    }
+}
+
+.button-with-arrow{
+    display: block;
+    height: 44px;
+    width: 99px;
+    border-radius: 22px;
+    background: $gradient-purple;
+
+    &__text{
+        @include h3;
+        color: #FFFFFF;
+    }
+    &:hover{
+        opacity: 50%;
+    }
+    &__arrow{
+        background: #FFFFFF;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
