@@ -1,0 +1,12 @@
+mixin like({likes,theme})
+    case theme
+        default
+            .like
+                span.like__icon.material-icons favorite_border
+                span.like__count=likes
+        when "checked"
+            .like.like__checked
+                span.like__icon_checked.material-icons favorite
+                span.like__count=likes
+        
+    
