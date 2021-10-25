@@ -1,0 +1,21 @@
+.review{
+    display: flex;
+    gap: 15px;
+    max-width: 712px;
+
+    &__img{
+        margin-bottom: 9px;
+    }
+    &__desc{
+        color: $dark75;
+    }
+    &__user-name{
+        font-weight: 700;
+    }
+    &__date{
+        margin-bottom: 10px;
+    }
+    &__like{
+        padding-left: 5px;
+    }
+}
