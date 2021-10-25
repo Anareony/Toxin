@@ -1,3 +1,5 @@
+@import '../../../node_modules/material-design-icons/iconfont/material-icons.css';
+
 @font-face{
     font-family: 'Montserrat';
     src: 
@@ -5,7 +7,8 @@
     url('../../../src/fonts/montserrat-regular/Montserrat-Regular.woff') format('woff'),
     url('../../../src/fonts/montserrat-regular/Montserrat-Regular.ttf') format('truetype'),
     url('../../../src/fonts/montserrat-regular/Montserrat-Regular.svg') format('svg');
-    font-weight: 400;
+    font-weight: normal;
+    font-style: normal;
 }
 @font-face{
     font-family: 'Montserrat';
@@ -14,7 +17,8 @@
     url('../../../src/fonts/montserrat-bold/montserrat_bold.woff') format('woff'),
     url('../../../src/fonts/montserrat-bold/montserrat_bold.ttf') format('truetype'),
     url('../../../src/fonts/montserrat-bold/montserrat_bold.svg') format('svg');
-    font-weight: 700;
+    font-weight: bold;
+    font-style: normal;
 }
 @font-face{
     font-family: 'Quicksand';
@@ -23,5 +27,6 @@
     url('../../../src/fonts/quicksand-bold/Quicksand-Bold.woff') format('woff'),
     url('../../../src/fonts/quicksand-bold/Quicksand-Bold.ttf') format('truetype'),
     url('../../../src/fonts/quicksand-bold/quicksand-Bold.svg') format('svg');
-    font-weight: 700;
+    font-weight: 700
+    ;
 }
