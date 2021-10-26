@@ -1,0 +1,27 @@
+.find-room{
+    max-width: 380px;
+    padding: 40px 30px 30px 30px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0.2857rem;
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 38px;
+
+    &__title{
+        @include h1;
+        margin-bottom: 21px;
+    }
+    &__calendar{
+        margin-bottom: 22px;
+        &-arrive{
+            padding-right: 20px;
+        }
+    }
+    &__dropdown{
+        margin-bottom: 31px;
+    }
+    &__calendar{
+        display: flex;
+    }
+}
