@@ -1,0 +1,24 @@
+mixin sign-up({title})
+    .sign-up
+        .sign-up__title=title
+        .sign-up__name
+            +field({placeholder:"Имя"})
+        .sign-up__surname
+            +field({placeholder:"Фамилия"})
+        .sign-up__gender
+            +radio({name:"gender",description:"Мужчина",checked:"checked"})
+            +radio({name:"gender",description:"Женщина"})
+        .sign-up__date
+            +field({title:"Дата Рождения",placeholder:"ДД.ММ.ГГГГ"})
+        .sign-up__email
+            +field({title:"Данные для входа в сервис",placeholder:"Email"})
+        .sign-up__password
+            +field({placeholder:"Пароль"})
+        .sign-up__toggle
+            +toggle({text:"Получать спецпредложения"})
+        .sign-up__button
+            +button({theme:"with-arrow",text:"Перейти к оплате"})
+        .sign-up__sign-in
+            p.sign-up__text Уже есть аккаунт на Toxin
+            +button({text:"Войти"})
+        
