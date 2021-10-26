@@ -27,6 +27,14 @@
     url('../../../src/fonts/quicksand-bold/Quicksand-Bold.woff') format('woff'),
     url('../../../src/fonts/quicksand-bold/Quicksand-Bold.ttf') format('truetype'),
     url('../../../src/fonts/quicksand-bold/quicksand-Bold.svg') format('svg');
-    font-weight: 700
-    ;
+    font-weight: 700;   
+}
+@font-face{
+    font-family: 'Material icons';
+    src: 
+    url('../../../src/fonts/Material-icons-regular/Material-icons-regular.woff2') format('woff2'),
+    url('../../../src/fonts/Material-icons-regular/Material-icons-regular.woff') format('woff'),
+    url('../../../src/fonts/Material-icons-regular/Material-icons-regular.ttf') format('truetype'),
+    url('../../../src/fonts/Material-icons-regular/Material-icons-regular.svg') format('svg');
+    font-weight: 400;
 }
