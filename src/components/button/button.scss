@@ -1,11 +1,14 @@
 @import '../../scss/mixin.scss';
 
 .button-with-background{
-    display: block;
+    display: flex;
     height: 44px;
     width: 99px;
     border-radius: 22px;
     background: $gradient-purple;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
 
     &__text{
         @include h3;
@@ -15,28 +18,55 @@
         opacity: 50%;
     }
 }
-.button-without-background{
-    display: block;
+
+.button-with-border{
+    display: flex;
     height: 44px;
     width: 99px;
+    @include h3;
+    color: #BC9CFF;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background: $gradient-purple;
     border-radius: 22px;
-    border: 1px solid $gradient-purple;
-
-    &__text{
-        @include h3;
-        color: #BC9CFF;
+    
+    &::before{
+        position: absolute;
+        content: '';
+        background: #FFFFFF;
+        border-radius: 22px;
     }
+    &::before:hover{
+        opacity: 50%;
+    }
+}
+
+.button-without-background{ 
+    @include h3;
+    color: #BC9CFF;
+    cursor: pointer;
+    max-width: 61px;
+
     &:hover{
-        border: 1px solid linear-gradient(#BC9CFF 0%, #8BA4F9 100%, 0.5);
+        color: $dark50;
     }
 }
 
 .button-with-arrow{
-    display: block;
-    height: 44px;
-    width: 99px;
+    display: flex;
+    color: #FFFFFF;
+    height: 44px; 
+    max-width: 320px;
     border-radius: 22px;
     background: $gradient-purple;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
 
     &__text{
         @include h3;
@@ -45,10 +75,12 @@
     &:hover{
         opacity: 50%;
     }
-    &__arrow{
-        background: #FFFFFF;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+    &::after{
+        @include material-icons;
+        position: absolute;
+        content: 'arrow_forward';
+        text-transform: none;
+        right: 10px;
+        top: 10px;
     }
 }
