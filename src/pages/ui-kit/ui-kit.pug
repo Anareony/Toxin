@@ -14,6 +14,9 @@ include ../../components/bullet-list/bullet-list
 include ../../components/review/review
 include ../../components/advantages/advantages
 include ../../components/button/button
+include ../../components/find-room/find-room
+include ../../components/sign-up/sign-up
+include ../../components/log-in/log-in
 
 block title  
     title Toxin | Ui kit
@@ -105,8 +108,10 @@ block main
                             .form-elements__buttons
                                 h3.elem__title buttons
                                     +button({text:"click me"})
+                                    +button({theme:"with-border",text:"click me"})
+                                .block
                                     +button({theme:"without-background",text:"click me"})
-                                    +button({theme:"with-arrow",text:"click me",arrow:"arrow_forward"})
+                                    +button({theme:"with-arrow",text:"Перейти к оплате",arrow:"arrow_forward"})
                         .form-elements__item
                             .form-elements__buttons
                                 h3.elem__title pagination
@@ -146,6 +151,16 @@ block main
                         +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
                     .form-elements__column_review
                         +review({url:"image.jpg",username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-                       
+            .ui-kit_section-cards
+            img.ui-kit__img(src="Group.svg")
+            .cards
+                .card__column
+                    .room-seacrh-container
+                        +find-room({title:"Найдём номера под ваши пожелания"})
+                    .sign-up__container
+                        +sign-up({title:"Регистрация аккаунта"})
+                .card__column
+                    .log-in__container
+                        
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
