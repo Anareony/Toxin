@@ -1,0 +1,35 @@
+mixin booking()
+    .booking
+        .booking__title
+            .booking__number
+                span.booking__number-icon №
+                span.booking__number-value 888
+                span.booking__number-text люкс
+            .booking__price
+                span.booking__price-cost 9 990₽
+                span.booking__price-date в сутки
+        .find-room__calendar
+            .booking__calendar-arrive
+                +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ"})
+            .booking__calendar-departure
+                +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ"})
+        .booking__dropdown
+            +dropdown({variables:"guests",title:"Гости"})
+        .booking__items
+            .booking__service
+                span 9 990₽ х 4 суток
+                span 39 960₽
+            .booking__service
+                span Сбор за услуги: скидка 2 179₽
+                span i
+                span 0₽
+            .booking__service
+                span Сбор за дополнительные услуги
+                span i
+                span 300₽
+        .booking__total-price
+            span.booking__total Итого
+            span.booking__line
+            span.booking__price2 38 081₽ 
+        .booking__button
+            +button({theme:"with-arrow",text:"Забронировать"})
