@@ -1,0 +1,46 @@
+.header{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+    &__nav{
+        display: flex;
+        margin: 0 140px 0 140px;
+        padding: 15px 0 15px 0;
+    }
+    &__logo{
+        margin-right: 284px;
+    }
+    &__nav-user{
+        display: flex;
+        &-item{
+            display: flex;
+            align-items: center;
+            &_auth{
+                padding-left: 25px;
+                display: flex;
+                align-items: center;
+                border-left: 1px solid black;
+            }
+        }
+    }
+    &__nav-site{
+        display: flex;
+        align-items: center;
+
+    }
+    &__item{
+        margin-right: 20px;
+        color: $dark50;
+
+        &-sub-menu{
+            display: flex;
+            align-items: center;
+            
+        }
+    }
+}
+.header__nav-user-item2{
+    margin-left: 20px;
+}
+.header__nav-site-item-bold{
+    font-weight: 700;
+}
