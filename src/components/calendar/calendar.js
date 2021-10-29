@@ -14,5 +14,18 @@ new AirDatepicker('.filter-date', {
     navTitles: {
         days: '<strong>MMMM</strong> <i>yyyy</i>',
     },    
-    buttons: ['clear']
+    buttons: ['apply','clear']
+})
+
+new AirDatepicker('.calendar',{
+    inline: true,
+    range: true,
+    multipleDatesSeparator: ' - ',
+    dateFormat: 'dd MMM',
+    navTitles: {
+        days: '<strong>MMMM</strong> <i>yyyy</i>',
+    },    
+    buttons: ['clear','today'],
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>'
 })

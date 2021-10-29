@@ -3,45 +3,107 @@
 
 
 .air-datepicker{
-      font-family: $first-font;
-      background: #fff;
-      padding: 20px;
-      border: 0.0714rem solid $dark25;
-      box-shadow: 0 0.7143rem 1.4286rem $dark5;
-      border-radius: 0.2857rem;
-      z-index: 10;
+    font-family: $first-font;
+    padding: 20px;
+    border: 1px solid $dark25;
+    border-radius: 4px;
+    background: #fff;
+    z-index: 5;
+    
 
-      &--navigation{
+    &--navigation{
         &-nav{
-          &--title{
-            i {
-              color: $dark100;
-            } 
-          }
+            &--title{
+                i {
+                    color: $dark100;
+                } 
+            }
         }
-      }
-      &-body--day-name{
+    }
+
+    &-body--day-name{
         @include h3;
         text-transform: none;
         color: $purple;
-      }
-      &-cell{
+    }
+
+    &-cell{
         font-size: 12px;
         color: $dark50;
+
         .-current-{
-          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
         }
+
         &:active{
-          font-weight: bold;
-          background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-          border-radius: 22px;
-          color: white;
+            font-weight: bold;
+            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+            border-radius: 22px;
+            color: white;
         }
-      }
-      &-nav--title{
-        @include h2;
-      }
+    }
+
+        &-nav--title{
+            @include h2;
+        }
 }
 .-year{
-  background-color: $dark100;
+    background-color: $dark100;
+}
+
+.air-datepicker-cell.-selected-{
+    background: $gradient-purple;
+    border-radius: 22px;
+}
+
+.air-datepicker-cell.-current-{
+    background: $gradient-green;
+    border-radius: 22px;
+    color: #FFFFFF;
+}
+
+.air-datepicker-nav--title, .air-datepicker-nav--title i{
+    @include h2;
+    color: $dark100 ;
+}
+
+.air-datepicker-cell.-day-.-weekend-.-selected-.-focus-{
+    background: $gradient-purple;
+}
+
+.air-datepicker-cell.-day-.-weekend-.-focus-{
+    background: $gradient-purple;
+    color: #fff;
+    border-radius: 22px;
+}
+
+.air-datepicker-cell.-day-.-focus-{
+    background: $gradient-purple;
+    color: #fff;
+    border-radius: 22px;
+}
+.air-datepicker--navigation{
+    padding-bottom: 30px;
+}
+.air-datepicker-button{
+    @include h3;
+    color: $purple;
+    &:hover{
+        color: $dark50;
+    }
+}
+.air-datepicker-cell.-in-range-{
+    background: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
+}
+.air-datepicker-cell.-day-.-focus-.-range-to-,
+.air-datepicker-cell.-day-.-focus-.-range-from-,
+.air-datepicker-cell.-day-.-range-to-,
+.air-datepicker-cell.-day-.-range-from-{
+    border: none;
+    background: $gradient-purple;
+    border-radius: 22px;
+    color: #FFFFFF;
+}
+.air-datepicker-nav--action{
+    color: $purple;
 }
