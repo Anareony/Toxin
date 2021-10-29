@@ -1,0 +1,51 @@
+.footer{
+    &__main{
+        margin: 100px 140px 100px 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description{
+        width: 260px;
+        margin-right: 40px;
+    }
+
+    &__title{
+        margin-bottom: 21px;
+    }
+
+    &__item{
+        margin-bottom: 25px;
+    }
+
+    &__subscription{
+        width: 260px;
+        margin-left: 40px;
+    }
+
+    &__text{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__img{
+        margin-bottom: 20px;
+    }
+    &__sub{
+        margin: 100px 140px 100px 140px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-list{
+        display: flex;
+    }
+    
+}
+.footer__social-list-item123{
+    flex-basis: 560px;
+}
