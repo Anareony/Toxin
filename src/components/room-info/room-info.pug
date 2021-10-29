@@ -1,0 +1,29 @@
+mixin room-info()
+    .room-info
+        .room-info__move
+            .room-info__button-img
+                img.room-info__img(src="photo1.jpg")
+                button.room-info__fogging.room-info__fogging-left
+                    span.room-info__button_left(class="material-icons") expand_more
+                button.room-info__fogging.room-info__fogging-right
+                    span.room-info__button_right(class="material-icons") expand_more
+                .room-info__radio-buttons 
+                    button.room-info__buttons(name="radio")
+                    button.room-info__buttons(name="radio")
+                    button.room-info__buttons(name="radio")
+                    button.room-info__buttons(name="radio")
+        .room-info__container
+            .room-info__title
+                .room-info__number
+                    span.room-info__number-icon №
+                    span.room-info__number-value 888
+                    span.room-info__number-text люкс
+                .room-info__price
+                    span.room-info__price-cost 9 990₽
+                    span.room-info__price-date в сутки
+            .room-info__stats
+                .room-info___rating
+                    +rate({rate:5})
+                p.room-info__total-reviews
+                    span.room-info__value 145
+                    span.room-info__text Отзывов
