@@ -17,6 +17,10 @@ include ../../components/button/button
 include ../../components/find-room/find-room
 include ../../components/sign-up/sign-up
 include ../../components/log-in/log-in
+include ../../components/booking/booking
+include ../../components/room-info/room-info
+include ../../components/header/header
+include ../../components/footer/footer
 
 block title  
     title Toxin | Ui kit
@@ -160,7 +164,59 @@ block main
                     .sign-up__container
                         +sign-up({title:"Регистрация аккаунта"})
                 .card__column
+                    .booking__container
+                        +booking({title:"123"})
                     .log-in__container
-                        
+                        +log-in({title:"Войти"})
+                .card__column-with-calendar
+                    .calendar
+                    .room-info__container
+                        +room-info()
+            .ui-kit_section-headers-footers
+            img.ui-kit__img(src="Group.svg")
+            +header([
+            {name:"О нас",bold:true},
+            {name:"Услуги",sub:true},
+            {name:"Вакансии"},
+            {name:"Новости"},
+            {name:"Соглашения",sub:true}
+            ])
 
+            +header([
+            {name:"О нас",bold:true},
+            {name:"Услуги",sub:true},
+            {name:"Вакансии"},
+            {name:"Новости"},
+            {name:"Соглашения",sub:true}
+            ],"Юлий Цезарь")
+
+            +footer("Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»","Подписка","Получайте специальные предложения и новости сервиса",[
+                {
+                title:"Навигация",
+                items: [
+                    {text:"О нас"},
+                    {text:"Новости"},
+                    {text:"Служба поддержки"},
+                    {text:"Услуги"}
+                    ]
+                },
+                {
+                title:"О нас",
+                items: [
+                    {text:"О сервисе"},
+                    {text:"Наша команда"},
+                    {text:"Вакансии"},
+                    {text:"Инвесторы"}
+                    ]
+                },
+                {
+                title:"Служба поддержки",
+                items: [
+                    {text:"Соглашения"},
+                    {text:"Сообщество"},
+                    {text:"Связь с нами"}
+                    ]
+                }
+                ])
+                        
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
