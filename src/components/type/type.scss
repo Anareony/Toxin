@@ -1,39 +1,25 @@
 @import '../../scss/vars.scss';
 @import '../../scss/fonts.scss';
 @import '../../scss/mixin.scss';
-
+@import '../../scss/styles.scss';
 
 .type{
-    margin-right: 151px;
-    width: 431px;
+    max-width: 431px;
 
-    &__type-h1{
+    &__item{
         display:flex;
+        margin-bottom:51px;
         gap:30px;
-        @include h1;
+
+        &_type-body{
+            max-width: 370px;
+        }
     }
-    &__type-h2{
-        display:flex;
-        gap:30px;
-        @include h2;
-    }
-    &__type-h3{
-        @include h3;
-        display:flex;
-        gap:30px;
-    }
-    &__type-body{
-        display:flex;
-        gap:30px;
-        width: 370px;
-    }
+    
     &__heading{
         color: $dark25;
         text-align: right;
         width: 31px;
         font-weight:400;
-    }
-    &__item{
-        margin-bottom:51px;
     }
 }

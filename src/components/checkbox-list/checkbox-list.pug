@@ -1,8 +1,18 @@
 include ../checkbox/checkbox
 
-mixin checkbox-list({title,items})
-    h3.checkbox-list__title=title
-    ul.checkbox-list__list
-        each item in items
-            li.checkbox-list__starege
-                +checkbox(item)
+mixin checkbox-list({theme,title,items})
+    case theme
+        default
+            h3.checkbox-list__title=title
+            ul.checkbox-list__list
+                each item in items
+                    li.checkbox-list__starege
+                        +checkbox(item)
+
+        when "expandable"
+            h3.checkbox-list__title=title
+            input.checkbox-list__exp(type="checkbox")
+            ul.checkbox-list__list
+                each item in items
+                    li.checkbox-list__starege
+                        +checkbox(item)

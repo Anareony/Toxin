@@ -4,6 +4,7 @@
     padding-left: 50px;
     cursor: pointer;
     color: $dark75;
+    @include body;
 
     &__input {
         -webkit-appearance: none;

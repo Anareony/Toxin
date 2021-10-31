@@ -94,10 +94,11 @@
     font-family: "Material Icons";
     content: "expand_more";
     font-size: 24px;
+    line-height: 24px;
     position: absolute;
     color: $dark75;
-    right: 7px;
-    top: 0px;
+    right: 5px;
+    top: -5px;
 }
 .title{
     margin-bottom: 5px;

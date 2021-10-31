@@ -5,7 +5,8 @@ mixin button({theme,text,arrow,href})
                 .button-with-background__text=text
         
         when "with-border"
-            a.button-with-border=text
+            .border-wrap
+                a.button-with-border=text
 
         when "without-background"
             a.button-without-background(href=href)=text

@@ -1,7 +1,6 @@
 mixin type (items=[])
     .type 
         each item in items
-            .type__item
-                    div(class=item.class)
-                        div.type__heading=item.heading
-                        div.type__description=item.description
+            .type__item(class=item.class)
+                    .type__heading=item.heading
+                    .type__description=item.description

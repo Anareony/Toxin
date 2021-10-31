@@ -3,7 +3,7 @@
 .button-with-background{
     display: flex;
     height: 44px;
-    width: 99px;
+    width: 100%;
     border-radius: 22px;
     background: $gradient-purple;
     cursor: pointer;
@@ -13,6 +13,7 @@
     &__text{
         @include h3;
         color: #FFFFFF;
+        padding: 14px 21px 15px 19px;
     }
     &:hover{
         opacity: 50%;
@@ -21,26 +22,25 @@
 
 .button-with-border{
     display: flex;
-    height: 44px;
-    width: 99px;
+    padding: 13px;
+    width: 100%;
     @include h3;
     color: #BC9CFF;
     cursor: pointer;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    position: relative;
-    background: $gradient-purple;
+    background: #FFFFFF;
     border-radius: 22px;
-    
-    &::before{
-        position: absolute;
-        content: '';
-        background: #FFFFFF;
-        border-radius: 22px;
-    }
-    &::before:hover{
-        opacity: 50%;
+}
+.border-wrap{
+    background: $gradient-purple;
+    padding: 2px;
+    border-radius: 22px;
+    &:hover{
+        background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+        
+        
     }
 }
 

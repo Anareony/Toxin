@@ -2,13 +2,7 @@
 @import '../../scss/fonts.scss';
 @import '../../scss/mixin.scss';
 
-.colors-type{
-    display:flex;
-    justify-content:space-between;
-}
 .colors{
-    margin-left: 150px;
-
     &__box{
         height:70px;
         width: 70px;
@@ -17,7 +11,7 @@
     }
     &__item{
         @include h2;
-        margin-top:20px;
+        margin-bottom:20px;
         display:flex;
         align-items: center;
     }
@@ -25,34 +19,7 @@
         padding-bottom: 5px;
         font-weight: 700;
     }
-    &__item:first-child{
-        margin-top:0;
-    }
     &__hex{
         font-weight: 400;
-    }
-}
-
-.colors__item{
-    &_color-ds100{
-        background-color: $dark100;
-    }
-    &_color-ds75{
-        background-color: $dark75;
-    }
-    &_color-ds50{
-        background-color: $dark50;
-    }
-    &_color-ds25{
-        background-color: $dark25;
-    }
-    &_color-ds5{
-        background-color: $dark5;
-    }
-    &_color-purple{
-        background-color: $purple;
-    }
-    &_color-green{
-        background-color: $green;
     }
 }
