@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require ('copy-webpack-plugin')
 module.exports = {
     mode: 'development',
     entry: {
-        uikit: './src/pages/ui-kit/ui-kit.js'
+        uikit: './src/entry.js'
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -15,8 +15,20 @@ module.exports = {
     },
     plugins: [
         new HTMLWebpackPlugin({
-            filename: "ui-kit.html",
-            template: './src/pages/ui-kit/ui-kit.pug'
+            filename: "colors-type.html",
+            template: './src/pages/colors-type/colors-type.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "form-elements.html",
+            template: './src/pages/form-elements/form-elements.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "cards.html",
+            template: './src/pages/cards/cards.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "headers-footers.html",
+            template: './src/pages/headers-footers/headers-footers.pug'
         }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({patterns:[
