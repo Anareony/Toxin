@@ -1,0 +1,26 @@
+@import '../../scss/reset.scss';
+@import '../../scss/vars.scss';
+@import '../../scss/fonts.scss';
+@import '../../scss/mixin.scss';
+@import '../../components/find-room/find-room.scss';
+@import '../../components/sign-up/sign-up.scss';
+@import '../../components/log-in/log-in.scss';
+@import '../../components/booking/booking.scss';
+@import '../../components/room-info/room-info.scss';
+
+h3{
+    @include h3;
+}
+
+.cards__img{
+    margin: 15px 0 72px 45px;
+}
+.cards__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1130px;
+}
+.card__column-with-calendar{
+    width: 320px;
+}

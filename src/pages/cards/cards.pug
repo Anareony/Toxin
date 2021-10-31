@@ -1,0 +1,29 @@
+extends ../base/base
+include ../../components/find-room/find-room
+include ../../components/sign-up/sign-up
+include ../../components/log-in/log-in
+include ../../components/booking/booking
+include ../../components/room-info/room-info
+
+block title  
+    title Toxin | Cards
+
+block main
+    body
+        .cards
+            img.cards__img(src="Group.svg")
+            .cards__container
+                .cards__column
+                    .room-seacrh-container
+                        +find-room({title:"Найдём номера под ваши пожелания"})
+                    .sign-up__container
+                        +sign-up({title:"Регистрация аккаунта"})
+                .cards__column
+                    .booking__container
+                        +booking({title:"123"})
+                    .log-in__container
+                        +log-in({title:"Войти"})
+                .cards__column-with-calendar
+                    .calendar
+                    .room-info__container
+                        +room-info()
