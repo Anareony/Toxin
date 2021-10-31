@@ -1,0 +1,63 @@
+@import '../../scss/reset.scss';
+@import '../../scss/vars.scss';
+@import '../../scss/fonts.scss';
+@import '../../scss/mixin.scss';
+@import '../../scss/styles.scss';
+@import '../../components/type/type.scss';
+@import '../../components/colors/colors.scss';
+
+
+.colors-type{
+
+    &__container{
+        display:flex;
+        justify-content:space-between;
+        max-width: 1130px;
+        margin: 0 auto;
+    }
+
+    &__img{
+        margin: 30px 0 68px 35px;
+    }
+}
+
+.type{
+    &__item{
+        &_type-h1{
+            @include h1;
+        }
+        &_type-h2{
+            @include h2;
+        }
+        &_type-h3{
+            @include h3;
+        }
+        &_type-body{
+            @include body;
+        }
+    }
+}
+
+.colors__item{
+    &_color-ds100{
+        background-color: $dark100;
+    }
+    &_color-ds75{
+        background-color: $dark75;
+    }
+    &_color-ds50{
+        background-color: $dark50;
+    }
+    &_color-ds25{
+        background-color: $dark25;
+    }
+    &_color-ds5{
+        background-color: $dark5;
+    }
+    &_color-purple{
+        background-color: $purple;
+    }
+    &_color-green{
+        background-color: $green;
+    }
+}

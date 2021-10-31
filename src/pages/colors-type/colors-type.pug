@@ -1,0 +1,27 @@
+extends ../base/base
+include ../../components/colors/colors
+include ../../components/type/type
+
+block title  
+    title Toxin | Colors&types
+
+block main
+    body
+        .colors-type
+            img.colors-type__img(src="Group.svg")
+            .colors-type__container
+                +colors([
+                    {class:"colors__item_color-ds100",name: "Dark Shade 100%",hex:"#1F2041"},
+                    {class:"colors__item_color-ds75",name: "Dark Shade 75%",hex:"#1F2041"},
+                    {class:"colors__item_color-ds50",name: "Dark Shade 50%",hex:"#1F2041"},
+                    {class:"colors__item_color-ds25",name: "Dark Shade 25%",hex:"#1F2041"},
+                    {class:"colors__item_color-ds5",name: "Dark Shade 5%",hex:"#1F2041"},
+                    {class:"colors__item_color-purple",name: "Purple",hex:"#BC9CFF"},
+                    {class:"colors__item_color-green",name: "Green",hex:"#6FCF97"}
+                ])
+                +type([
+                    {class:"type__item_type-h1",heading: "H1",description:"This one is the sub-section or widget title"},
+                    {class:"type__item_type-h2",heading: "H2",description:"Next one is the item title inside widgets"},
+                    {class:"type__item_type-h3",heading: "H3",description:"This is a label or CTA text"},
+                    {class:"type__item_type-body",heading: "Body",description:"This is the body text which is used for most of the design, like paragraphs, lists, etc."},
+                ])
