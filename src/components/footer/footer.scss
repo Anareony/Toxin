@@ -45,7 +45,22 @@
         display: flex;
     }
     
-}
-.footer__social-list-item123{
-    flex-basis: 560px;
+    &-small__main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    &-small__social-list{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        &-item{
+            margin-left: 20px;
+        }
+    }
+    &-small__description{
+        margin-bottom: 20px;
+    }
 }
