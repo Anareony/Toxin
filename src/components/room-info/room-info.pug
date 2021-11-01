@@ -1,10 +1,10 @@
 include ../rate/rate
 
-mixin room-info()
+mixin room-info({url,value,cost,value1,rate,lux})
     .room-info
         .room-info__move
             .room-info__button-img
-                img.room-info__img(src="photo1.jpg")
+                img.room-info__img(src=url)
                 button.room-info__fogging.room-info__fogging-left
                     span.room-info__button_left(class="material-icons") expand_more
                 button.room-info__fogging.room-info__fogging-right
@@ -18,14 +18,15 @@ mixin room-info()
             .room-info__title
                 .room-info__number
                     span.room-info__number-icon №
-                    span.room-info__number-value 888
-                    span.room-info__number-text люкс
+                    span.room-info__number-value=value
+                    if lux
+                        span.room-info__number-text люкс
                 .room-info__price
-                    span.room-info__price-cost 9 990₽
+                    span.room-info__price-cost=cost
                     span.room-info__price-date в сутки
             .room-info__stats
                 .room-info___rating
-                    +rate({rate:5})
+                    +rate({rate})
                 p.room-info__total-reviews
-                    span.room-info__value 145
+                    span.room-info__value=value1
                     span.room-info__text Отзывов
