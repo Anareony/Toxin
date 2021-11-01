@@ -30,10 +30,30 @@ module.exports = {
             filename: "headers-footers.html",
             template: './src/pages/headers-footers/headers-footers.pug'
         }),
+        new HTMLWebpackPlugin({
+            filename: "landing-page.html",
+            template: './src/pages/landing-page/landing-page.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "search-room.html",
+            template: './src/pages/search-room/search-room.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "room-details.html",
+            template: './src/pages/room-details/room-details.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "registration.html",
+            template: './src/pages/registration/registration.pug'
+        }),
+        new HTMLWebpackPlugin({
+            filename: "sign-in.html",
+            template: './src/pages/sign-in/sign-in.pug'
+        }),
         new CleanWebpackPlugin(),
         new CopyWebpackPlugin({patterns:[
             {
-                from: path.resolve(__dirname,'./src/pages/ui-kit/img/'),
+                from: path.resolve(__dirname,'./src/'),
                 to: path.resolve(__dirname,'./dist')
             }
         ]
