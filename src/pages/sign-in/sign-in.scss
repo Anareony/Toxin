@@ -1,0 +1,10 @@
+.sign-in{
+    &__main{
+        background: url(./img/imag.jpg);
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        padding: 172px 0;
+    }
+}
