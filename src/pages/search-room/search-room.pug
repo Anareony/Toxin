@@ -1,0 +1,110 @@
+extends ../base/base
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../components/field/field
+include ../../components/dropdown/dropdown
+include ../../components/range-slider/range-slider
+include ../../components/checkbox-list/checkbox-list
+include ../../components/room-info/room-info
+include ../../components/pagination/pagination
+
+block title  
+    title Toxin | landing page
+
+block main
+    body
+        .search-room
+            .search-room__header
+                +header([
+                    {name:"О нас"},
+                    {name:"Услуги",sub:true},
+                    {name:"Вакансии"},
+                    {name:"Новости"},
+                    {name:"Соглашения",sub:true}
+                ])
+            .search-room__main
+                .search-room__rooms
+                    h1.search-rooms_rooms-title Номера, которые мы для вас подобрали
+                    .search-rooms__list
+                        +room-info({url:"/pages/search-room/img/1.jpg",value:"888",cost:"9 990₽",value1:"144",rate:5,lux:true})
+                        +room-info({url:"/pages/search-room/img/2.jpg",value:"840",cost:"9 990₽",value1:"65",rate:4})
+                        +room-info({url:"/pages/search-room/img/3.jpg",value:"980",cost:"8 500₽",value1:"35",rate:3,lux:true})
+                        +room-info({url:"/pages/search-room/img/4.jpg",value:"856",cost:"7 300₽",value1:"19",rate:5})
+                        +room-info({url:"/pages/search-room/img/5.jpg",value:"740",cost:"6 000₽",value1:"44",rate:4})
+                        +room-info({url:"/pages/search-room/img/6.jpg",value:"982",cost:"5 800₽",value1:"56",rate:3})
+                        +room-info({url:"/pages/search-room/img/7.jpg",value:"678",cost:"5 500₽",value1:"45",rate:5})
+                        +room-info({url:"/pages/search-room/img/8.jpg",value:"450",cost:"5 300₽",value1:"39",rate:4})
+                        +room-info({url:"/pages/search-room/img/9.jpg",value:"350",cost:"5 000₽",value1:"77",rate:3})
+                        +room-info({url:"/pages/search-room/img/10.jpg",value:"666",cost:"5 000₽",value1:"25",rate:5})
+                        +room-info({url:"/pages/search-room/img/11.jpg",value:"444",cost:"5 000₽",value1:"15",rate:3})
+                        +room-info({url:"/pages/search-room/img/12.jpg",value:"352",cost:"5 000₽",value1:"55",rate:3})
+                    .search-rooms__pagination
+                        +pagination
+                .search-room__nav
+                    .search-room__date
+                        +field({theme:"with-dropdown",title:"Дата пребывания в отеле"})
+                    .search-room__dropdown-guests
+                        +dropdown({title:"Гости",variables:"guests"})
+                    .search-room__range-slider
+                        +range-slider({title:"Диапазон цены"})
+                    .search-room__checkbox
+                        +checkbox-list({
+                            title:"Правила дома",
+                            items:[
+                            {label:"Можно курить"},
+                            {label:"Можно с питомцами",checked:"checked"},
+                            {label:"Можно пригласить гостей (до 10 человек)",checked:"checked"}
+                        ]})
+                    .search-room__rich-checkbox
+                        +checkbox-list({
+                            title:"Доступность",
+                            items:[
+                            {theme:"rich",label:"Широкий коридор",description:"Ширина коридоров в номере не менее 91 см."},
+                            {theme:"rich",label:"Помощник для инвалидов",description:"На 1 этаже вас встретит специалист  и проводит до номера."},
+                        ]})
+                    .search-room__dropdown-rooms
+                        +dropdown({variables:"rooms",title:"Удобства номер"})
+                    .search-room__expandable-checkbox
+                        +checkbox-list({
+                            title: "expandable checkbox list",
+                            items:[
+                                {label:"Завтрак"},
+                                {label:"Письменный стол",checked:"checked"},
+                                {label:"Стул для кормления",checked:"checked"},
+                                {label:"Кроватка",checked:"checked"},
+                                {label:"Телевизор"},
+                                {label:"Шампунь"},
+                            ]
+                        })
+            .search-room__footer
+                +footer("default",
+                        "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+                        "Подписка",
+                        "Получайте специальные предложения и новости сервиса",
+                        [{
+                        title:"Навигация",
+                        items: [
+                            {text:"О нас"},
+                            {text:"Новости"},
+                            {text:"Служба поддержки"},
+                            {text:"Услуги"}
+                            ]
+                        },
+                        {
+                        title:"О нас",
+                        items: [
+                            {text:"О сервисе"},
+                            {text:"Наша команда"},
+                            {text:"Вакансии"},
+                            {text:"Инвесторы"}
+                            ]
+                        },
+                        {
+                        title:"Служба поддержки",
+                        items: [
+                            {text:"Соглашения"},
+                            {text:"Сообщество"},
+                            {text:"Связь с нами"}
+                            ]
+                        }
+                        ])
