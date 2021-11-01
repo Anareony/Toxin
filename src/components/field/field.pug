@@ -13,6 +13,6 @@ mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonl
                     input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,class=classes)
         when "with-arrow"
             .field
+                h3.field__title=title 
                 .field__arrow
-                    h3.field__title=title 
-                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id)
+                    input.field__input.field__input_arrow(type=type,name=name,placeholder=placeholder,value=value,id=id)

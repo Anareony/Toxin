@@ -27,7 +27,7 @@
         width: 260px;
         margin-left: 40px;
     }
-
+    
     &__text{
         font-size: 14px;
         line-height: 24px;
@@ -40,9 +40,14 @@
         margin: 100px 140px 100px 140px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__social-list{
         display: flex;
+        align-items: center;
+        &-item{
+            margin-left: 20px;
+        }
     }
     
     &-small__main{
