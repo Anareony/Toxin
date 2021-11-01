@@ -1,0 +1,11 @@
+.registration{
+    &__main{
+        background: url(./img/imag.jpg);
+    }
+    &__container{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 19px 0 19px 0;
+    }
+}
