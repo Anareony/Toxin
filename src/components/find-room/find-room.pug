@@ -5,11 +5,12 @@ include ../dropdown/dropdown
 mixin find-room({title})
     .find-room
         h1.find-room__title=title
-        .find-room__calendar
-            .find-room__calendar-arrive
-                +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ"})
-            .find-room__calendar-departure
-                +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ"})
+        .date-picker
+            .find-room__calendar
+                    .find-room__calendar-arrive
+                        +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ",classes:"arrival"})
+                    .find-room__calendar-departure
+                        +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ",classes:"departure"})
         .find-room__dropdown
             +dropdown({variables:"guests",title:"Гости"})
         .find-room__button
