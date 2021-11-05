@@ -4,7 +4,8 @@ mixin room-info({url,value,cost,value1,rate,lux})
     .room-info
         .room-info__move
             .room-info__button-img
-                img.room-info__img(src=url)
+                figure
+                    img.room-info__img(src=url)
                 button.room-info__fogging.room-info__fogging-left
                     span.room-info__button_left(class="material-icons") expand_more
                 button.room-info__fogging.room-info__fogging-right
