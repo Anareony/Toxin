@@ -5,10 +5,18 @@
     &__title{
         margin-bottom: 16px;
     }
-    &__list{
-        display: none;
-    }
-    &__exp:hover .checkbox-list__list{
-        display: block;
+
+    &__summary{
+        list-style: none;
+        cursor: pointer;
+        position: relative;
+        &::after{
+            @include material-icons;
+            content:'expand_more';
+            position: absolute;
+            top: -4px;
+            right: 10px;
+        }
     }
 }
+
