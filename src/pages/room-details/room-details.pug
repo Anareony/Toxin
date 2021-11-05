@@ -1,0 +1,82 @@
+extends ../base/base
+include ../../components/header/header
+include ../../components/footer/footer
+include ../../components/booking/booking
+include ../../components/bullet-list/bullet-list
+include ../../components/review/review
+include ../../components/advantages/advantages
+include ../../components/chart/chart
+
+block title  
+    title Toxin | Room details
+
+block main
+    body
+        header.room-details__header
+            +header([
+                {name:"О нас"},
+                {name:"Услуги",sub:true},
+                {name:"Вакансии"},
+                {name:"Новости"},
+                {name:"Соглашения",sub:true}
+            ])
+        main.room-details__main
+            .gallery
+                .room-details__gallery
+                    img.room-details__gallery_img.room-details__gallery_1(src="/pages/room-details/img/image.png")
+                    img.room-details__gallery_img(src="/pages/room-details/img/image2.png")
+                    img.room-details__gallery_img(src="/pages/room-details/img/image3.png")
+            .room-details__container
+                .room-details__content
+                    .room-details__advantage
+                        h3.room-details__title Сведения о номере
+                        +advantage({icon:"insert_emoticon",title:"Комфорт",description:"Шумопоглощающие стены"})
+                        +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
+                        +advantage({icon:"whatshot",title:"Уют",description:"Номер оснащен камином"})
+                    .room-details__rating
+                        h3.room-details__title Впечатления о номере
+                        +chart()
+                    .room-details__review
+                        h3.room-details__title Отзывы посетителей номера
+                        +review({url:"/pages/form-elements/img/image.png",username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+                        +review({url:"/pages/form-elements/img/image4.png",username:"Патрисия Стёклышкова",date:"Неделю назад",likes:"2",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент."})
+                    .room-details__bullet-list
+                        h3.room-details__title.room-details__title_margin Правила
+                        +bullet-list({title:"bullet list", items:["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
+                    .room-details__cancel
+                        h3.room-details__title Отмена
+                        p.room-details__text Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. до прибытия вы получите полный возврат за вычетом сбора за услуги.
+                .room-details__side
+                    +booking()
+        footer.room-details__footer
+            +footer("default",
+                    "Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»",
+                    "Подписка",
+                    "Получайте специальные предложения и новости сервиса",
+                    [{
+                    title:"Навигация",
+                    items: [
+                        {text:"О нас"},
+                        {text:"Новости"},
+                        {text:"Служба поддержки"},
+                        {text:"Услуги"}
+                        ]
+                    },
+                    {
+                    title:"О нас",
+                    items: [
+                        {text:"О сервисе"},
+                        {text:"Наша команда"},
+                        {text:"Вакансии"},
+                        {text:"Инвесторы"}
+                        ]
+                    },
+                    {
+                    title:"Служба поддержки",
+                    items: [
+                        {text:"Соглашения"},
+                        {text:"Сообщество"},
+                        {text:"Связь с нами"}
+                        ]
+                    }
+                    ])
