@@ -15,7 +15,7 @@ include ../../components/button/button
 include ../../components/pagination/pagination
 
 block title  
-    title Toxin | Form-elements
+    title Toxin | Form elements
 
 block main
     body
@@ -35,9 +35,9 @@ block main
                         .form-elements__item
                             .date-picker.date-dropdown
                                 .form-elements__item_arrival
-                                    +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"datepicker__dropdown"})
+                                    +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"arrival"})
                                 .form-elements__item_departure
-                                    +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"datepicker__dropdown"})
+                                    +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"departure"})
                         .form-elements__width
                             .form-elements__item
                                 +field({theme:"with-dropdown",title:"filter date dropdown",placeholder:"ДД.ММ.ГГГГ",value:"19 авг - 23 авг",classes:"filter-date"})

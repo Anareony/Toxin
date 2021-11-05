@@ -11,3 +11,6 @@ import './pages/search-room/search-room'
 import './pages/room-details/room-details'
 import './pages/registration/registration'
 import './pages/sign-in/sign-in'
+
+import './scss/vars.scss'
+import './scss/mixin.scss'
