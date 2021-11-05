@@ -4,12 +4,13 @@
 
 .air-datepicker{
     font-family: $first-font;
-    padding: 20px;
+    padding: 15px 20px 4px 16px;
     border: 1px solid $dark25;
     border-radius: 4px;
     background: #fff;
     z-index: 5;
-    
+    box-sizing: border-box;
+    width: 320px;
 
     &--navigation{
         &-nav{
@@ -83,7 +84,7 @@
     border-radius: 22px;
 }
 .air-datepicker--navigation{
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 }
 .air-datepicker-button{
     @include h3;
@@ -106,4 +107,16 @@
 }
 .air-datepicker-nav--action{
     color: $purple;
+}
+.air-datepicker-body--cells.-days-{
+    grid-template-columns: repeat(7, 40px);
+    grid-auto-rows: 40px;
+}
+.air-datepicker-body--day-names{
+    margin: 8px 0 11px;
+}
+.air-datepicker-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
 }
