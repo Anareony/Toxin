@@ -25,11 +25,14 @@
     &__nav-site{
         display: flex;
         align-items: center;
-
     }
     &__item{
         margin-right: 20px;
         color: $dark50;
+        &:hover{
+            color: $dark75;
+            font-weight: 700;
+        }
 
         &-sub-menu{
             display: flex;
