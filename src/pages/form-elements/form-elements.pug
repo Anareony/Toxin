@@ -10,7 +10,7 @@ include ../../components/rate/rate
 include ../../components/like/like
 include ../../components/bullet-list/bullet-list
 include ../../components/review/review
-include ../../components/advantages/advantages
+include ../../components/advantage/advantage
 include ../../components/button/button
 include ../../components/pagination/pagination
 
@@ -31,7 +31,7 @@ block main
                         .form-elements__item
                             +field({theme:"with-dropdown",title:"Dropdown",value:"Сколько гостей"})
                         .form-elements__item
-                            +field({title:"Masked text field",placeholder:"ДД.ММ.ГГГГ",disabled:"disabled"})
+                            +field({title:"Masked text field",placeholder:"ДД.ММ.ГГГГ"})
                         .form-elements__item
                             .date-picker.date-dropdown
                                 .form-elements__item_arrival
