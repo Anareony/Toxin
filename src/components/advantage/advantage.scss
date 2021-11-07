@@ -1,7 +1,6 @@
 .advantage{
     display: flex;
     gap:10px;
-    margin-bottom: 41px;
 
     &__icon{
         font-size: 48px;
@@ -10,7 +9,7 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    &__items{
+    &__content{
         color: $dark75;
         @include body;
     }
