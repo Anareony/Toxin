@@ -1,21 +1,36 @@
 mixin chart()
     .chart
-      svg.donut__svg(width="100%" height="100%" )
-        circle(r="58" cx="60" cy="60" fill="transparent" stroke="url(#gradient-orange)" stroke-width="4" stroke-dasharray="181.5 377" transform="rotate(90.5 62 62)")
-        defs
-          linearGradient(id="gradient-orange")
-            stop(offset="0" stop-color="#FFE29C")
-            stop(offset="1" stop-color="#FFBA9C")
-        circle(r="58" cx="62" cy="65" fill="transparent" stroke="url(#gradient-purple)" stroke-width="4" stroke-dasharray="89 377" transform="rotate(270.5 61 61)")
-        defs
-          linearGradient(id="gradient-purple")
-            stop(offset="0" stop-color="#BA9CFE")
-            stop(offset="1" stop-color="#A59FFC")
-        circle(r="58" cx="65" cy="60" fill="transparent" stroke="url(#gradient-green)" stroke-width="4" stroke-dasharray="90.5 377")
-        defs
-          linearGradient(id="gradient-green")
-            stop(offset="0" stop-color="#6cd1c1")
-            stop(offset="1" stop-color="#6ecf99")
-        g.chart__text 
-            text.chart__number(x="50%" y="50%") 260
-            text.chart__votes(x="50%" y="50%") Голосов
+        .chart__donut
+            svg.donut__svg(width="100%" height="100%" )
+                circle(r="58" cx="56" cy="61" fill="transparent" stroke="url(#gradient-orange)" stroke-width="4" stroke-dasharray="181.5 377" transform="rotate(90 58 62)")
+                defs
+                linearGradient(id="gradient-orange")
+                    stop(offset="0" stop-color="#FFE29C")
+                    stop(offset="1" stop-color="#FFBA9C")
+                circle(r="58" cx="62" cy="60" fill="transparent" stroke="url(#gradient-purple)" stroke-width="4" stroke-dasharray="89 377" transform="rotate(270 61 61)")
+                defs
+                linearGradient(id="gradient-purple")
+                    stop(offset="0" stop-color="#BA9CFE")
+                    stop(offset="1" stop-color="#A59FFC")
+                circle(r="58" cx="60" cy="60" fill="transparent" stroke="url(#gradient-green)" stroke-width="4" stroke-dasharray="90.5 377")
+                defs
+                linearGradient(id="gradient-green")
+                    stop(offset="0" stop-color="#6cd1c1")
+                    stop(offset="1" stop-color="#6ecf99")
+                g.chart__text 
+                    text.chart__number(x="50%" y="50%") 260
+                    text.chart__votes(x="50%" y="50%") Голосов
+        ul.chart__info
+            li.chart__char
+                .chart__lap.chart__lap_orange
+                .chart__lap-value Великолепно
+            li.chart__char
+                .chart__lap.chart__lap_green
+                .chart__lap-value Хорошо
+            li.chart__char
+                .chart__lap.chart__lap_purple
+                .chart__lap-value Удовлетворительно
+            li.chart__char
+                .chart__lap.chart__lap_black
+                .chart__lap-value Разочарован
+        

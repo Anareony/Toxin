@@ -1,0 +1,51 @@
+.chart{
+    display: flex;
+    align-items: flex-end;
+    &__donut{
+        width: 120px;
+        height: 120px;
+    }
+    &__number{
+        fill: $purple;
+        @include h1;
+        transform: translate(-23px, -1px);
+    }
+    &__votes{
+        fill: $purple;
+        @include h3;
+        transform: translate(-32px, 17px );
+    }
+    &__info{
+        margin-left: 30px;
+    }
+    &__char{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        &:last-child{
+            margin-bottom: 4px;
+        }
+    }
+    &__lap{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+
+        &_orange{
+            background: linear-gradient(180deg, #FFE39C 0%, #FFBA9C 100%);
+        }
+
+        &_green{
+            background: $green;
+        }
+
+        &_purple{
+            background: $purple;
+        }
+
+        &_black{
+            background: linear-gradient(180deg, #919191 0%, #3D4975 100%);
+        }
+    }
+}

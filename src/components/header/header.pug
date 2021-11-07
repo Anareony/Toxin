@@ -9,8 +9,7 @@ mixin header(nav,user)
                 each item in nav
                     if item.sub
                         li.header__nav-site-item
-                            a.header__item.header__item-sub-menu(href="#")
-                                span=item.name
+                            a.header__item.header__item-sub-menu(href="#")=item.name
                                 span.material-icons expand_more
                     else if item.bold
                         li.header__nav-site-item.header__nav-site-item-bold
@@ -24,6 +23,6 @@ mixin header(nav,user)
                         a.header__nav-user-link=user
                 else
                     li.header__nav-user-item
-                        +button({theme:"with-border",text:"Войти"})
-                    li.header__nav-user-item2
-                        +button({text:"Зарегистрироваться"})
+                        +button({theme:"with-border",text:"Войти",classes:"button-with-border_small"})
+                    li.header__nav-user-item
+                        +button({text:"Зарегистрироваться",classes:"button-with-background_small"})

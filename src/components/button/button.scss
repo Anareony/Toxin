@@ -9,6 +9,9 @@
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    &_small{
+        height: 35px
+    }
 
     &__text{
         @include h3;
@@ -32,6 +35,9 @@
     cursor: pointer;
     background: #FFFFFF;
     border-radius: 22px;
+    &_small{
+        padding: 8px 18px;
+    }
 }
 .border-wrap{
     background: $gradient-purple;
@@ -39,8 +45,6 @@
     border-radius: 22px;
     &:hover{
         background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
-        
-        
     }
 }
 

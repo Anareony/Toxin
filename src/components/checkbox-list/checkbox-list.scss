@@ -5,8 +5,7 @@
     &__title{
         margin-bottom: 16px;
     }
-
-    &__summary{
+    &__details .checkbox-list__summary{
         list-style: none;
         cursor: pointer;
         position: relative;
@@ -18,5 +17,14 @@
             right: 10px;
         }
     }
+    &__details[open] .checkbox-list__summary::after{
+        @include material-icons;
+        content:'expand_more';
+        position: absolute;
+        top: -4px;
+        right: 10px;
+        transform: rotate(180deg);
+    }
 }
+
 

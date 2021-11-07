@@ -2,16 +2,19 @@
     &__main{
         margin: 100px 140px 100px 140px;
         display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
+        grid-template-columns: 0.9fr 2fr 0.9fr;
         
     }
 
     &__nav{
         display: grid;
-        grid-template-columns: 1.35fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 38px;
+        padding: 0 20px;
     }
 
     &__description{
+        margin-top: -5px;
         width: 260px;
         margin-right: 20px;
     }
@@ -28,7 +31,9 @@
         width: 260px;
         margin-left: 20px;
     }
-    
+    &__container{
+        padding-left: 20px;
+    }
     &__text{
         font-size: 14px;
         line-height: 24px;

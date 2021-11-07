@@ -5,15 +5,18 @@
         display: flex;
         margin: 0 140px 0 140px;
         padding: 15px 0 15px 0;
+        align-items: center;
     }
     &__logo{
-        margin-right: 284px;
+        margin-right: auto;
     }
     &__nav-user{
         display: flex;
         &-item{
             display: flex;
             align-items: center;
+            margin-left: 20px;
+        
             &_auth{
                 padding-left: 25px;
                 display: flex;
@@ -25,13 +28,16 @@
     &__nav-site{
         display: flex;
         align-items: center;
+        &-item{
+            display: flex;
+            margin-left: 20px;
+        }
     }
     &__item{
-        margin-right: 20px;
+        
         color: $dark50;
         &:hover{
             color: $dark75;
-            font-weight: 700;
         }
 
         &-sub-menu{
@@ -40,9 +46,6 @@
             
         }
     }
-}
-.header__nav-user-item2{
-    margin-left: 20px;
 }
 .header__nav-site-item-bold{
     font-weight: 700;
