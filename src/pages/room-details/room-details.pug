@@ -4,7 +4,7 @@ include ../../components/footer/footer
 include ../../components/booking/booking
 include ../../components/bullet-list/bullet-list
 include ../../components/review/review
-include ../../components/advantages/advantages
+include ../../components/advantage/advantage
 include ../../components/chart/chart
 
 block title  
@@ -24,17 +24,20 @@ block main
             .gallery
                 .room-details__gallery
                     img.room-details__gallery_img.room-details__gallery_1(src="/pages/room-details/img/image.png")
-                    img.room-details__gallery_img(src="/pages/room-details/img/image2.png")
+                    img.room-details__gallery_img(src="/pages/room-details/img/image4.jpg")
                     img.room-details__gallery_img(src="/pages/room-details/img/image3.png")
             .room-details__container
                 .room-details__content
                     .room-details__advantage
                         h3.room-details__title Сведения о номере
-                        +advantage({icon:"insert_emoticon",title:"Комфорт",description:"Шумопоглощающие стены"})
-                        +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
-                        +advantage({icon:"whatshot",title:"Уют",description:"Номер оснащен камином"})
+                        .advantage__item
+                            +advantage({icon:"insert_emoticon",title:"Комфорт",description:"Шумопоглощающие стены"})
+                        .advantage__item
+                            +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
+                        .advantage__item
+                            +advantage({icon:"whatshot",title:"Уют",description:"Номер оснащен камином"})
                     .room-details__rating
-                        h3.room-details__title Впечатления о номере
+                        h3.room-details__title Впечатления от номера
                         +chart()
                     .room-details__review
                         h3.room-details__title Отзывы посетителей номера
