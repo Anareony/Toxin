@@ -51,13 +51,7 @@ module.exports = {
             template: './src/pages/sign-in/sign-in.pug'
         }),
         new CleanWebpackPlugin(),
-        new CopyWebpackPlugin({patterns:[
-            {
-                from: path.resolve(__dirname,'./src/'),
-                to: path.resolve(__dirname,'./dist')
-            }
-        ]
-        }),
+
         new webpack.ProvidePlugin({
             $:'jquery',
             jQuery:'jquery',
@@ -67,23 +61,23 @@ module.exports = {
     module:{
         rules:[
             {
-                test:/\.sass|scss|css$/,
+                test:/\.sass|scss|css$/i,
                 use:['style-loader', 'css-loader','sass-loader']
             },
             {
-                test:/\.pug$/,
+                test:/\.pug$/i,
                 use:['pug-loader']
             },
             {
-                test:/\.(|woff|woff2|eot|ttf|otf|svg)$/,
-                type: 'asset',
+                test:/\.(|woff|woff2|eot|ttf|otf|svg)$/i,
+                type: 'asset/resource',
                 generator: {
                   filename: '[name][ext]'
                 }
             
             },
             {
-                test:/\.(png|jpg|svg|gif|ico)$/,
+                test:/\.(png|jpg|svg|gif|ico)$/i,
                 type: 'asset/resource',
                 generator: {
                   filename: '[name][ext]'
