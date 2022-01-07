@@ -9,7 +9,8 @@ block main
     body
         .ui-kit
             .ui-kit_section-headers-footers
-            img.ui-kit__img(src="assets/Group.svg")
+            a.headers-footers__logo(href="index.html")
+                img.ui-kit__img(src=require("/src/assets/Group.svg"))
             +header([
                 {name:"О нас",bold:true},
                 {name:"Услуги",sub:true},

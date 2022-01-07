@@ -1,12 +1,12 @@
 {
   "name": "toxin",
   "version": "1.0.0",
-  "description": "",
-  "uikit": "../src/pages/ui-kit/ui-kit",
+  "description": "+ [colors type](https://anareony.github.io/Toxin/colors-type.html)\r + [form elements](https://anareony.github.io/Toxin/form-elements.html)\r + [cards](https://anareony.github.io/Toxin/cards.html)\r + [headers footers](https://anareony.github.io/Toxin/headers-footers.html)\r + [landing page](https://anareony.github.io/Toxin/landing-page.html)\r + [search room](https://anareony.github.io/Toxin/search-room.html)\r + [room details](https://anareony.github.io/Toxin/room-details.html)\r + [registration](https://anareony.github.io/Toxin/registration.html)\r + [sign in](https://anareony.github.io/Toxin/sign-in.html)",
+  "main": "webpack.config.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --open"
+    "start": "set NODE_ENV=development&&webpack serve --open",
+    "dev": "set NODE_ENV=development&&webpack",
+    "build": "set NODE_ENV=production&&webpack"
   },
   "repository": {
     "type": "git",
@@ -20,29 +20,26 @@
   },
   "homepage": "https://github.com/Anareony/Toxin#readme",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^9.0.1",
-    "css-loader": "^6.3.0",
-    "file-loader": "^6.2.0",
-    "gh-pages": "^3.2.3",
-    "html-webpack-plugin": "^5.3.2",
-    "node-sass": "^6.0.1",
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "jquery": "^3.6.0",
+    "mini-css-extract-plugin": "^2.4.6",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "postcss-preset-env": "^7.2.0",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
-    "sass-loader": "^12.1.0",
-    "source-map-loader": "^3.0.0",
-    "style-loader": "^3.3.0",
-    "webpack": "^5.54.0",
-    "webpack-cli": "^4.8.0",
-    "webpack-dev-server": "^4.3.0"
+    "sass": "^1.45.2",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2"
   },
   "dependencies": {
-    "air-datepicker": "^3.0.1",
+    "air-datepicker": "^3.1.0",
     "ion-rangeslider": "^2.3.1",
     "item-quantity-dropdown": "^2.1.0",
-    "jquery": "^3.6.0",
-    "material-design-icons": "^3.0.1",
-    "postcss-loader": "^6.2.0",
-    "resolve-url-loader": "^4.0.0"
+    "material-design-icons": "^3.0.1"
   }
 }

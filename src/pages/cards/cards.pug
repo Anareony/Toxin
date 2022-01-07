@@ -11,7 +11,8 @@ block title
 block main
     body
         .cards
-            img.cards__img(src="assets/Group.svg")
+            a.cards__logo(href="index.html")
+                img.cards__img(src=require("/src/assets/Group.svg"))
             .cards__container
                 .cards__column
                     .room-seacrh-container
@@ -26,4 +27,4 @@ block main
                 .cards__column-with-calendar
                     .calendar
                     .room-info__notcontainer
-                        +room-info({url:"1.jpg",value:"888",cost:"9 990₽",value1:"145",rate:5,lux:true})
+                        +room-info({url:require("/src/pages/cards/img/1.jpg"),value:"888",cost:"9 990₽",value1:"145",rate:5,lux:true})

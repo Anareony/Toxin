@@ -3,8 +3,8 @@ include ../button/button
 mixin header(nav,user)
     .header
         nav.header__nav
-            a.header__logo(href="")
-                img.header__img(src="components/header/img/logo-with-text.svg")
+            a.header__logo(href="index.html")
+                img.header__img(src=require("/src/components/header/img/logo-with-text.svg"))
             ul.header__nav-site
                 each item in nav
                     if item.sub

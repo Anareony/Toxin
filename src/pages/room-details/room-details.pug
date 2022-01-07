@@ -23,9 +23,9 @@ block main
         main.room-details__main
             .gallery
                 .room-details__gallery
-                    img.room-details__gallery_img.room-details__gallery_1(src="/pages/room-details/img/image.png")
-                    img.room-details__gallery_img(src="/pages/room-details/img/image4.jpg")
-                    img.room-details__gallery_img(src="/pages/room-details/img/image3.png")
+                    img.room-details__gallery_img.room-details__gallery_1(src=require("/src/pages/room-details/img/image.png"))
+                    img.room-details__gallery_img(src=require("/src/pages/room-details/img/image4.jpg"))
+                    img.room-details__gallery_img(src=require("/src/pages/room-details/img/image3.png"))
             .room-details__container
                 .room-details__content
                     .room-details__advantage
@@ -41,8 +41,8 @@ block main
                         +chart()
                     .room-details__review
                         h3.room-details__title Отзывы посетителей номера
-                        +review({url:"/pages/form-elements/img/image.png",username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
-                        +review({url:"/pages/form-elements/img/image4.png",username:"Патрисия Стёклышкова",date:"Неделю назад",likes:"2",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент."})
+                        +review({url:require("/src/pages/form-elements/img/image.png"),username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+                        +review({url:require("/src/pages/form-elements/img/image4.png"),username:"Патрисия Стёклышкова",date:"Неделю назад",likes:"2",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент."})
                     .room-details__bullet-list
                         h3.room-details__title.room-details__title_margin Правила
                         +bullet-list({title:"bullet list", items:["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})

@@ -20,7 +20,8 @@ block title
 block main
     body
         .form-elements
-            img.form-elements__img(src="assets/Group.svg")
+            a.form-elements__logo(href="index.html")
+                img.form-elements__img(src=require("/src/assets/Group.svg"))
             .form-elements__main
                 .form-elements__container
                     .form-elements__column
@@ -129,6 +130,6 @@ block main
                         +advantage({icon:"mood",title:"Комфорт",description:"Шумопоглощающие стены"})
                         +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
                     .form-elements__column_review
-                        +review({url:"/pages/form-elements/img/image.jpg",username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+                        +review({url:require("/src/pages/form-elements/img/image.png"),username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
                         
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")

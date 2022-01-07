@@ -3,6 +3,7 @@ import './components/dropdown/dropdown'
 import './components/range-slider/range-slider'
 import './components/checkbox-list/checkbox-list'
 
+import './pages/index/index'
 import './pages/colors-type/colors-type'
 import './pages/form-elements/form-elements'
 import './pages/cards/cards'

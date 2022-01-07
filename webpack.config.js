@@ -1,19 +1,31 @@
 const path = require('path')
 const webpack = require('webpack')
 const HTMLWebpackPlugin = require ('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
-const CopyWebpackPlugin = require ('copy-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+
+let mode = 'development'
+if (process.env.NODE_ENV === 'production') {
+    mode = 'production'
+}
 
 module.exports = {
     mode: 'development',
     entry: {
-        uikit: './src/entry.js'
+        entry: './src/entry.js'
     },
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: "assets/[hash][ext][query]",
+        clean: true
     },
+    devtool: 'source-map',
     plugins: [
+        new MiniCssExtractPlugin({
+            filename: '[name].[contenthash].css'
+        }),
+        new HTMLWebpackPlugin({
+            template: './src/pages/index/index.pug'
+        }),
         new HTMLWebpackPlugin({
             filename: "colors-type.html",
             template: './src/pages/colors-type/colors-type.pug'
@@ -50,8 +62,6 @@ module.exports = {
             filename: "sign-in.html",
             template: './src/pages/sign-in/sign-in.pug'
         }),
-        new CleanWebpackPlugin(),
-
         new webpack.ProvidePlugin({
             $:'jquery',
             jQuery:'jquery',
@@ -61,28 +71,31 @@ module.exports = {
     module:{
         rules:[
             {
+                test: /\.(png|svg|jpg|jpeg|ico|woff|woff2|eot|ttf|otf|webmanifest)$/i,
+                type: 'asset/resource',
+            },
+            {
                 test:/\.sass|scss|css$/i,
-                use:['style-loader', 'css-loader','sass-loader']
+                use: [
+                    ( mode === 'development') ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            postcssOptions: {
+                                plugins: [
+                                    'postcss-preset-env'
+                                ]
+                            }
+                        }
+                    },
+                    'sass-loader'
+                ]
             },
             {
                 test:/\.pug$/i,
-                use:['pug-loader']
-            },
-            {
-                test:/\.(|woff|woff2|eot|ttf|otf|svg)$/i,
-                type: 'asset/resource',
-                generator: {
-                  filename: '[name][ext]'
-                }
-            
-            },
-            {
-                test:/\.(png|jpg|svg|gif|ico)$/i,
-                type: 'asset/resource',
-                generator: {
-                  filename: '[name][ext]'
-                }
-            },
+                use: ['pug-loader'],
+            }
         ]
-    },
+    }
 }
