@@ -1,6 +1,7 @@
 # Toxin
 
 ### Pages
++ [index](https://anareony.github.io/Toxin/index.html)
 + [colors type](https://anareony.github.io/Toxin/colors-type.html)
 + [form elements](https://anareony.github.io/Toxin/form-elements.html)
 + [cards](https://anareony.github.io/Toxin/cards.html)
