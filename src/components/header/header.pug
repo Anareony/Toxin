@@ -1,28 +1,27 @@
 include ../button/button
 
 mixin header(nav,user)
-    .header
-        nav.header__nav
+    header.header
+        .header__container
             a.header__logo(href="index.html")
                 img.header__img(src=require("/src/components/header/img/logo-with-text.svg"))
-            ul.header__nav-site
-                each item in nav
-                    if item.sub
-                        li.header__nav-site-item
-                            a.header__item.header__item-sub-menu(href="#")=item.name
-                                span.material-icons expand_more
-                    else if item.bold
-                        li.header__nav-site-item.header__nav-site-item-bold
-                            a.header__item(href="#")=item.name
+            button.js-header__burger
+            nav.header__nav
+                ul.header__nav-site
+                    each item in nav
+                        if item.sub
+                            li.header__item
+                                a.header__link.header__item_sub-menu(href="#")=item.name
+                                    span.material-icons expand_more
+                        else
+                            li.header__item
+                                a.header__link(href="#")=item.name
+                ul.header__nav-user
+                    if user
+                        li.header__item
+                            a.header__user-link=user
                     else
-                        li.header__nav-site-item
-                            a.header__item(href="#")=item.name
-            ul.header__nav-user
-                if user
-                    li.header__nav-user-item_auth
-                        a.header__nav-user-link=user
-                else
-                    li.header__nav-user-item
-                        +button({theme:"with-border",text:"Войти",classes:"button-with-border_small"})
-                    li.header__nav-user-item
-                        +button({text:"Зарегистрироваться",classes:"button-with-background_small"})
+                        li.header__item
+                            +button({theme:"with-border",text:"Войти",classes:"button-with-border_small"})
+                        li.header__item
+                            +button({text:"Зарегистрироваться",classes:"button-with-background_small"})

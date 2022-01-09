@@ -2,6 +2,7 @@ import './components/calendar/calendar'
 import './components/dropdown/dropdown'
 import './components/range-slider/range-slider'
 import './components/checkbox-list/checkbox-list'
+import './components/header/header'
 
 import './pages/index/index'
 import './pages/colors-type/colors-type'
