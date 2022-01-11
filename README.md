@@ -18,7 +18,7 @@ Demo: https://anareony.github.io/Toxin/
 + [sign in](https://anareony.github.io/Toxin/sign-in.html)
 
 * TODO:
-        * Responsive for room details and search room.
-        * Custom dropdown.
-        * BEM and semantics Refactoring.
-        * Change direction for pictures.
+ * Responsive for room details and search room.
+ * Custom dropdown.
+ * BEM and semantics Refactoring.
+ * Change direction for pictures.
