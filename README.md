@@ -1,12 +1,10 @@
 # Toxin
 
-Demo: https://anareony.github.io/Toxin/
+Demo: - [Click](https://anareony.github.io/Toxin/)
 
 Technology stack: | HTML | PUG | CSS | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive | Pixel Perfect | BEM |
 
 Pages:
-
-[index](https://anareony.github.io/Toxin/index.html)
 
 [Colors and type](https://anareony.github.io/Toxin/colors-type.html)
 
