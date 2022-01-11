@@ -6,6 +6,12 @@
         margin: 100px 140px 100px 140px;
         display: grid;
         grid-template-columns: 0.9fr 2fr 0.9fr;
+
+        @media screen and (max-width: 1080px) {
+            display: flex;
+            justify-content: center;      
+            margin: 100px 140px 0 140px;      
+        }
         
     }
 
@@ -14,12 +20,23 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-column-gap: 38px;
         padding: 0 20px;
+
+        @media screen and (max-width: 1080px) {
+            display: none;            
+        }
     }
 
     &__description{
         margin-top: -5px;
         width: 260px;
         margin-right: 20px;
+
+        @media screen and (max-width: 1080px) {
+            text-align: center;
+            min-width: 300px;     
+            margin-right: 0;     
+        }
+        
     }
 
     &__title{
@@ -34,6 +51,10 @@
     &__subscription{
         width: 260px;
         margin-left: 20px;
+
+        @media screen and (max-width: 1080px) {
+            display: none;            
+        }
     }
     &__container{
         padding-left: 20px;
@@ -41,23 +62,50 @@
     &__text{
         font-size: 14px;
         line-height: 24px;
+        @media screen and (max-width: 1080px) {
+            display: none;            
+        }
     }
 
     &__img{
         margin-bottom: 20px;
+
+        &-link{
+            @media screen and (max-width: 1080px) {
+                display: flex;
+                justify-content: center;            
+            }
+        }   
     }
     &__sub{
-        margin: 100px 140px 100px 140px;
+        margin: 0 140px 100px 140px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: 1080px) {
+            margin: 0 0 100px 0;
+            flex-direction: column;
+            text-align: center;
+        }
     }
     &__social-list{
         display: flex;
         align-items: center;
         &-item{
-            margin-left: 20px;
+            margin-right: 20px;
+
+            @media screen and (max-width: 1080px) {
+
+                margin-right: 0;
+                &:nth-child(2){
+                    margin: 20px 20px;
+                }
+                
+            }
         }
+        
+
     }
     
     &-small__main{
