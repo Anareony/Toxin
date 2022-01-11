@@ -4,7 +4,7 @@
 
 HTML | PUG | CSS | SCSS | JS | jQuery | WEBPACK | GIT | FIGMA | RESPONSIVE | PERFECT PIXEL | BEM | SEMANTICS
 
-https://anareony.github.io/Toxin/
+Demo: https://anareony.github.io/Toxin/
 
 + [index](https://anareony.github.io/Toxin/index.html)
 + [colors type](https://anareony.github.io/Toxin/colors-type.html)
@@ -17,7 +17,8 @@ https://anareony.github.io/Toxin/
 + [registration](https://anareony.github.io/Toxin/registration.html)
 + [sign in](https://anareony.github.io/Toxin/sign-in.html)
 
-TODO:   Responsive for room details and search room.
-        Custom dropdown.
-        BEM and semantics Refactoring.
-        Change direction for pictures.
+* TODO:
+        * Responsive for room details and search room.
+        * Custom dropdown.
+        * BEM and semantics Refactoring.
+        * Change direction for pictures.
