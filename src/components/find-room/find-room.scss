@@ -1,4 +1,13 @@
+@import '../../scss/vars.scss';
+@import '../../scss/mixin.scss';
+@import '../field/field.scss';
+
+@import '../dropdown/dropdown.scss';
+@import '../field/field.scss';
+@import '../button/button.scss';
+
 .find-room{
+    min-width: 320px;
     max-width: 380px;
     padding: 40px 30px 30px 30px;
     border-radius: 4px;
@@ -13,15 +22,22 @@
         margin-bottom: 21px;
     }
     &__calendar{
+        display: flex;
         margin-bottom: 22px;
+
+        @media screen and (max-width: 380px){
+            flex-direction: column;
+        }
         &-arrive{
             padding-right: 20px;
+
+            @media screen and (max-width: 380px){
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
         }
     }
     &__dropdown{
         margin-bottom: 31px;
-    }
-    &__calendar{
-        display: flex;
     }
 }

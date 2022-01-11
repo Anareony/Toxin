@@ -1,3 +1,8 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
+@import '../rate/rate.scss';
+
 .room-info{
     box-shadow: 0px 10px 20px 0px $dark5;
     background: #FFFFFF;

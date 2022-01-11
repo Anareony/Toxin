@@ -1,3 +1,8 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
+@import '../like/like.scss';
+
 .review{
     display: flex;
     gap: 15px;

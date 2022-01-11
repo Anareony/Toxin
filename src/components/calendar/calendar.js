@@ -8,6 +8,15 @@ let submitButton = {
         dp.hide()
     }
 }
+new AirDatepicker('.calendar', {
+    dateFormat: 'dd MMM',
+    navTitles: {
+        days: '<strong>MMMM</strong> <i>yyyy</i>',
+    },    
+    buttons: ['clear',submitButton],
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>'
+})
 
 new AirDatepicker('.arrival', {
     range: true,

@@ -1,8 +1,14 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
+@import '../checkbox/checkbox.scss';
+
 .checkbox-list{
     &__starege{
         margin-bottom: 12px;
     }
     &__title{
+        @include h3;
         margin-bottom: 16px;
     }
     &__details .checkbox-list__summary{

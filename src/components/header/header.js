@@ -1,16 +1,21 @@
 const burger = document.querySelector('.js-header__burger')
-const target1 = document.querySelector('.header__nav-site');
-const target2 = document.querySelector('.header__nav-user');
 
 function openBurger() {
-    const target1 = document.querySelector('.header__nav-site');
+    const burger = document.querySelector('.js-header__burger')
+    const nav = document.querySelector('.header__nav');
+
     burger.classList.toggle(".js-header__burger_opened")
-    target1.style.display = "block";
-    target2.style.display = "block";
+    
+    if(burger.classList.contains(".js-header__burger_opened")) {
+        burger.innerHTML = "close";
+    } else {
+        burger.innerHTML = "menu";
+    }
+    
+    nav.style.display = "flex";
 
     if(!burger.classList.contains(".js-header__burger_opened")) {
-        target1.style.display = "none";
-        target2.style.display = "none";
+        nav.style.display = "";
     }
 }
 

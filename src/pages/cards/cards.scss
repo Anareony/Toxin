@@ -1,12 +1,8 @@
-@import '../../scss/reset.scss';
 @import '../../scss/vars.scss';
-@import '../../scss/fonts.scss';
 @import '../../scss/mixin.scss';
-@import '../../components/find-room/find-room.scss';
-@import '../../components/sign-up/sign-up.scss';
-@import '../../components/log-in/log-in.scss';
-@import '../../components/booking/booking.scss';
-@import '../../components/room-info/room-info.scss';
+@import '../../scss/styles.scss';
+
+@import '../../components/calendar/calendar.scss';
 
 h3{
     @include h3;

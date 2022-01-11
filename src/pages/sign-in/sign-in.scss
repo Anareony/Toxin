@@ -1,3 +1,12 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+@import '../../scss/styles.scss';
+
+@import '../../components/header/header.scss';
+@import '../../components/footer/footer.scss';
+@import '../../components/log-in/log-in.scss';
+
+
 .sign-in{
     &__main{
         background: url(./img/imag.jpg) no-repeat;

@@ -1,12 +1,25 @@
+@import '../../scss/reset.scss';
+@import '../../scss/vars.scss';
+@import '../../scss/fonts.scss';
+@import '../../scss/mixin.scss';
+@import '../../scss/styles.scss';
+
 .landing-page{
     &__main{
         width: 100%;
-        background: url(./img/image3.jpg);
+        background: url(./img/image3.jpg) no-repeat 50%/cover;
     }
     &__container{
         margin: 0 auto;
         max-width: 1130px;
         padding: 70px 100px 400px 0;
+
+        @media screen and (max-width: 720px) {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
     }
     &__text{
         float: right;

@@ -3,9 +3,9 @@ include ../button/button
 mixin header(nav,user)
     header.header
         .header__container
-            a.header__logo(href="index.html")
+            a.header__logo(href="index.html" alt="Toxin")
                 img.header__img(src=require("/src/components/header/img/logo-with-text.svg"))
-            button.js-header__burger
+            button.js-header__burger.material-icons menu
             nav.header__nav
                 ul.header__nav-site
                     each item in nav

@@ -11,56 +11,74 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
     mode: 'development',
     entry: {
-        entry: './src/entry.js'
+        colorsType: './src/pages/colors-type/colors-type.js',
+        formElements: './src/pages/form-elements/form-elements.js',
+        cards: './src/pages/cards/cards.js',
+        headersFooters: './src/pages/headers-footers/headers-footers.js',
+        index: './src/pages/index/index.js',
+        landing: './src/pages/landing-page/landing-page.js',
+        registration: './src/pages/registration/registration.js',
+        roomDetails: './src/pages/room-details/room-details.js',
+        searchRoom: './src/pages/search-room/search-room.js',
+        signIn: './src/pages/sign-in/sign-in.js'
     },
     output: {
         filename: '[name].[contenthash].js',
         assetModuleFilename: "assets/[hash][ext][query]",
         clean: true
     },
-    devtool: 'source-map',
     plugins: [
         new MiniCssExtractPlugin({
-            filename: '[name].[contenthash].css'
+            filename: '[id].[contenthash].css'
         }),
         new HTMLWebpackPlugin({
-            template: './src/pages/index/index.pug'
+            template: './src/pages/index/index.pug',
+            chunks: ['index']
         }),
         new HTMLWebpackPlugin({
             filename: "colors-type.html",
-            template: './src/pages/colors-type/colors-type.pug'
+            template: './src/pages/colors-type/colors-type.pug',
+            chunks: ['colorsType']
         }),
         new HTMLWebpackPlugin({
             filename: "form-elements.html",
-            template: './src/pages/form-elements/form-elements.pug'
+            template: './src/pages/form-elements/form-elements.pug',
+            chunks: ['formElements']
         }),
         new HTMLWebpackPlugin({
             filename: "cards.html",
-            template: './src/pages/cards/cards.pug'
+            template: './src/pages/cards/cards.pug',
+            chunks: ['cards']
         }),
         new HTMLWebpackPlugin({
             filename: "headers-footers.html",
-            template: './src/pages/headers-footers/headers-footers.pug'
+            template: './src/pages/headers-footers/headers-footers.pug',
+            chunks: ['headersFooters']
         }),
         new HTMLWebpackPlugin({
             filename: "landing-page.html",
-            template: './src/pages/landing-page/landing-page.pug'
+            template: './src/pages/landing-page/landing-page.pug',
+            chunks: ['landing']
         }),
         new HTMLWebpackPlugin({
             filename: "search-room.html",
-            template: './src/pages/search-room/search-room.pug'
+            template: './src/pages/search-room/search-room.pug',
+            chunks: ['searchRoom']
         }),
         new HTMLWebpackPlugin({
             filename: "room-details.html",
-            template: './src/pages/room-details/room-details.pug'
+            template: './src/pages/room-details/room-details.pug',
+            chunks: ['roomDetails']
         }),
         new HTMLWebpackPlugin({
             filename: "registration.html",
-            template: './src/pages/registration/registration.pug'
+            template: './src/pages/registration/registration.pug',
+            chunks: ['registration']
         }),
         new HTMLWebpackPlugin({
             filename: "sign-in.html",
-            template: './src/pages/sign-in/sign-in.pug'
+            template: './src/pages/sign-in/sign-in.pug',
+            chunks: ['signIn']
         }),
         new webpack.ProvidePlugin({
             $:'jquery',

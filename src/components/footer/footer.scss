@@ -1,3 +1,6 @@
+@import '../../scss/mixin.scss';
+@import '../../scss/vars.scss';
+
 .footer{
     &__main{
         margin: 100px 140px 100px 140px;
@@ -20,6 +23,7 @@
     }
 
     &__title{
+        @include h3;
         margin-bottom: 21px;
     }
 
