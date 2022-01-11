@@ -1,10 +1,10 @@
 # Toxin
 
-## Demo: - [Click](https://anareony.github.io/Toxin/)
+### Demo: - [Click](https://anareony.github.io/Toxin/)
 
-## Technology stack: | HTML | PUG | CSS | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive | Pixel Perfect | BEM |
+### Technology stack: | HTML | PUG | CSS | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive | Pixel Perfect | BEM |
 
-## Pages:
+### Pages:
 
 [Colors and type](https://anareony.github.io/Toxin/colors-type.html)
 
@@ -24,8 +24,8 @@
 
 [Sign in](https://anareony.github.io/Toxin/sign-in.html)
 
-* TODO:
-    * Responsive for room details and search room.
-    * Custom dropdown.
-    * BEM and semantics refactoring.
-    * Change direction for pictures.
+### TODO:
+1. Responsive for room details and search room.
+2. Custom dropdown.
+3. BEM and semantics refactoring.
+4. Change direction for pictures.
