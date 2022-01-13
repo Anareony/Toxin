@@ -28,4 +28,4 @@
 1. Responsive for room details and search room.
 2. Custom dropdown.
 3. BEM and semantics refactoring.
-4. Change direction for pictures.
+4. Change directions for pictures.

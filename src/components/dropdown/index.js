@@ -1,89 +1,49 @@
-console.log("eblan")
-let counter = 0;
-const dropdown = document.querySelector('.dropdown');
-const increment = document.querySelector('.dropdown__increment');
-const decrement = document.querySelector('.dropdown__decrement');
-const apply = document.querySelector('.dropdown__apply');
-const clear = document.querySelector('.dropdown__clear');
-const textHolder = document.querySelector(".dropdown__quantity");
-const input = document.querySelector('.input');
-textHolder.innerHTML = counter;
-let variants = ['Эюдей', 'абобусов' , 'амогусов'];
-
-function increase() {
-    textHolder.innerHTML = ++counter;
-    input.value = counter;
-
-    if (counter >= 1) {
-        input.value = `${variants[0]} ${counter} `
-    }
-    if (counter > 2) {
-        input.value = `${variants[1]} ${counter} `
-    }
-    if (counter > 3) {
-        input.value = `${variants[2]} ${counter} `
+class Dropdown {
+    constructor({anchor, items}) {
+        this.anchor = anchor;
+        this.name = "egor";
+        this.counter = 0;
+        this.createWrapper();
+        this.createItem();     
+        this.changeAmount();
     }
 
-    if (counter > 0) {
-        decrement.disabled = false;
+    createWrapper() {
+        const wrapperHTML = '<ul class="dropdown__list"></div>';
+        this.anchor.insertAdjacentHTML('afterend', wrapperHTML);
+        this.wrapperHTML = this.anchor.parentElement.querySelector('.dropdown__list');
     }
-} 
-
-function decrease() {
-    textHolder.innerHTML = --counter;
-    input.value = counter;
-    if (counter >= 1) {
-        input.value = `${variants[0]} ${counter} `
-    }
-    if (counter > 2) {
-        input.value = `${variants[1]} ${counter} `
-    }
-    if (counter > 3) {
-        input.value = `${variants[2]} ${counter} `
-    }
+    changeAmount(e) {
     
-    if (counter === 0) {
-        input.value = "нету амогусов"
-        decrement.disabled = true;
+    
+        if (e.target.classList.contains('dropdown__btn dropdown__btn-plus')) {
+          this.counter += 1;
+        } else {
+          desiredItem.amount -= 1;
+        }
     }
+    createItem() {
+        const wrapperItemHTML = `
+            <li class="dropdown__item">
+                <div class="dropdown__target">${this.name}</div>
+                <div class="dropdown__counter-btns">
+                    <button class="dropdown__btn dropdown__btn-minus">
+                    -
+                    </button>
+                    <span class="dropdown__value">${this.counter}</span>
+                    <button class="dropdown__btn dropdown__btn-plus">
+                    +
+                    </button>
+                </div>
+            </li>
+            `;
+        this.wrapperHTML.insertAdjacentHTML('afterbegin', wrapperItemHTML);
+      }
 }
 
-function check() {
-    if (counter >= 1) {
-        input.value = `${variants[0]} ${counter} `
-    }
-    if (counter > 2) {
-        input.value = `${variants[1]} ${counter} `
-    }
-    if (counter > 3) {
-        input.value = `${variants[2]} ${counter} `
-    }
-}
-
-function toggleDropdown(event) {
-    if (event.target.classList.contains('input')) {
-	    dropdown.classList.toggle('show');
-    } else {
-        dropdown.classList.remove('show');
-    }
-}
-
-function hide() {
-    dropdown.classList.remove('show');
-}
-
-function clearCounter() {
-    input.value = "нету амогусов";
-    counter = 0;
-    decrement.disabled = true;
-    textHolder.innerHTML = 0;
-}
-
-dropdown.addEventListener('click',function(event){
-    event.stopPropagation();
-})
-document.addEventListener("click", toggleDropdown)
-increment.addEventListener('click', increase)
-decrement.addEventListener('click', decrease)
-apply.addEventListener('click', hide)
-clear.addEventListener('click', clearCounter)
+const guest = new Dropdown({anchor: document.querySelector('.dropdown'),
+    items: [
+        {
+        title: 'Младенцы',
+        }
+    ]});
