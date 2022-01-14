@@ -24,6 +24,11 @@
 
 [Sign in](https://anareony.github.io/Toxin/sign-in.html)
 
+### Plugins: 
+* [Air Datepicker](https://air-datepicker.com/ru)
+* [Ion.RangeSlider](http://ionden.com/a/plugins/ion.rangeSlider/index.html)
+* [Material Design Icons](http://google.github.io/material-design-icons/)
+
 ### TODO:
 1. Responsive for room details and search room.
 2. Custom dropdown.
