@@ -4,8 +4,9 @@ mixin checkbox({theme,label,description,checked})
             .checkbox
                 label.checkbox__label=label
                     input.checkbox__input(type="checkbox" checked=checked)
+                    
         when "rich"
-            .checkbox.rich
+            .checkbox.checkbox__rich
                 label.checkbox__label_rich=label
                     input.checkbox__input(type="checkbox" checked=checked)
-                p.checkbox__description=description
+                    p.checkbox__description=description

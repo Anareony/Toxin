@@ -39,13 +39,13 @@ block main
                                     +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"arrival"})
                                 .form-elements__item_departure
                                     +field({theme:"with-dropdown",title:"date dropdown",placeholder:"ДД.ММ.ГГГГ",classes:"departure"})
-                        .form-elements__width
-                            .form-elements__item
+                        .form-elemnts__item
+                            .form-elements__field_filter-date-dropdown
                                 +field({theme:"with-dropdown",title:"filter date dropdown",placeholder:"ДД.ММ.ГГГГ",value:"19 авг - 23 авг",classes:"filter-date"})
-                            .form-elements__item
+                            .form-elements__field_subscription
                                 +field({theme:"with-arrow",title:"subscription text field",placeholder:"Email"})
-                    .form-elements__column_radio
-                        .form-elements__item_buttons_checkbox
+                    .form-elements__column
+                        .form-elements__item
                             +checkbox-list({
                                 title:"checkbox buttons",
                                 items:[
@@ -53,83 +53,91 @@ block main
                                 {label:"Можно с питомцами",checked:"checked"},
                                 {label:"Можно пригласить гостей (до 10 человек)",checked:"checked"}
                                 ]})
-                        .form-elements__item_buttons
-                            .radio_butt
-                                h3.form-elements__title radio buttons
-                                +radio({description:"Мужчина",name:"sex",checked:"checked"})
-                                +radio({description:"Женщина",name:"sex"})
-                        .form-elements__item_buttons
-                            .form-elements__toggle
-                                h3.form-elements__title toggle
-                                .togglick
-                                    +toggle({text:"Получать спецпредложения",checked:"checked"})
-                                .togglick
-                                    +toggle({text:"Получать спецпредложения"})
-                        .form-elements__item_buttons
-                            .like_button
-                                h3.form-elements__title like button
-                                .like_button_1
-                                    +like({likes:"2"})
-                                .like_button_2
-                                    +like({likes:"12", theme:"checked"})
                         .form-elements__item
-                            .rating_button
-                                h3.form-elements__title rate button
-                                .rating__buttons
-                                    +rate({rate: "4"})
-                                .rating__buttons
-                                    +rate({rate: "5"})
+                            h3.form-elements__title radio buttons
+                            .form-elements__radio
+                                +radio({description:"Мужчина",name:"sex",checked:"checked"})
+                            .form-elements__radio
+                                +radio({description:"Женщина",name:"sex"})
+                        .form-elements__item
+                            h3.form-elements__title toggle
+                            .form-elements__toggle
+                                +toggle({text:"Получать спецпредложения",checked:"checked"})
+                            .form-elements__toggle
+                                +toggle({text:"Получать спецпредложения"})
+                        .form-elements__item
+                            h3.form-elements__title like button
+                            .like_button
+                                +like({likes:"2"})
+                            .like_button
+                                +like({likes:"12", theme:"checked"})
+                        .form-elements__item
+                            h3.form-elements__title rate button
+                            .form-elements__rate
+                                +rate({rate: "4"})
+                            .form-elements__rate
+                                +rate({rate: "5"})
                     .form-elements__column
                         .form-elements__item
                             .form-elements__slider
                                 +range-slider({title:"range slider"})
                         .form-elements__item
-                            .form-elements__buttons
-                                h3.form-elements__title buttons
-                                    +button({text:"click me"})
-                                    +button({theme:"with-border",text:"click me"})
-                                .block
-                                    +button({theme:"without-background",text:"click me"})
-                                    +button({theme:"with-arrow",text:"Перейти к оплате",arrow:"arrow_forward"})
+                            h3.form-elements__title buttons
+                            .form-elements__btn
+                                +button({text:"click me"})
+                            .form-elements__btn 
+                                +button({theme:"with-border",text:"click me"})
+                            .form-elements__btn
+                                +button({theme:"without-background",text:"click me"})
+                            .form-elements__btn
+                                +button({theme:"with-arrow",text:"Перейти к оплате",arrow:"arrow_forward"})
                         .form-elements__item
-                            .form-elements__buttons
-                                h3.form-elements__title pagination
+                            h3.form-elements__title pagination
+                            .form-elements__pagination
                                 +pagination()
                 .form-elements__container
                     .form-elements__column
-                        .dropdown__little
+                        .form-elements__item
                             +dropdown({title:"dropdown",variables:"rooms",theme:"with-dropdown"})
                     .form-elements__column
-                        .dropdown__big
+                        .form-elements__item
                             +dropdown({title:"dropdown",variables:"guests"})
                 .form-elements__container
                     .form-elements__column
-                        +checkbox-list({theme:"expandable",
-                            title: "expandable checkbox list",
-                            items:[
-                                {label:"Завтрак"},
-                                {label:"Письменный стол",checked:"checked"},
-                                {label:"Стул для кормления",checked:"checked"},
-                                {label:"Кроватка",checked:"checked"},
-                                {label:"Телевизор"},
-                                {label:"Шампунь"},
-                            ]
-                        })
+                        .form-elements__item
+                            +checkbox-list({theme:"expandable",
+                                title: "expandable checkbox list",
+                                items:[
+                                    {label:"Завтрак"},
+                                    {label:"Письменный стол",checked:"checked"},
+                                    {label:"Стул для кормления",checked:"checked"},
+                                    {label:"Кроватка",checked:"checked"},
+                                    {label:"Телевизор"},
+                                    {label:"Шампунь"},
+                                ]
+                            })
                     .form-elements__column
-                        +checkbox-list({
+                        .form-elements__item
+                            +checkbox-list({
                                 title:"rich checkbox buttons",
                                 items:[
                                 {theme:"rich",label:"Широкий коридор",description:"Ширина коридоров в номере не менее 91 см."},
                                 {theme:"rich",label:"Помощник для инвалидов",description:"На 1 этаже вас встретит специалист  и проводит до номера."},
-                                ]})
+                                ]
+                            })
                     .form-elements__column
-                        h3.form-elements__title bullet list
-                        +bullet-list({title:"bullet list", items:["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
+                        .form-elements__item
+                            h3.form-elements__title bullet list
+                            +bullet-list({title:"bullet list", items:["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
                 .form-elements__container
                     .form-elements__column
-                        +advantage({icon:"mood",title:"Комфорт",description:"Шумопоглощающие стены"})
-                        +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
-                    .form-elements__column_review
-                        +review({url:require("/src/pages/form-elements/img/image.png"),username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
+                        .form-elements__item
+                            .form-elements__advantage
+                                +advantage({icon:"mood",title:"Комфорт",description:"Шумопоглощающие стены"})
+                            .form-elements__advantage
+                                +advantage({icon:"location_city",title:"Удобства",description:"Окно в каждей из спален"})
+                    .form-elements__column
+                        .form-elements__item
+                            +review({url:require("/src/pages/form-elements/img/image.png"),username:"Мурад Сарафанов",date:"5 дней назад",likes:"12",theme:"checked",text:"Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей."})
                         
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")

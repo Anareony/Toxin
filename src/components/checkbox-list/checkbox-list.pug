@@ -4,16 +4,16 @@ mixin checkbox-list({theme,title,items})
     case theme
         default
             h3.checkbox-list__title=title
-            ul.checkbox-list__list
+            ul.checkbox-list__items
                 each item in items
-                    li.checkbox-list__starege
+                    li.checkbox-list__item
                         +checkbox(item)
 
         when "expandable"
             details.checkbox-list__details
                 summary.checkbox-list__summary
                     h3.checkbox-list__title=title
-                ul.checkbox-list__list
+                ul.checkbox-list__items
                     each item in items
-                        li.checkbox-list__starege
+                        li.checkbox-list__item
                             +checkbox(item)

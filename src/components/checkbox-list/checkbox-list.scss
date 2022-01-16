@@ -4,17 +4,21 @@
 @import '../checkbox/checkbox.scss';
 
 .checkbox-list{
-    &__starege{
+
+    &__item{
         margin-bottom: 12px;
     }
+
     &__title{
         @include h3;
         margin-bottom: 16px;
     }
+
     &__details .checkbox-list__summary{
         list-style: none;
         cursor: pointer;
         position: relative;
+        
         &::after{
             @include material-icons;
             content:'expand_more';
@@ -23,6 +27,7 @@
             right: 10px;
         }
     }
+
     &__details[open] .checkbox-list__summary::after{
         @include material-icons;
         content:'expand_more';
