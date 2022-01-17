@@ -5,8 +5,8 @@ include ../radio/radio
 include ../toggle/toggle
 
 mixin sign-up({title})
-    .sign-up
-        .sign-up__title=title
+    form.sign-up
+        h1.sign-up__title=title
         .sign-up__name
             +field({placeholder:"Имя"})
         .sign-up__surname
@@ -19,7 +19,7 @@ mixin sign-up({title})
         .sign-up__email
             +field({title:"Данные для входа в сервис",placeholder:"Email"})
         .sign-up__password
-            +field({placeholder:"Пароль"})
+            +field({placeholder:"Пароль",type:"password"})
         .sign-up__toggle
             +toggle({text:"Получать спецпредложения"})
         .sign-up__button

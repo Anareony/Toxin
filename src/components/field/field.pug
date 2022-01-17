@@ -1,11 +1,10 @@
 mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonly})
     case theme
         default
-            .field
-                .field__item(class = classes)
+            .field(class = classes)
+                label.field__container
                     h3.field__title=title 
-                    label.field__container
-                        input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled)
+                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled)
         when "with-dropdown"
             .field
                 label.field__dropdown
@@ -13,6 +12,6 @@ mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonl
                     input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,class=classes)
         when "with-arrow"
             .field
-                h3.field__title=title 
-                .field__arrow
-                    input.field__input.field__input_arrow(type=type,name=name,placeholder=placeholder,value=value,id=id)
+                label.field__arrow
+                    h3.field__title=title 
+                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id)

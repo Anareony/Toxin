@@ -1,7 +1,6 @@
 @import '../../scss/vars.scss';
 @import '../../scss/mixin.scss';
 
-
 .air-datepicker{
     font-family: $first-font;
     padding: 15px 20px 4px 16px;
@@ -13,27 +12,100 @@
     width: 320px;
 
     &--navigation{
-        &-nav{
-            &--title{
-                i {
-                    color: $dark100;
-                } 
-            }
+        padding-bottom: 27px;
+    }
+
+    &--pointer{
+        display: none;
+    }
+
+    &-buttons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    &-button{
+        @include h3;
+        color: $purple;
+
+        &:hover{
+            color: $dark50;
         }
     }
 
-    &-body--day-name{
-        @include h3;
-        text-transform: none;
-        color: $purple;
+    &-nav{
+        &--title{
+            @include h2;
+            color: $dark100;
+            
+            i {
+                color: $dark100;
+            } 
+        }
+
+        &--action{
+            color: $purple;
+        }
+    }
+
+    &-body{
+        &--cells.-days-{
+            grid-template-columns: repeat(7, 40px);
+            grid-auto-rows: 40px;
+        }
+
+        &--day{
+            &-names{
+                margin: 8px 0 11px;
+            }
+
+            &-name{
+                @include h3;
+                text-transform: none;
+                color: $purple;
+            }
+        }
     }
 
     &-cell{
         font-size: 12px;
         color: $dark50;
 
-        .-current-{
-            background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        &.-day-{
+            &.-range-from-,
+            &.-range-to-{
+                border: none;
+                background: $gradient-purple;
+                border-radius: 22px;
+                color: #FFFFFF;
+            }
+        }
+        
+        &.-focus-{
+            background: $gradient-purple;
+            color: #fff;
+            border-radius: 22px;
+
+            &.-in-range-{
+                background: $gradient-purple;
+            }
+        }
+
+        &.-selected-{
+            background: $gradient-purple;
+            border-radius: 22px;
+
+            &.-focus-{
+                background: $gradient-purple;
+            }
+        }
+
+        &.-current-,
+        &.-current-.-in-range-{
+            background: $gradient-green;
+            border-radius: 22px;
+            color: #FFFFFF;
         }
 
         &:active{
@@ -42,85 +114,9 @@
             border-radius: 22px;
             color: white;
         }
-    }
-
-        &-nav--title{
-            @include h2;
+        
+        &.-in-range-{
+            background: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
         }
-}
-.-year{
-    background-color: $dark100;
-}
-
-.air-datepicker-cell.-selected-{
-    background: $gradient-purple;
-    border-radius: 22px;
-}
-
-.air-datepicker-cell.-current-{
-    background: $gradient-green;
-    border-radius: 22px;
-    color: #FFFFFF;
-}
-
-.air-datepicker-nav--title, .air-datepicker-nav--title i{
-    @include h2;
-    color: $dark100 ;
-}
-
-.air-datepicker-cell.-day-.-weekend-.-selected-.-focus-{
-    background: $gradient-purple;
-}
-
-.air-datepicker-cell.-day-.-weekend-.-focus-{
-    background: $gradient-purple;
-    color: #fff;
-    border-radius: 22px;
-}
-
-.air-datepicker-cell.-day-.-focus-{
-    background: $gradient-purple;
-    color: #fff;
-    border-radius: 22px;
-}
-.air-datepicker--navigation{
-    padding-bottom: 27px;
-}
-.air-datepicker-button{
-    @include h3;
-    color: $purple;
-    &:hover{
-        color: $dark50;
     }
-}
-.air-datepicker-cell.-in-range-{
-    background: linear-gradient(180deg,rgba(188,156,255,.25),rgba(139,164,249,.25));
-}
-.air-datepicker-cell.-day-.-focus-.-range-to-,
-.air-datepicker-cell.-day-.-focus-.-range-from-,
-.air-datepicker-cell.-day-.-range-to-,
-.air-datepicker-cell.-day-.-range-from-{
-    border: none;
-    background: $gradient-purple;
-    border-radius: 22px;
-    color: #FFFFFF;
-}
-.air-datepicker-nav--action{
-    color: $purple;
-}
-.air-datepicker-body--cells.-days-{
-    grid-template-columns: repeat(7, 40px);
-    grid-auto-rows: 40px;
-}
-.air-datepicker-body--day-names{
-    margin: 8px 0 11px;
-}
-.air-datepicker-buttons{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-
-.air-datepicker--pointer{
-    display: none;
 }

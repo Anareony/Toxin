@@ -2,10 +2,12 @@
 @import '../../scss/mixin.scss';
 
 .field{
-    h3{
+
+    &__title{
         @include h3;
         margin-bottom: 5px;
     }
+    
     &__input{
         @include body;
         border: 1px solid $dark25;
@@ -13,19 +15,16 @@
         width: 100%;
         height: 44px;
         padding-left: 15px;
+        cursor: pointer;
 
-        &_arrow{
-            padding: 0 40px 0 15px;
-        }
         &:hover, &:focus{
             border: 1px solid $dark50;
         }
     }
+
     &__dropdown{
         position: relative;
-        .field__input{
-            cursor: pointer;
-        }
+
         &::after{
             font-family: "Material Icons";
             content: "expand_more";
@@ -37,6 +36,7 @@
             cursor: pointer;
         }
     }
+
     &__arrow{
         position: relative;
 
@@ -50,12 +50,9 @@
             font-size: 24px;
             line-height: 24px;
             position: absolute;
-            top: 10px;
+            bottom: -2px;
             right: 10px;
             cursor: pointer;
         }
     }
-}
-.fiend__input_submit{
-    @include material-icons;
 }

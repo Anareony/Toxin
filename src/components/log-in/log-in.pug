@@ -2,12 +2,12 @@ include ../button/button
 include ../field/field
 
 mixin log-in({title})
-    .log-in
+    form.log-in
         h1.log-in__title=title
         .log-in__email
             +field({placeholder:"Email"})
         .log-in__password
-            +field({placeholder:"Password"})
+            +field({placeholder:"Password",type:"password"})
         .log-in__button
             +button({theme:"with-arrow",text:"Войти"})
         .log-in__sign-up
