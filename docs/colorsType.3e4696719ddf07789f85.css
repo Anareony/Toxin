@@ -1,0 +1,402 @@
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/type/type.scss ***!
+  \**********************************************************************************************************************************************************************************************/
+.type {
+  max-width: 431px;
+}
+.type__item {
+  display: flex;
+  margin-bottom: 51px;
+  gap: 30px;
+}
+.type__item_type-body {
+  max-width: 370px;
+}
+.type__heading {
+  color: rgba(31, 32, 65, 0.25);
+  text-align: right;
+  width: 31px;
+  font-weight: 400;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/colors/colors.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.colors__box {
+  height: 70px;
+  width: 70px;
+  margin-right: 40px;
+  border-radius: 6px;
+}
+.colors__item {
+  color: #1F2041;
+  line-height: 23.16px;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.colors__title {
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+.colors__hex {
+  font-weight: 400;
+}
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/material-design-icons/iconfont/material-icons.css ***!
+  \******************************************************************************************************************/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./docs/assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(./docs/assets/cff684e59ffb052d72cb.woff2) format('woff2'),
+       url(./docs/assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
+       url(./docs/assets/5e7382c63da0098d634a.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*!**********************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/material-design-icons/iconfont/material-icons.css (1) ***!
+  \**********************************************************************************************************************/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(./docs/assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(./docs/assets/cff684e59ffb052d72cb.woff2) format('woff2'),
+       url(./docs/assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
+       url(./docs/assets/5e7382c63da0098d634a.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/pages/colors-type/colors-type.scss ***!
+  \*******************************************************************************************************************************************************************************************************/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./docs/assets/c430087a706cf2a89f21.woff2) format("woff2"), url(./docs/assets/bd93c5afe50577b99cdc.woff) format("woff"), url(./docs/assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(./docs/assets/96c577f34b708c36aafc.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./docs/assets/192477b00936dba64c71.woff2) format("woff2"), url(./docs/assets/86d875e34853435223d1.woff) format("woff"), url(./docs/assets/733964aa5261b1af4852.ttf) format("truetype"), url(./docs/assets/40f8a405348f3215d6cb.svg) format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(./docs/assets/375bc3e0944347a1a423.woff2) format("woff2"), url(./docs/assets/7d763529eb6680f61f94.woff) format("woff"), url(./docs/assets/cf79f16dce505196be22.ttf) format("truetype"), url(./docs/assets/e4a93567c887810fa28e.svg) format("svg");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Material icons";
+  src: url(./docs/assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(./docs/assets/399a9a5135a1f76af795.woff) format("woff"), url(./docs/assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(./docs/assets/f433086ea7ba8b8349ec.svg) format("svg");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./docs/assets/c430087a706cf2a89f21.woff2) format("woff2"), url(./docs/assets/bd93c5afe50577b99cdc.woff) format("woff"), url(./docs/assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(./docs/assets/96c577f34b708c36aafc.svg) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(./docs/assets/192477b00936dba64c71.woff2) format("woff2"), url(./docs/assets/86d875e34853435223d1.woff) format("woff"), url(./docs/assets/733964aa5261b1af4852.ttf) format("truetype"), url(./docs/assets/40f8a405348f3215d6cb.svg) format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url(./docs/assets/375bc3e0944347a1a423.woff2) format("woff2"), url(./docs/assets/7d763529eb6680f61f94.woff) format("woff"), url(./docs/assets/cf79f16dce505196be22.ttf) format("truetype"), url(./docs/assets/e4a93567c887810fa28e.svg) format("svg");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Material icons";
+  src: url(./docs/assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(./docs/assets/399a9a5135a1f76af795.woff) format("woff"), url(./docs/assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(./docs/assets/f433086ea7ba8b8349ec.svg) format("svg");
+  font-weight: 400;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Montserrat, sans-serif, Arial;
+  color: rgba(31, 32, 65, 0.75);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+.colors-type__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.colors-type__img {
+  margin: 30px 0 68px 35px;
+}
+
+.type__item_type-h1 {
+  color: #1F2041;
+  line-height: 29.26px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.type__item_type-h2 {
+  color: #1F2041;
+  line-height: 23.16px;
+  font-size: 19px;
+  font-weight: 700;
+}
+.type__item_type-h3 {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.type__item_type-body {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.colors__item_color-ds100 {
+  background-color: #1F2041;
+}
+.colors__item_color-ds75 {
+  background-color: rgba(31, 32, 65, 0.75);
+}
+.colors__item_color-ds50 {
+  background-color: rgba(31, 32, 65, 0.5);
+}
+.colors__item_color-ds25 {
+  background-color: rgba(31, 32, 65, 0.25);
+}
+.colors__item_color-ds5 {
+  background-color: rgba(31, 32, 65, 0.05);
+}
+.colors__item_color-purple {
+  background-color: #BC9CFF;
+}
+.colors__item_color-green {
+  background-color: #6FCF97;
+}
