@@ -39,6 +39,7 @@
     }
     &__arrow{
         position: relative;
+
         &::after{
             font-family: "Material Icons";
             content: "arrow_forward";

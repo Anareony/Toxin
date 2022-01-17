@@ -1,12 +1,12 @@
-mixin button({theme,text,arrow,href,classes})
+mixin button({theme,text,href,classes})
     case theme
         default
-            a.button-with-background(class=classes)
+            a.button-with-background(class=classes,href=href)
                 .button-with-background__text=text
         
         when "with-border"
-            .border-wrap
-                a.button-with-border(href=href,class=classes)=text
+            a.button-with-border(href=href,class=classes)
+                .button-with-border__text=text
 
         when "without-background"
             a.button-without-background=text

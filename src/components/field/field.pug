@@ -1,4 +1,4 @@
-mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonly,datas})
+mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonly})
     case theme
         default
             .field
@@ -10,7 +10,7 @@ mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonl
             .field
                 label.field__dropdown
                     h3.field__title=title 
-                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,class=classes,data-class=datas)
+                    input.field__input(readonly,type=type,name=name,placeholder=placeholder,value=value,class=classes)
         when "with-arrow"
             .field
                 h3.field__title=title 

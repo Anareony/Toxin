@@ -9,31 +9,31 @@ mixin booking()
                 span.booking__number-icon №
                 span.booking__number-value 888
                 span.booking__number-text люкс
-            .booking__price
-                span.booking__price-cost 9 990₽
-                span.booking__price-date в сутки
+            .booking__price-per-day
+                span.booking__cost 9 990₽
+                span.booking__date в сутки
         .booking__calendar
             .booking__calendar-arrive
-                +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ"})
+                +field({theme:"with-dropdown",title:"Прибытие",classes:"arrival",value:"ДД.ММ.ГГГГ"})
             .booking__calendar-departure
-                +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ"})
+                +field({theme:"with-dropdown",title:"Выезд",classes:"departure",value:"ДД.ММ.ГГГГ"})
         .booking__dropdown
             +dropdown({variables:"guests",title:"Гости"})
         .booking__items
             .booking__service
-                span 9 990₽ х 4 суток
-                span 39 960₽
+                span.booking__text 9 990₽ х 4 суток
+                span.booking__text 39 960₽
             .booking__service
-                span Сбор за услуги: скидка 2 179₽
-                span i
-                span 0₽
+                span.booking__text Сбор за услуги: скидка 2 179₽
+                span.booking__text i
+                span.booking__text 0₽
             .booking__service
-                span Сбор за дополнительные услуги
-                span i
-                span 300₽
-        .booking__total-price
-            span.booking__total Итого
-            span.booking__line
-            span.booking__price2 38 081₽ 
+                span.booking__text Сбор за дополнительные услуги
+                span.booking__text i
+                span.booking__text 300₽
+        .booking__total
+            span.booking__total-summary Итого
+            span.booking__total-line
+            span.booking__total-price 38 081₽ 
         .booking__button
             +button({theme:"with-arrow",text:"Забронировать"})

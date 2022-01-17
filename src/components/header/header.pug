@@ -11,17 +11,17 @@ mixin header(nav,user)
                     each item in nav
                         if item.sub
                             li.header__item
-                                a.header__link.header__item_sub-menu(href="#")=item.name
+                                a.header__link.header__item_sub-menu(href="/change-me")=item.name
                                     span.material-icons expand_more
                         else
                             li.header__item
-                                a.header__link(href="#")=item.name
+                                a.header__link(href="/change-me")=item.name
                 ul.header__nav-user
                     if user
                         li.header__item
                             a.header__user-link=user
                     else
                         li.header__item
-                            +button({theme:"with-border",text:"Войти",classes:"button-with-border_small"})
+                            +button({theme:"with-border",text:"Войти",classes:"button-with-border_small",href:"sign-in.html"})
                         li.header__item
-                            +button({text:"Зарегистрироваться",classes:"button-with-background_small"})
+                            +button({text:"Зарегистрироваться",classes:"button-with-background_small", href:"registration.html"})

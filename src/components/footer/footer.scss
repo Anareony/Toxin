@@ -1,6 +1,8 @@
 @import '../../scss/mixin.scss';
 @import '../../scss/vars.scss';
 
+@import '../field/field.scss';
+
 .footer{
     &__main{
         margin: 100px 140px 100px 140px;
@@ -38,14 +40,16 @@
         }
         
     }
-
+    &__link{
+        color: $dark50;
+    }
     &__title{
         @include h3;
-        margin-bottom: 21px;
+        margin-bottom: 19px;
     }
 
     &__item{
-        margin-bottom: 25px;
+        margin-bottom: 12px;
     }
 
     &__subscription{
@@ -62,6 +66,7 @@
     &__text{
         font-size: 14px;
         line-height: 24px;
+        margin-bottom: 22px;
         @media screen and (max-width: 1080px) {
             display: none;            
         }

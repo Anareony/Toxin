@@ -6,19 +6,19 @@ mixin footer(theme,description,title,text,navigation=[])
             when theme="small"
                 .footer-small__main
                     .footer-small__description
-                        a.footer-small__img-link(href="")
+                        a.footer-small__img-link(href="/change-me")
                             img.footer-small__img(src=require("/src/components/footer/img/logo-with-text.svg"))
                     .footer-small__sub
                         p.footer-small__copyright Copyright © 2018 Toxin отель. Все права защищены.
                         ul.footer-small__social-list
                             li.footer-small__social-list-item
-                                a.footer-small__social-link(href='')
+                                a.footer-small__social-link(href='https://twitter.com/' target="_blank" rel="noopener noreferrer")
                                     img(src=require("/src/components/footer/img/tw.svg"))
                             li.footer-small__social-list-item
-                                a.footer-small__social-link(href='')
+                                a.footer-small__social-link(href='https://facebook.com' target="_blank" rel="noopener noreferrer")
                                     img(src=require("/src/components/footer/img/fb.svg"))
                             li.footer-small__social-list-item
-                                a.footer-small__social-link(href='')
+                                a.footer-small__social-link(href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer")
                                     img(src=require("/src/components/footer/img/ig.svg"))
             default
                 .footer__main
@@ -33,7 +33,7 @@ mixin footer(theme,description,title,text,navigation=[])
                                 ul.footer__list-item
                                     each item in nav.items
                                         li.footer__item
-                                            a.footer__link=item.text
+                                            a.footer__link(href="/change-me")=item.text
                     .footer__subscription
                         h3.footer__title=title
                         p.footer__text=text
@@ -42,11 +42,11 @@ mixin footer(theme,description,title,text,navigation=[])
                     p.footer__copyright Copyright © 2018 Toxin отель. Все права защищены.
                     ul.footer__social-list
                         li.footer__social-list-item
-                            a.footer__social-link(href='')
+                            a.footer__social-link(href='https://twitter.com/' target="_blank" rel="noopener noreferrer")
                                 img(src=require("/src/components/footer/img/tw.svg"))
                         li.footer__social-list-item
-                            a.footer__social-link(href='')
+                            a.footer__social-link(href='https://facebook.com' target="_blank" rel="noopener noreferrer")
                                 img(src=require("/src/components/footer/img/fb.svg"))
                         li.footer__social-list-item
-                            a.footer__social-link(href='')
+                            a.footer__social-link(href='https://www.instagram.com/' target="_blank" rel="noopener noreferrer")
                                 img(src=require("/src/components/footer/img/ig.svg"))

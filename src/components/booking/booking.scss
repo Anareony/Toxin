@@ -20,67 +20,81 @@
         justify-content: space-between;
         margin-bottom: 17px;
     }
+
     &__number{
         @include h3;
+
         &-icon{
             font-size: 14px;
             line-height: 29.26px;
             margin-right: 5px;
         }
+
         &-value{
             font-size: 24px;
             line-height: 17.07px;
             margin-right: 8px;
         }
+        
         &-text{
             font-size: 12px;
             line-height: 14.63px;
             color: $purple;
         }
     }
-    &__price{
+
+    &__price-per-day{
         color: $dark50;
         line-height: 30px;
-        &-cost{
-            font-weight: 700;
-            margin-right: 5px;
-        }
-        &-date{
-            font-size: 12px;
-        }
     }
+
+    &__cost{
+        font-weight: 700;
+        margin-right: 5px;
+    }
+
+    &__date{
+        font-size: 12px;
+    }
+
     &__calendar{
         margin-bottom: 22px;
+
         &-arrive{
             padding-right: 20px;
         }
     }
+
     &__dropdown{
         margin-bottom: 20px;
     }
+
     &__calendar{
         display: flex;
     }
+
     &__service{
         color: $dark75;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
     }
-    &__total-price{
+
+    &__total{
         display: flex;
         justify-content: space-between;
         @include h2;
         margin-bottom: 20px;
         align-items: baseline;
+
+        &-line{
+            border-bottom: 0.0625rem dotted $dark25;
+            height: 1px;
+            width: 170px;
+        }
     }
+
     &__items{
         margin-bottom: 30px;
     }
-    &__line{
-        border-bottom: 0.0625rem dotted $dark25;
-        height: 1px;
-        width: 170px;
-    }
-
 }

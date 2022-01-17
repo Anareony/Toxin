@@ -12,10 +12,12 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
     &__content{
         color: $dark75;
         @include body;
     }
+    
     &__title{
         font-weight: 700;
     }

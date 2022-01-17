@@ -47,6 +47,8 @@ new AirDatepicker('.filter-date', {
     nextHtml: '<span class="material-icons">arrow_forward</span>'
 })
 
-$(".field__input.departure").on('click', function() {
-    $(this).parents(".date-picker").find(".field__input.arrival").trigger('click')
-})
+const departure = document.querySelector(".field__input.departure")
+
+departure.addEventListener('click', () => document.querySelector(".field__input.arrival").click())
+
+
