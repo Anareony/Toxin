@@ -2,16 +2,18 @@
 @import '../../scss/vars.scss';
 
 .range-slider {
+
     &__title {
         @include h3;
     }
 
-    .irs--flat {
-        max-width: 266px;
-        height: 30px;
-        margin-bottom: 10px;
-    
-        .irs-line {
+    .irs{
+        &--flat {
+            max-width: 266px;
+            height: 30px;
+            margin-bottom: 10px;
+        }
+        &-line {
             height: 6px;
             border-radius: 3px;
             border: 1px solid $dark25;
@@ -19,13 +21,13 @@
             top: 22px;
         }
   
-        .irs-bar {
+        &-bar {
             background: $gradient-green;
             height: 6px;
             top: 22px;
         }
     
-        .irs-handle {
+        &-handle {
             width: 12px;
             height: 12px;
             border-radius: 50%;
@@ -36,9 +38,9 @@
             cursor: pointer;
         }
     
-        .irs-from,
-        .irs-to,
-        .irs-single {
+        &-from,
+        &-to,
+        &-single {
             visibility: hidden !important;
             
             &::before {
@@ -46,7 +48,7 @@
             }
         }
     
-        .irs-single {
+        &-single {
             visibility: visible !important;
             left: auto !important;
             right: 0;
@@ -60,6 +62,7 @@
         }
     }
 }
+
 .irs--flat .irs-handle > i:first-child{
     display: none;
 }

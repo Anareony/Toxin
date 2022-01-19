@@ -8,16 +8,19 @@
         margin-right:40px;
         border-radius: 6px;
     }
+    
     &__item{
         @include h2;
         margin-bottom:20px;
         display:flex;
         align-items: center;
     }
+
     &__title{
         padding-bottom: 5px;
         font-weight: 700;
     }
+
     &__hex{
         font-weight: 400;
     }

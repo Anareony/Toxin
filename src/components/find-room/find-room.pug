@@ -7,10 +7,10 @@ mixin find-room({title})
         h1.find-room__title=title
         .date-picker
             .find-room__calendar
-                    .find-room__calendar-arrive
-                        +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ",classes:"arrival"})
-                    .find-room__calendar-departure
-                        +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ",classes:"departure"})
+                .find-room__calendar_arrive
+                    +field({theme:"with-dropdown",title:"Прибытие",value:"ДД.ММ.ГГГГ",classes:"arrival"})
+                .find-room__calendar_departure
+                    +field({theme:"with-dropdown",title:"Выезд",value:"ДД.ММ.ГГГГ",classes:"departure"})
         .find-room__dropdown
             +dropdown({variables:"guests",title:"Гости"})
         .find-room__button

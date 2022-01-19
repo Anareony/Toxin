@@ -19,30 +19,39 @@
         @include h1;
         margin-bottom: 20px;
     }
+
     &__name{
         margin-bottom: 10px;
     }
+
     &__surname{
         margin-bottom: 10px;
     }
+
     &__gender{
         margin-bottom: 23.56px;
     }
+
     &__date{
         margin-bottom: 20px;
     }
+
     &__email{
         margin-bottom: 10px;
     }
+
     &__password{
         margin-bottom: 8px;
     }
+
     &__toggle{
         margin-bottom: 24px;
     }
+
     &__button{
         margin-bottom: 30px;
     }
+    
     &__sign-in{
         display: flex;
         align-items: center;

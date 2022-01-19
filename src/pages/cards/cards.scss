@@ -4,28 +4,30 @@
 
 @import '../../components/calendar/calendar.scss';
 
-h3{
-    @include h3;
+.cards{
+    &__img{
+        margin: 15px 0 72px 45px;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1130px;
+    }
+
+    &__column-with-calendar{
+        width: 320px;
+    }
 }
 
-.cards__img{
-    margin: 15px 0 72px 45px;
-}
-.cards__container{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1130px;
-}
-.cards__column-with-calendar{
-    width: 320px;
-}
 .calendar{
     width: 100%;
 }
+
 .booking__container{
     width: 380px;
 }
+
 .room-info__item{
     width: 270px;
 }

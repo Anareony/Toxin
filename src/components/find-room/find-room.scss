@@ -21,6 +21,7 @@
         @include h1;
         margin-bottom: 21px;
     }
+
     &__calendar{
         display: flex;
         margin-bottom: 22px;
@@ -28,7 +29,8 @@
         @media screen and (max-width: 380px){
             flex-direction: column;
         }
-        &-arrive{
+
+        &_arrive{
             padding-right: 20px;
 
             @media screen and (max-width: 380px){
@@ -37,6 +39,7 @@
             }
         }
     }
+    
     &__dropdown{
         margin-bottom: 31px;
     }

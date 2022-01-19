@@ -4,23 +4,28 @@
 .chart{
     display: flex;
     align-items: flex-end;
+    
     &__donut{
         width: 120px;
         height: 120px;
     }
+
     &__number{
         fill: $purple;
         @include h1;
         transform: translate(-23px, -1px);
     }
+
     &__votes{
         fill: $purple;
         @include h3;
         transform: translate(-32px, 17px );
     }
+
     &__info{
         margin-left: 30px;
     }
+
     &__char{
         display: flex;
         align-items: center;
@@ -29,6 +34,7 @@
             margin-bottom: 4px;
         }
     }
+
     &__lap{
         width: 10px;
         height: 10px;

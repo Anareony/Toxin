@@ -23,16 +23,16 @@ module.exports = {
         signIn: './src/pages/sign-in/sign-in.js'
     },
     output: {
-        filename: './docs/[name].[contenthash].js',
-        assetModuleFilename: "./docs/assets/[hash][ext][query]",
+        filename: '[name].[contenthash].js',
+        assetModuleFilename: "assets/[hash][ext][query]",
         path: path.resolve(__dirname, 'docs'),
         clean: true
     },
     devServer: {
-        contentBase: path.join(__dirname, 'docs'),
-        compress: true,
-        port: 9999,
-        clientLogLevel: 'silent',
+        static: {
+            directory: path.join(__dirname, 'docs')
+        },
+        compress: true
     },
     plugins: [
         new MiniCssExtractPlugin({

@@ -6,9 +6,9 @@ mixin room-info({url,value,cost,value1,rate,lux})
             .room-info__button-img
                 figure
                     img.room-info__img(src=url)
-                button.room-info__fogging.room-info__fogging-left
+                button.room-info__fogging.room-info__fogging_left
                     span.room-info__button_left.material-icons expand_more
-                button.room-info__fogging.room-info__fogging-right
+                button.room-info__fogging.room-info__fogging_right
                     span.room-info__button_right.material-icons expand_more
                 .room-info__radio-buttons 
                     button.room-info__buttons(name="radio")
@@ -18,13 +18,13 @@ mixin room-info({url,value,cost,value1,rate,lux})
         .room-info__container
             .room-info__title
                 .room-info__number
-                    span.room-info__number-icon №
-                    span.room-info__number-value=value
+                    span.room-info__number_icon №
+                    span.room-info__number_value=value
                     if lux
-                        span.room-info__number-text люкс
+                        span.room-info__number_text люкс
                 .room-info__price
-                    span.room-info__price-cost=cost
-                    span.room-info__price-date в сутки
+                    span.room-info__price_cost=cost
+                    span.room-info__price_date в сутки
             .room-info__stats
                 .room-info___rating
                     +rate({rate})
