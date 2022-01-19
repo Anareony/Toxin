@@ -10,10 +10,10 @@
         color: $purple;
         height: 24px;
         width: 24px;
-        background: url('../../assets/star.svg') no-repeat;
+        background: url('../../components/rate/img/star.svg') no-repeat;
 
         &_outline {
-            background: url('../../assets/star-border.svg') no-repeat;
+            background: url('../../components/rate/img/star-border.svg') no-repeat;
         }
     }
 }
