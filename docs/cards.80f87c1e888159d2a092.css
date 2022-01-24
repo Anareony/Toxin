@@ -5,12 +5,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(./docs/assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
+  src: url(assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(./docs/assets/cff684e59ffb052d72cb.woff2) format('woff2'),
-       url(./docs/assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
-       url(./docs/assets/5e7382c63da0098d634a.ttf) format('truetype');
+       url(assets/cff684e59ffb052d72cb.woff2) format('woff2'),
+       url(assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
+       url(assets/5e7382c63da0098d634a.ttf) format('truetype');
 }
 
 .material-icons {
@@ -43,24 +43,24 @@
   \*******************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(./docs/assets/c430087a706cf2a89f21.woff2) format("woff2"), url(./docs/assets/bd93c5afe50577b99cdc.woff) format("woff"), url(./docs/assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(./docs/assets/96c577f34b708c36aafc.svg) format("svg");
+  src: url(assets/c430087a706cf2a89f21.woff2) format("woff2"), url(assets/bd93c5afe50577b99cdc.woff) format("woff"), url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/96c577f34b708c36aafc.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(./docs/assets/192477b00936dba64c71.woff2) format("woff2"), url(./docs/assets/86d875e34853435223d1.woff) format("woff"), url(./docs/assets/733964aa5261b1af4852.ttf) format("truetype"), url(./docs/assets/40f8a405348f3215d6cb.svg) format("svg");
+  src: url(assets/192477b00936dba64c71.woff2) format("woff2"), url(assets/86d875e34853435223d1.woff) format("woff"), url(assets/733964aa5261b1af4852.ttf) format("truetype"), url(assets/40f8a405348f3215d6cb.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(./docs/assets/375bc3e0944347a1a423.woff2) format("woff2"), url(./docs/assets/7d763529eb6680f61f94.woff) format("woff"), url(./docs/assets/cf79f16dce505196be22.ttf) format("truetype"), url(./docs/assets/e4a93567c887810fa28e.svg) format("svg");
+  src: url(assets/375bc3e0944347a1a423.woff2) format("woff2"), url(assets/7d763529eb6680f61f94.woff) format("woff"), url(assets/cf79f16dce505196be22.ttf) format("truetype"), url(assets/e4a93567c887810fa28e.svg) format("svg");
   font-weight: 700;
 }
 @font-face {
   font-family: "Material icons";
-  src: url(./docs/assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(./docs/assets/399a9a5135a1f76af795.woff) format("woff"), url(./docs/assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(./docs/assets/f433086ea7ba8b8349ec.svg) format("svg");
+  src: url(assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(assets/399a9a5135a1f76af795.woff) format("woff"), url(assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(assets/f433086ea7ba8b8349ec.svg) format("svg");
   font-weight: 400;
 }
 * {
@@ -267,26 +267,15 @@ header {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
 }
 
-h3 {
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-}
-
 .cards__img {
   margin: 15px 0 72px 45px;
 }
-
 .cards__container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   max-width: 1130px;
 }
-
 .cards__column-with-calendar {
   width: 320px;
 }
@@ -677,11 +666,11 @@ h3 {
     flex-direction: column;
   }
 }
-.find-room__calendar-arrive {
+.find-room__calendar_arrive {
   padding-right: 20px;
 }
 @media screen and (max-width: 380px) {
-  .find-room__calendar-arrive {
+  .find-room__calendar_arrive {
     padding-right: 0;
     margin-bottom: 20px;
   }
@@ -1489,7 +1478,7 @@ h3 {
 }
 
 .booking {
-  min-width: 380px;
+  width: 380px;
   padding: 40px 30px 30px 30px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.12);
@@ -1585,10 +1574,10 @@ h3 {
   color: #BC9CFF;
   height: 24px;
   width: 24px;
-  background: url(./docs/assets/5a1fce0bd521840614e1.svg) no-repeat;
+  background: url(assets/5a1fce0bd521840614e1.svg) no-repeat;
 }
 .rate__star_outline {
-  background: url(./docs/assets/d6f803db6e2d4c949d36.svg) no-repeat;
+  background: url(assets/d6f803db6e2d4c949d36.svg) no-repeat;
 }
 
 .room-info {
@@ -1623,19 +1612,19 @@ h3 {
   display: flex;
   align-items: center;
 }
-.room-info__fogging-left {
+.room-info__fogging_left {
   left: 0;
   opacity: 0;
 }
-.room-info__fogging-left:hover {
+.room-info__fogging_left:hover {
   opacity: 1;
 }
-.room-info__fogging-right {
+.room-info__fogging_right {
   right: 0px;
   transform: rotate(180deg);
   opacity: 0;
 }
-.room-info__fogging-right:hover {
+.room-info__fogging_right:hover {
   opacity: 1;
 }
 .room-info__button_left {
@@ -1660,16 +1649,16 @@ h3 {
   font-style: normal;
   text-transform: uppercase;
 }
-.room-info__number-icon {
+.room-info__number_icon {
   font-size: 14px;
   line-height: 29.26px;
   margin-right: 5px;
 }
-.room-info__number-value {
+.room-info__number_value {
   font-size: 19px;
   line-height: 17.07px;
 }
-.room-info__number-text {
+.room-info__number_text {
   font-size: 12px;
   line-height: 14.63px;
   color: #BC9CFF;
@@ -1678,11 +1667,11 @@ h3 {
   color: rgba(31, 32, 65, 0.5);
   line-height: 18px;
 }
-.room-info__price-cost {
+.room-info__price_cost {
   font-weight: 700;
   margin-right: 5px;
 }
-.room-info__price-date {
+.room-info__price_date {
   font-size: 12px;
 }
 .room-info__move {

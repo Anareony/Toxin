@@ -5,12 +5,12 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(./docs/assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
+  src: url(assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
   src: local('Material Icons'),
        local('MaterialIcons-Regular'),
-       url(./docs/assets/cff684e59ffb052d72cb.woff2) format('woff2'),
-       url(./docs/assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
-       url(./docs/assets/5e7382c63da0098d634a.ttf) format('truetype');
+       url(assets/cff684e59ffb052d72cb.woff2) format('woff2'),
+       url(assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
+       url(assets/5e7382c63da0098d634a.ttf) format('truetype');
 }
 
 .material-icons {
@@ -43,24 +43,24 @@
   \*******************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
-  src: url(./docs/assets/c430087a706cf2a89f21.woff2) format("woff2"), url(./docs/assets/bd93c5afe50577b99cdc.woff) format("woff"), url(./docs/assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(./docs/assets/96c577f34b708c36aafc.svg) format("svg");
+  src: url(assets/c430087a706cf2a89f21.woff2) format("woff2"), url(assets/bd93c5afe50577b99cdc.woff) format("woff"), url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/96c577f34b708c36aafc.svg) format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url(./docs/assets/192477b00936dba64c71.woff2) format("woff2"), url(./docs/assets/86d875e34853435223d1.woff) format("woff"), url(./docs/assets/733964aa5261b1af4852.ttf) format("truetype"), url(./docs/assets/40f8a405348f3215d6cb.svg) format("svg");
+  src: url(assets/192477b00936dba64c71.woff2) format("woff2"), url(assets/86d875e34853435223d1.woff) format("woff"), url(assets/733964aa5261b1af4852.ttf) format("truetype"), url(assets/40f8a405348f3215d6cb.svg) format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Quicksand";
-  src: url(./docs/assets/375bc3e0944347a1a423.woff2) format("woff2"), url(./docs/assets/7d763529eb6680f61f94.woff) format("woff"), url(./docs/assets/cf79f16dce505196be22.ttf) format("truetype"), url(./docs/assets/e4a93567c887810fa28e.svg) format("svg");
+  src: url(assets/375bc3e0944347a1a423.woff2) format("woff2"), url(assets/7d763529eb6680f61f94.woff) format("woff"), url(assets/cf79f16dce505196be22.ttf) format("truetype"), url(assets/e4a93567c887810fa28e.svg) format("svg");
   font-weight: 700;
 }
 @font-face {
   font-family: "Material icons";
-  src: url(./docs/assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(./docs/assets/399a9a5135a1f76af795.woff) format("woff"), url(./docs/assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(./docs/assets/f433086ea7ba8b8349ec.svg) format("svg");
+  src: url(assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(assets/399a9a5135a1f76af795.woff) format("woff"), url(assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(assets/f433086ea7ba8b8349ec.svg) format("svg");
   font-weight: 400;
 }
 * {
