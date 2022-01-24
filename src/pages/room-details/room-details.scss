@@ -8,11 +8,14 @@
 @import '../../components/header/header.scss';
 @import '../../components/booking/booking.scss';
 @import '../../components/review/review.scss';
+@import '../../components/bullet-list/bullet-list.scss';
+
 
 .room-details{
-
+    &__main{
+        margin: 0 auto;
+    }
     &__gallery{
-
         display: grid;
         grid-template-columns: auto auto auto;
         grid-template-rows: auto auto;
@@ -29,19 +32,25 @@
             float: left;
         }
     }
+
     &__container{
         display: flex;
-        width: 1170px;
-        margin: 0 auto;
+
+        @media screen and (max-width: 1173px) {
+            flex-direction: column;
+            align-items: center;     
+        }
     }
+
     &__content{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            'advantage rating'
-            'review review'
-            'bullet cancel';
+        margin-right: 20px;
     }
+
+    &__item{
+        display: flex;
+        justify-content: space-between
+    }
+
     &__title{
         @include h2;
         text-transform: none;
@@ -56,31 +65,18 @@
     &__text{
         @include body;
     }
-    &__advantage{
-        grid-area: advantage;
-    }
-    &__rating{
-        grid-area: rating;
-    }
-    &__review{
-        grid-area: review;
-    }
-    &__review{
-        grid-area: review;
-    }
-    &__bullet-list{
-        grid-area: bullet;
-    }
     &__cancel{
-        grid-area: cancel;
+        max-width: 320px;
     }
 }
+
 .gallery{
     margin: 0 auto;
     max-width: 1440px;
     object-fit: cover;
     margin-bottom: 70px;
 }
+
 .advantage__item{
     margin-bottom: 41px;
     &:last-child{
