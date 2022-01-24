@@ -18,6 +18,12 @@
         @include body;
     }
     
+    &__item{
+        margin-bottom: 41px;
+        &:last-child{
+            margin-bottom: 20px;
+        }
+    }
     &__title{
         font-weight: 700;
     }

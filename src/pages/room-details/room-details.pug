@@ -21,11 +21,10 @@ block main
                 {name:"Соглашения",sub:true}
             ])
         main.room-details__main
-            .gallery
-                .room-details__gallery
-                    img.room-details__gallery_img.room-details__gallery_1(src=require("/src/pages/room-details/img/image.png"))
-                    img.room-details__gallery_img(src=require("/src/pages/room-details/img/image4.jpg"))
-                    img.room-details__gallery_img(src=require("/src/pages/room-details/img/image3.png"))
+            .room-details__gallery
+                img.room-details__gallery_img.room-details__gallery_big(src=require("/src/pages/room-details/img/image.png"))
+                img.room-details__gallery_img(src=require("/src/pages/room-details/img/image4.jpg"))
+                img.room-details__gallery_img(src=require("/src/pages/room-details/img/image3.png"))
             .room-details__container
                 .room-details__content
                     .room-details__item
@@ -47,7 +46,7 @@ block main
                             +review({url:require("/src/pages/form-elements/img/image4.png"),username:"Патрисия Стёклышкова",date:"Неделю назад",likes:"2",text:"Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент."})
                     .room-details__item    
                         .room-details__bullet-list
-                            h3.room-details__title.room-details__title_margin Правила
+                            h3.room-details__title Правила
                             +bullet-list({title:"bullet list", items:["Нельзя с питомцами", "Без вечеринок и мероприятий", "Время прибытия — после 13:00, а выезд до 12:00"]})
                         .room-details__cancel
                             h3.room-details__title Отмена
