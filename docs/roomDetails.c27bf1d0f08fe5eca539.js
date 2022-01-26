@@ -94,47 +94,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/components/find-room/find-room.scss":
-/*!*************************************************!*\
-  !*** ./src/components/find-room/find-room.scss ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/find-room/find-room.scss?");
-
-/***/ }),
-
-/***/ "./src/components/footer/footer.scss":
-/*!*******************************************!*\
-  !*** ./src/components/footer/footer.scss ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/footer/footer.scss?");
-
-/***/ }),
-
-/***/ "./src/components/header/header.scss":
-/*!*******************************************!*\
-  !*** ./src/components/header/header.scss ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/header/header.scss?");
-
-/***/ }),
-
-/***/ "./src/pages/landing-page/landing-page.scss":
+/***/ "./src/pages/room-details/room-details.scss":
 /*!**************************************************!*\
-  !*** ./src/pages/landing-page/landing-page.scss ***!
+  !*** ./src/pages/room-details/room-details.scss ***!
   \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/landing-page/landing-page.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/room-details/room-details.scss?");
+
+/***/ }),
+
+/***/ "./src/components/booking/booking.js":
+/*!*******************************************!*\
+  !*** ./src/components/booking/booking.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/booking/booking.js?");
 
 /***/ }),
 
@@ -145,7 +123,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var _calendar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calendar.scss */ \"./src/components/calendar/calendar.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\nlet submitButton = {\r\n    content: 'Применить',\r\n    onClick: (dp) => {\r\n        dp.hide()\r\n    }\r\n}\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.calendar', {\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.arrival', {\r\n    range: true,\r\n    dateFormat: 'dd.MM.yyyy',\r\n    multipleDates: 2,\r\n    showEvent: 'click',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>',\r\n    onSelect({date, formattedDate, datepicker}) {\r\n        $('.arrival').val(formattedDate[0])\r\n        $('.departure').val(formattedDate[1])\r\n    }\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.filter-date', {\r\n    range: true,\r\n    multipleDatesSeparator: ' - ',\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nconst departure = document.querySelector(\".field__input.departure\")\r\n\r\ndeparture.addEventListener('click', () => document.querySelector(\".field__input.arrival\").click())\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/calendar/calendar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var _calendar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calendar.scss */ \"./src/components/calendar/calendar.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\nlet submitButton = {\r\n    content: 'Применить',\r\n    onClick: (dp) => {\r\n        dp.hide()\r\n    }\r\n}\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.calendar', {\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.arrival', {\r\n    range: true,\r\n    dateFormat: 'dd.MM.yyyy',\r\n    multipleDates: 2,\r\n    showEvent: 'click',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>',\r\n    onSelect({date, formattedDate, datepicker}) {\r\n        $('.arrival').val(formattedDate[0])\r\n        $('.departure').val(formattedDate[1])\r\n    }\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.filter-date', {\r\n    range: true,\r\n    multipleDatesSeparator: ' - ',\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\n\n//# sourceURL=webpack://toxin/./src/components/calendar/calendar.js?");
 
 /***/ }),
 
@@ -170,14 +148,14 @@ eval("const burger = document.querySelector('.js-header__burger')\r\n\r\nfunctio
 
 /***/ }),
 
-/***/ "./src/pages/landing-page/landing-page.js":
+/***/ "./src/pages/room-details/room-details.js":
 /*!************************************************!*\
-  !*** ./src/pages/landing-page/landing-page.js ***!
+  !*** ./src/pages/room-details/room-details.js ***!
   \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _landing_page_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./landing-page.scss */ \"./src/pages/landing-page/landing-page.scss\");\n/* harmony import */ var _components_header_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header/header.scss */ \"./src/components/header/header.scss\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_header_header__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_footer_footer_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/footer/footer.scss */ \"./src/components/footer/footer.scss\");\n/* harmony import */ var _components_find_room_find_room_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/find-room/find-room.scss */ \"./src/components/find-room/find-room.scss\");\n/* harmony import */ var _components_calendar_calendar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _components_dropdown_dropdown__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/landing-page/landing-page.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-details.scss */ \"./src/pages/room-details/room-details.scss\");\n/* harmony import */ var _components_booking_booking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/booking/booking */ \"./src/components/booking/booking.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_header_header__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/room-details/room-details.js?");
 
 /***/ })
 
@@ -253,7 +231,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lan
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/landing-page/landing-page.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/room-details/room-details.js");
 /******/ 	
 /******/ })()
 ;

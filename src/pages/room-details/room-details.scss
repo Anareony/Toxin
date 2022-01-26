@@ -51,10 +51,9 @@
             align-items: center;
             padding: 10px;     
         }
-    }
-
-    &__content{
-        margin-right: 20px;
+        @media screen and (max-width: 620px) {
+            padding: 0;   
+        }
     }
 
     &__item{
@@ -65,7 +64,6 @@
         @media screen and (max-width: 620px) {
             align-items: center;
             flex-direction: column;
-            margin-left: 20px;
             margin-bottom: 20px;
 
             &:nth-child(2){

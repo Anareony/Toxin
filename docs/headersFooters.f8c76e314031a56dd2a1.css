@@ -279,20 +279,31 @@ header {
 .header__container {
   display: flex;
   justify-content: space-between;
-  margin: 0 140px 0 140px;
+  width: 80.5%;
+  margin: 0 auto;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 1250px) {
   .header__container {
+    width: 91%;
+  }
+}
+@media screen and (max-width: 996px) {
+  .header__container {
+    width: 95%;
     display: grid;
-    margin: 0;
     grid-template-areas: "logo button" "nav nav";
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__container {
+    width: 100%;
   }
 }
 .header__nav {
   display: flex;
   grid-area: nav;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 996px) {
   .header__nav {
     display: none;
     flex-direction: column;
@@ -302,7 +313,7 @@ header {
   padding: 15px 0 15px 0;
   grid-area: logo;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 996px) {
   .header__logo {
     margin-left: 40px;
   }
@@ -310,7 +321,7 @@ header {
 .header__nav-site, .header__nav-user {
   display: flex;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 996px) {
   .header__nav-site, .header__nav-user {
     flex-direction: column;
     align-items: center;
@@ -319,9 +330,9 @@ header {
 .header__item {
   display: flex;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 21px;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 996px) {
   .header__item {
     margin-bottom: 15px;
     margin-left: 0;
@@ -348,7 +359,7 @@ header {
   display: none;
   grid-area: button;
 }
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 996px) {
   .js-header__burger {
     display: block;
     font-size: 36px;
@@ -417,14 +428,23 @@ header {
   cursor: pointer;
 }
 
+.footer {
+  margin: 0 auto;
+  width: 80.5%;
+}
+@media screen and (max-width: 1250px) {
+  .footer {
+    width: 88%;
+  }
+}
 .footer__main {
-  margin: 100px 140px 100px 140px;
+  margin: 100px 0;
   display: grid;
   grid-template-columns: 0.9fr 2fr 0.9fr;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__main {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 100px 140px 0 140px;
   }
@@ -433,27 +453,27 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 38px;
-  padding: 0 20px;
+  padding: 0 22px 0 25px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__nav {
     display: none;
   }
 }
 .footer__description {
   margin-top: -5px;
-  width: 260px;
-  margin-right: 20px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__description {
     text-align: center;
-    min-width: 300px;
-    margin-right: 0;
+    margin: 0;
   }
 }
 .footer__link {
   color: rgba(31, 32, 65, 0.5);
+}
+.footer__link:hover {
+  color: rgba(31, 32, 65, 0.75);
 }
 .footer__title {
   color: #1F2041;
@@ -465,49 +485,46 @@ header {
   margin-bottom: 19px;
 }
 .footer__item {
-  margin-bottom: 12px;
-}
-.footer__item:hover {
-  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 14px;
 }
 .footer__subscription {
-  width: 260px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__subscription {
     display: none;
   }
 }
 .footer__container {
-  padding-left: 20px;
+  margin: 0 auto;
+  width: 80.5%;
 }
 .footer__text {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 22px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__text {
     display: none;
   }
 }
 .footer__img {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__img-link {
     display: flex;
     justify-content: center;
   }
 }
 .footer__sub {
-  margin: 0 140px 100px 140px;
+  margin: 105px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__sub {
     margin: 0 0 100px 0;
     flex-direction: column;
@@ -519,11 +536,11 @@ header {
   align-items: center;
 }
 .footer__social-list-item {
-  margin-right: 20px;
+  margin-left: 22px;
 }
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 996px) {
   .footer__social-list-item {
-    margin-right: 0;
+    margin-left: 0;
   }
   .footer__social-list-item:nth-child(2) {
     margin: 20px 20px;

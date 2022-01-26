@@ -489,18 +489,17 @@ header {
   \******************************************************************************************************************************************************************************************************/
 .checkbox {
   padding-left: 30px;
-  position: relative;
+  max-width: 225px;
 }
 .checkbox__rich {
-  max-width: 274px;
-}
-.checkbox__label {
-  cursor: pointer;
-}
-.checkbox__label_rich {
+  max-width: 320px;
   cursor: pointer;
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
+}
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
 }
 .checkbox__input {
   -webkit-appearance: none;
@@ -509,7 +508,7 @@ header {
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -31px;
   content: "";
   width: 20px;
   height: 20px;
@@ -534,18 +533,17 @@ header {
   \****************************************************************************************************************************************************************************************************************/
 .checkbox {
   padding-left: 30px;
-  position: relative;
+  max-width: 225px;
 }
 .checkbox__rich {
-  max-width: 274px;
-}
-.checkbox__label {
-  cursor: pointer;
-}
-.checkbox__label_rich {
+  max-width: 320px;
   cursor: pointer;
   color: rgba(31, 32, 65, 0.75);
   font-weight: bold;
+}
+.checkbox__label {
+  position: relative;
+  cursor: pointer;
 }
 .checkbox__input {
   -webkit-appearance: none;
@@ -554,7 +552,7 @@ header {
   cursor: pointer;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -31px;
   content: "";
   width: 20px;
   height: 20px;
@@ -577,6 +575,7 @@ header {
 
 .checkbox-list__item {
   margin-bottom: 12px;
+  line-height: 18px;
 }
 .checkbox-list__title {
   color: #1F2041;
@@ -2168,7 +2167,6 @@ html *::after, html *::before {
   left: auto !important;
   right: 0;
   padding: 0;
-  padding-right: 3px;
   top: -15px;
   font: 400 12px Montserrat, sans-serif, Arial;
   color: rgba(31, 32, 65, 0.5);
