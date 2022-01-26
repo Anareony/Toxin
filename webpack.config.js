@@ -11,16 +11,15 @@ if (process.env.NODE_ENV === 'production') {
 module.exports = {
     mode: 'development',
     entry: {
-        colorsType: './src/pages/colors-type/colors-type.js',
-        formElements: './src/pages/form-elements/form-elements.js',
-        cards: './src/pages/cards/cards.js',
-        headersFooters: './src/pages/headers-footers/headers-footers.js',
-        index: './src/pages/index/index.js',
         landing: './src/pages/landing-page/landing-page.js',
         registration: './src/pages/registration/registration.js',
         roomDetails: './src/pages/room-details/room-details.js',
         searchRoom: './src/pages/search-room/search-room.js',
-        signIn: './src/pages/sign-in/sign-in.js'
+        signIn: './src/pages/sign-in/sign-in.js',
+        colorsType: './src/pages/colors-type/colors-type.js',
+        formElements: './src/pages/form-elements/form-elements.js',
+        cards: './src/pages/cards/cards.js',
+        headersFooters: './src/pages/headers-footers/headers-footers.js',
     },
     output: {
         filename: '[name].[contenthash].js',
@@ -39,31 +38,6 @@ module.exports = {
             filename: '[id].[contenthash].css'
         }),
         new HTMLWebpackPlugin({
-            template: './src/pages/index/index.pug',
-            chunks: ['index']
-        }),
-        new HTMLWebpackPlugin({
-            filename: "colors-type.html",
-            template: './src/pages/colors-type/colors-type.pug',
-            chunks: ['colorsType']
-        }),
-        new HTMLWebpackPlugin({
-            filename: "form-elements.html",
-            template: './src/pages/form-elements/form-elements.pug',
-            chunks: ['formElements']
-        }),
-        new HTMLWebpackPlugin({
-            filename: "cards.html",
-            template: './src/pages/cards/cards.pug',
-            chunks: ['cards']
-        }),
-        new HTMLWebpackPlugin({
-            filename: "headers-footers.html",
-            template: './src/pages/headers-footers/headers-footers.pug',
-            chunks: ['headersFooters']
-        }),
-        new HTMLWebpackPlugin({
-            filename: "landing-page.html",
             template: './src/pages/landing-page/landing-page.pug',
             chunks: ['landing']
         }),
@@ -86,6 +60,26 @@ module.exports = {
             filename: "sign-in.html",
             template: './src/pages/sign-in/sign-in.pug',
             chunks: ['signIn']
+        }),
+        new HTMLWebpackPlugin({
+            filename: "colors-type.html",
+            template: './src/pages/colors-type/colors-type.pug',
+            chunks: ['colorsType']
+        }),
+        new HTMLWebpackPlugin({
+            filename: "form-elements.html",
+            template: './src/pages/form-elements/form-elements.pug',
+            chunks: ['formElements']
+        }),
+        new HTMLWebpackPlugin({
+            filename: "cards.html",
+            template: './src/pages/cards/cards.pug',
+            chunks: ['cards']
+        }),
+        new HTMLWebpackPlugin({
+            filename: "headers-footers.html",
+            template: './src/pages/headers-footers/headers-footers.pug',
+            chunks: ['headersFooters']
         }),
         new webpack.ProvidePlugin({
             $:'jquery',
