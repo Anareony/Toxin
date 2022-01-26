@@ -7,18 +7,29 @@
     box-shadow: 0px 10px 20px 0px $dark5;
     background: #FFFFFF;
 
+    &__filter-btn{
+        background-image: $gradient-purple;
+        border: solid;
+        border-radius: 5px;
+    }
+    &__img{
+        width: 100%;
+    }
+
     &__title{
         display: flex;
         justify-content: space-between;
-        margin: 0 16px 10px 20px;
-        padding: 0 0 6px 0;
+        padding: 0 0 16px 0;
         border-bottom: 1px dotted rgba(31, 32, 65, 0.1);
         align-items: baseline;
     }
+
     &__stats{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
+
     &__button-img{
         position: relative;
         display: flex;
@@ -27,6 +38,7 @@
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
     }
+
     &__fogging{
         position: absolute;
         width: 42px;
@@ -59,6 +71,10 @@
         color: #FFFFFF;
         background: none;
         left: 10px;    
+    }
+
+    &__container{
+        padding: 10px;
     }
 
     &__button_right{
@@ -106,13 +122,6 @@
 
     &__move{
         margin-bottom: 20px;
-    }
-
-    &__stats{
-        margin: 0 20px 0 23.26px;
-        align-items: center;
-        padding-bottom: 10px;
-
     }
 
     &__value{

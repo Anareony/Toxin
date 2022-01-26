@@ -50,5 +50,3 @@ new AirDatepicker('.filter-date', {
 const departure = document.querySelector(".field__input.departure")
 
 departure.addEventListener('click', () => document.querySelector(".field__input.arrival").click())
-
-

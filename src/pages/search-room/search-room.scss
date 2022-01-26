@@ -13,33 +13,122 @@
 
 
 .search-room{
+
+    &__container{
+        margin: 0 auto;
+        width: 80.9%;
+        display: grid;
+        margin-top: 30px;
+        grid-template-columns: 267px 1fr;
+
+        
+        @media screen and (max-width: 1250px) { 
+            width: 91%;
+        }
+
+        @media screen and (max-width: 991px) {
+            margin-top: 0;
+            width: 97%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 95%;
+        }
+    }
+
     &__list{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
         row-gap: 21px;
         column-gap: 12px;
+
+        @media screen and (max-width: 1250px) {
+            grid-template-columns: repeat(2, 1fr);        
+        }
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: repeat(2, 1fr);        
+        }
+
+        @media screen and (max-width: 570px) {
+            grid-template-columns: 1fr;
+        }
     }
-    &__main{
-        display: grid;
-        margin: 0 auto;
-        max-width: 1170px;
-        margin-top: 30px;
-        grid-template-columns: 266px 1fr;
-        column-gap: 60px;
-        
+
+    &__filter-btn{
+        margin-bottom: 20px;
     }
+
+    &__rooms{
+        margin-left: 60px;
+
+        @media screen and (max-width: 991px) { 
+            margin-left: 0;
+            width: 90%;
+        }
+
+    }
+
     &__title{
         @include h1;
-        margin-bottom: 21px;
-    }
-    &__nav{
+        margin-bottom: 21px ;
 
+        @media screen and (max-width: 991px) {
+            text-align: center;
+        }
+    }
+
+    &__nav{
+        padding-left: 3px;
+        width: 90%;
+
+        @media screen and (max-width: 991px) {
+            display: none;            
+        }
         &-item{
             margin-bottom: 20px;
         }
     }
+
+    &__filter-btn{
+        display: none;
+
+        @media screen and (max-width: 991px) {
+            display: block;            
+        }
+    }
+
     &__pagination{
-        margin-top: 40.94px;
+        margin-top: 40px;
+    }
+
+    &__dropdown-guests{
+        margin-bottom: 32px;
+    }
+    
+    &__range-slider{
+        margin-bottom: 23px;
+
+        &_description{
+            padding-top: 0;
+            font-size: 12px;
+            color: $dark50;
+        }
+    }
+
+    &__checkbox{
+        margin-bottom: 32px;
+    }
+
+    &__rich-checkbox{
+        margin-bottom: 32px;
+    }
+
+    &__dropdown-rooms{
+        margin-bottom: 31px;
     }
 }

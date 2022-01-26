@@ -42,6 +42,7 @@
         &-to,
         &-single {
             visibility: hidden !important;
+
             
             &::before {
                 display: none;
@@ -53,7 +54,6 @@
             left: auto !important;
             right: 0;
             padding: 0;
-            padding-right: 3px;
             top: -15px;
             font: 400 12px $first-font;
             color: $dark50;

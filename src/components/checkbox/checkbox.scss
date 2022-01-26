@@ -3,21 +3,20 @@
 
 .checkbox{
     padding-left: 30px;
-    position: relative;
+    max-width: 225px;
 
     &__rich{
-        max-width: 274px;
+        max-width: 320px;
+        cursor: pointer;
+        color: $dark75;
+        font-weight: bold;
     }
 
     &__label{
+        position: relative;
         cursor: pointer;
-
-        &_rich{
-            cursor: pointer;
-            color: $dark75;
-            font-weight: bold;
-        }
     }
+    
     &__input{
         -webkit-appearance: none;
 
@@ -25,13 +24,13 @@
             cursor: pointer;
             position: absolute;
             top: 0;
-            left: 0;
+            left: -31px ;
             content: '';
             width: 20px;
             height: 20px;
             border: 1px solid $dark25;
             border-radius: 4px;
-            display: flex;
+            display: flex;  
             justify-content: center;
             align-items: center;
         }
