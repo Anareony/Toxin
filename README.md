@@ -1,12 +1,12 @@
 # Toxin
 
-### Demo: - [Click](https://anareony.github.io/Toxin/)
+### Demo: - [Click](https://anareony.github.io/Toxin/index.html)
 
 ### Technology stack: | HTML | PUG | CSS | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive  | BEM |
 
-### Pages(Responsive: max resolution 1920px):
+### Pages
 
-* [Landing page](https://anareony.github.io/Toxin/landing-page.html)
+* [Landing page](https://anareony.github.io/Toxin/index.html)
 
 * [Search room](https://anareony.github.io/Toxin/search-room.html)
 
@@ -27,11 +27,16 @@
 * [Headers and footers](https://anareony.github.io/Toxin/headers-footers.html)
 
 ### Plugins: 
+
 * [Air Datepicker](https://air-datepicker.com/ru)
+
 * [Ion.RangeSlider](http://ionden.com/a/plugins/ion.rangeSlider/index.html)
+
 * [Material Design Icons](http://google.github.io/material-design-icons/)
 
 ### TODO:
-1. Responsive for room details and search room.
+1. Fix filter button.
 2. Custom dropdown.
-3. navigation in index.
+3. Like button and pagination.
+4. Fix room info.
+5. Mask for input.
