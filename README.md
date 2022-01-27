@@ -2,7 +2,7 @@
 
 ### Demo: - [Click](https://anareony.github.io/Toxin/index.html)
 
-### Technology stack: | HTML | PUG | CSS | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive  | BEM |
+### Technology stack: | HTML | CSS | PUG | SCSS | JS | jQuery | Webpack | Git | Figma | Responsive | BEM |
 
 ### Pages
 
