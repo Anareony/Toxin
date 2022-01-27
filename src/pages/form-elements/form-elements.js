@@ -16,3 +16,4 @@ import '../../components/pagination/pagination.scss';
 
 import '../../components/dropdown/dropdown';
 import '../../components/range-slider/range-slider';
+import '../../components/like/like';

@@ -12,6 +12,7 @@
         border: solid;
         border-radius: 5px;
     }
+
     &__img{
         width: 100%;
     }
@@ -22,6 +23,11 @@
         padding: 0 0 16px 0;
         border-bottom: 1px dotted rgba(31, 32, 65, 0.1);
         align-items: baseline;
+    }
+
+    &__move{
+        position: relative;
+        margin-bottom: 20px;
     }
 
     &__stats{
@@ -38,7 +44,13 @@
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
     }
+    &__buttons{
+        opacity: 0;
 
+        &:hover{
+            opacity: 1;
+        }
+    }
     &__fogging{
         position: absolute;
         width: 42px;
@@ -49,19 +61,13 @@
 
         &_left{
             left:0;
-            opacity: 0;
-            &:hover{
-                opacity: 1;
-            }
+            top: 0;
         }
 
         &_right{
             right: 0px;
+            top: 0;
             transform: rotate(180deg);
-            opacity: 0;
-            &:hover{
-                opacity: 1;
-            }
         }
     }
 
@@ -118,10 +124,6 @@
         &_date{
             font-size: 12px;
         }
-    }
-
-    &__move{
-        margin-bottom: 20px;
     }
 
     &__value{
