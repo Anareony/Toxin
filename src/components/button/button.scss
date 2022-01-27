@@ -3,8 +3,6 @@
 
 .button-with-background{
     display: flex;
-    height: 44px;
-    width: 100%;
     border-radius: 22px;
     background: $gradient-purple;
     cursor: pointer;
@@ -26,28 +24,25 @@
     }
 }
 
-
 .button-with-border{
+    display: flex;
+    justify-content: center;
     background: $gradient-purple;
-    padding: 2px;
+    padding: 2px 2px;
     border-radius: 22px;
+    cursor: pointer;
+
+    &__wrapper{
+        @include h3;
+        padding: 8px 18px 8px 19px;
+        border-radius: 22px;
+        background-color: #FFFFFF;
+        text-align: center;
+        width: 100%;
+    }
 
     &__text{
-        display: flex;
-        padding: 8px 18px;
-        width: 100%;
-        @include h3;
         color: #BC9CFF;
-        cursor: pointer;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        background: #FFFFFF;
-        border-radius: 22px;
-    
-        &_small{
-            padding: 8px 18px;
-        }
     }
 
     &:hover{
@@ -59,7 +54,6 @@
     @include h3;
     color: #BC9CFF;
     cursor: pointer;
-    max-width: 61px;
 
     &:hover{
         color: $dark50;
@@ -69,8 +63,6 @@
 .button-with-arrow{
     display: flex;
     color: #FFFFFF;
-    height: 44px; 
-    max-width: 320px;
     border-radius: 22px;
     background: $gradient-purple;
     align-items: center;
@@ -78,10 +70,10 @@
     cursor: pointer;
     position: relative;
     
-
     &__text{
         @include h3;
         color: #FFFFFF;
+        padding: 15px 19px;
     }
 
     &:hover{
