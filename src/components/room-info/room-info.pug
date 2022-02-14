@@ -1,7 +1,7 @@
 include ../rate/rate
 
-mixin room-info({url,value,cost,value1,rate,lux})
-    .room-info
+mixin room-info({url,value,cost,value1,rate,lux,href})
+    a.room-info(href="room-details.html")
         .room-info__move
             figure.room-info__img-container
                 img.room-info__img(src=url)

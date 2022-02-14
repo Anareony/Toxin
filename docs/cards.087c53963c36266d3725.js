@@ -72,6 +72,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./src/components/booking/booking.scss":
+/*!*********************************************!*\
+  !*** ./src/components/booking/booking.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/booking/booking.scss?");
+
+/***/ }),
+
 /***/ "./src/components/calendar/calendar.scss":
 /*!***********************************************!*\
   !*** ./src/components/calendar/calendar.scss ***!
@@ -94,14 +105,58 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/pages/room-details/room-details.scss":
-/*!**************************************************!*\
-  !*** ./src/pages/room-details/room-details.scss ***!
-  \**************************************************/
+/***/ "./src/components/find-room/find-room.scss":
+/*!*************************************************!*\
+  !*** ./src/components/find-room/find-room.scss ***!
+  \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/room-details/room-details.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/find-room/find-room.scss?");
+
+/***/ }),
+
+/***/ "./src/components/log-in/log-in.scss":
+/*!*******************************************!*\
+  !*** ./src/components/log-in/log-in.scss ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/log-in/log-in.scss?");
+
+/***/ }),
+
+/***/ "./src/components/room-info/room-info.scss":
+/*!*************************************************!*\
+  !*** ./src/components/room-info/room-info.scss ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/room-info/room-info.scss?");
+
+/***/ }),
+
+/***/ "./src/components/sign-up/sign-up.scss":
+/*!*********************************************!*\
+  !*** ./src/components/sign-up/sign-up.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/sign-up/sign-up.scss?");
+
+/***/ }),
+
+/***/ "./src/pages/cards/cards.scss":
+/*!************************************!*\
+  !*** ./src/pages/cards/cards.scss ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/cards/cards.scss?");
 
 /***/ }),
 
@@ -134,28 +189,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.js */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js\");\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.css */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css\");\n/* harmony import */ var _dropdown_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dropdown.scss */ \"./src/components/dropdown/dropdown.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\n$(document).ready(function() {\r\n    $(\".rooms\").iqDropdown();\r\n    $(\".guests\").iqDropdown({\r\n        \r\n        selectionText: \"гость\",\r\n        textPlural: \"гостей\",\r\n    });\r\n});\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/dropdown/dropdown.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.js */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js\");\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.css */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css\");\n/* harmony import */ var _dropdown_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dropdown.scss */ \"./src/components/dropdown/dropdown.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\n$(document).ready(function() {\r\n    $(\".rooms\").iqDropdown({\r\n        selectionText: \"комната\",\r\n        textPlural: \"комнат\",\r\n    });\r\n    $(\".guests\").iqDropdown({\r\n        selectionText: \"гость\",\r\n        textPlural: \"гостей\",\r\n    });\r\n});\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/dropdown/dropdown.js?");
 
 /***/ }),
 
-/***/ "./src/components/header/header.js":
-/*!*****************************************!*\
-  !*** ./src/components/header/header.js ***!
-  \*****************************************/
-/***/ (() => {
-
-eval("const burger = document.querySelector('.js-header__burger')\r\n\r\nfunction openBurger() {\r\n    const burger = document.querySelector('.js-header__burger')\r\n    const nav = document.querySelector('.header__nav');\r\n\r\n    burger.classList.toggle(\".js-header__burger_opened\")\r\n    \r\n    if(burger.classList.contains(\".js-header__burger_opened\")) {\r\n        burger.innerHTML = \"close\";\r\n    } else {\r\n        burger.innerHTML = \"menu\";\r\n    }\r\n    \r\n    nav.style.display = \"flex\";\r\n\r\n    if(!burger.classList.contains(\".js-header__burger_opened\")) {\r\n        nav.style.display = \"\";\r\n    }\r\n}\r\n\r\nburger.addEventListener('click', openBurger)\n\n//# sourceURL=webpack://toxin/./src/components/header/header.js?");
-
-/***/ }),
-
-/***/ "./src/pages/room-details/room-details.js":
-/*!************************************************!*\
-  !*** ./src/pages/room-details/room-details.js ***!
-  \************************************************/
+/***/ "./src/components/find-room/find-room.js":
+/*!***********************************************!*\
+  !*** ./src/components/find-room/find-room.js ***!
+  \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _room_details_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./room-details.scss */ \"./src/pages/room-details/room-details.scss\");\n/* harmony import */ var _components_booking_booking__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/booking/booking */ \"./src/components/booking/booking.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_header_header__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/room-details/room-details.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/find-room/find-room.js?");
+
+/***/ }),
+
+/***/ "./src/pages/cards/cards.js":
+/*!**********************************!*\
+  !*** ./src/pages/cards/cards.js ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cards_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards.scss */ \"./src/pages/cards/cards.scss\");\n/* harmony import */ var _components_find_room_find_room_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/find-room/find-room.scss */ \"./src/components/find-room/find-room.scss\");\n/* harmony import */ var _components_sign_up_sign_up_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/sign-up/sign-up.scss */ \"./src/components/sign-up/sign-up.scss\");\n/* harmony import */ var _components_log_in_log_in_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/log-in/log-in.scss */ \"./src/components/log-in/log-in.scss\");\n/* harmony import */ var _components_booking_booking_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/booking/booking.scss */ \"./src/components/booking/booking.scss\");\n/* harmony import */ var _components_room_info_room_info_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/room-info/room-info.scss */ \"./src/components/room-info/room-info.scss\");\n/* harmony import */ var _components_find_room_find_room__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/find-room/find-room */ \"./src/components/find-room/find-room.js\");\n/* harmony import */ var _components_booking_booking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/booking/booking */ \"./src/components/booking/booking.js\");\n/* harmony import */ var _components_calendar_calendar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _components_calendar_calendar_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/calendar/calendar.scss */ \"./src/components/calendar/calendar.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/cards/cards.js?");
 
 /***/ })
 
@@ -231,7 +287,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _roo
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/room-details/room-details.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/cards/cards.js");
 /******/ 	
 /******/ })()
 ;

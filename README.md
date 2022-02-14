@@ -38,5 +38,4 @@
 1. Fix filter button.
 2. Custom dropdown.
 3. Like button and pagination.
-4. Fix room info.
-5. Mask for input.
+4. Mask for input.

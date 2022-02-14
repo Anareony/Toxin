@@ -38,141 +38,9 @@
   font-feature-settings: 'liga';
 }
 
-/*!**********************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/material-design-icons/iconfont/material-icons.css (1) ***!
-  \**********************************************************************************************************************/
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: url(assets/4674f8ded773cb03e824.eot); /* For IE6-8 */
-  src: local('Material Icons'),
-       local('MaterialIcons-Regular'),
-       url(assets/cff684e59ffb052d72cb.woff2) format('woff2'),
-       url(assets/83bebaf37c09c7e1c3ee.woff) format('woff'),
-       url(assets/5e7382c63da0098d634a.ttf) format('truetype');
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-/*!*********************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/pages/landing-page/landing-page.scss ***!
-  \*********************************************************************************************************************************************************************************************************/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0px;
-  line-height: 1;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/c430087a706cf2a89f21.woff2) format("woff2"), url(assets/bd93c5afe50577b99cdc.woff) format("woff"), url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/96c577f34b708c36aafc.svg) format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: url(assets/192477b00936dba64c71.woff2) format("woff2"), url(assets/86d875e34853435223d1.woff) format("woff"), url(assets/733964aa5261b1af4852.ttf) format("truetype"), url(assets/40f8a405348f3215d6cb.svg) format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Quicksand";
-  src: url(assets/375bc3e0944347a1a423.woff2) format("woff2"), url(assets/7d763529eb6680f61f94.woff) format("woff"), url(assets/cf79f16dce505196be22.ttf) format("truetype"), url(assets/e4a93567c887810fa28e.svg) format("svg");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Material icons";
-  src: url(assets/ae1788a08f3ef7c95b6a.woff2) format("woff2"), url(assets/399a9a5135a1f76af795.woff) format("woff"), url(assets/69a05f7f816de467f8c5.ttf) format("truetype"), url(assets/f433086ea7ba8b8349ec.svg) format("svg");
-  font-weight: 400;
-}
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/pages/cards/cards.scss ***!
+  \*******************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Montserrat";
   src: url(assets/c430087a706cf2a89f21.woff2) format("woff2"), url(assets/bd93c5afe50577b99cdc.woff) format("woff"), url(assets/3cd786652b8a2e9d41f2.ttf) format("truetype"), url(assets/96c577f34b708c36aafc.svg) format("svg");
@@ -296,429 +164,132 @@ header {
   flex: 0 0 auto;
 }
 
-.landing-page__main {
-  width: 100%;
-  background: url(assets/b16b5f294258b914f18e.jpg) no-repeat 50%/cover;
-}
-.landing-page__container {
-  margin: 0 auto;
-  max-width: 1130px;
-  padding: 70px 100px 400px 0;
-}
-@media screen and (max-width: 720px) {
-  .landing-page__container {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-.landing-page__text {
-  float: right;
-}
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/header/header.scss ***!
-  \**************************************************************************************************************************************************************************************************/
-.button-with-background {
-  display: flex;
-  height: 44px;
-  width: 100%;
-  border-radius: 22px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-}
-.button-with-background_small {
-  height: 35px;
-}
-.button-with-background__text {
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  padding: 15px 19px;
-}
-.button-with-background:hover {
-  opacity: 50%;
-}
-
-.button-with-border {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 2px;
-  border-radius: 22px;
-}
-.button-with-border__text {
-  display: flex;
-  padding: 8px 18px;
-  width: 100%;
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #BC9CFF;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: #FFFFFF;
-  border-radius: 22px;
-}
-.button-with-border__text_small {
-  padding: 8px 18px;
-}
-.button-with-border:hover {
-  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
-}
-
-.button-without-background {
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #BC9CFF;
-  cursor: pointer;
-  max-width: 61px;
-}
-.button-without-background:hover {
-  color: rgba(31, 32, 65, 0.5);
-}
-
-.button-with-arrow {
-  display: flex;
-  color: #FFFFFF;
-  height: 44px;
-  max-width: 320px;
-  border-radius: 22px;
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  position: relative;
-}
-.button-with-arrow__text {
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-.button-with-arrow:hover {
-  opacity: 50%;
-}
-.button-with-arrow::after {
-  font-family: "Material Icons";
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  position: absolute;
-  content: "arrow_forward";
-  text-transform: none;
-  right: 10px;
-  top: 10px;
-}
-
-.header {
-  background: white;
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
-}
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  width: 80.5%;
-  margin: 0 auto;
-}
-@media screen and (max-width: 1250px) {
-  .header__container {
-    width: 91%;
-  }
-}
-@media screen and (max-width: 996px) {
-  .header__container {
-    width: 95%;
-    display: grid;
-    grid-template-areas: "logo button" "nav nav";
-  }
-}
-@media screen and (max-width: 767px) {
-  .header__container {
-    width: 100%;
-  }
-}
-.header__nav {
-  display: flex;
-  grid-area: nav;
-}
-@media screen and (max-width: 996px) {
-  .header__nav {
-    display: none;
-    flex-direction: column;
-  }
-}
-.header__logo {
-  padding: 15px 0 15px 0;
-  grid-area: logo;
-}
-@media screen and (max-width: 996px) {
-  .header__logo {
-    margin-left: 40px;
-  }
-}
-.header__nav-site, .header__nav-user {
-  display: flex;
-}
-@media screen and (max-width: 996px) {
-  .header__nav-site, .header__nav-user {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.header__item {
-  display: flex;
-  align-items: center;
-  margin-left: 21px;
-}
-@media screen and (max-width: 996px) {
-  .header__item {
-    margin-bottom: 15px;
-    margin-left: 0;
-  }
-}
-.header__item_sub-menu {
-  display: flex;
-  align-items: center;
-}
-.header__link {
-  color: rgba(31, 32, 65, 0.5);
-}
-.header__link:hover {
-  color: rgba(31, 32, 65, 0.75);
-}
-.header_auth {
-  padding-left: 25px;
-  display: flex;
-  align-items: center;
-  border-left: 1px solid black;
-}
-
-.js-header__burger {
-  display: none;
-  grid-area: button;
-}
-@media screen and (max-width: 996px) {
-  .js-header__burger {
-    display: block;
-    font-size: 36px;
-    text-align: right;
-    margin-right: 40px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-}
-/*!**************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/footer/footer.scss ***!
-  \**************************************************************************************************************************************************************************************************/
-.field__title {
-  color: #1F2041;
-  line-height: 14.63px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  text-transform: uppercase;
-  margin-bottom: 5px;
-}
-.field__input {
-  color: rgba(31, 32, 65, 0.75);
-  line-height: 24px;
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
+.air-datepicker {
+  font-family: Montserrat, sans-serif, Arial;
+  padding: 15px 20px 4px 16px;
   border: 1px solid rgba(31, 32, 65, 0.25);
   border-radius: 4px;
-  width: 100%;
-  height: 44px;
-  padding-left: 15px;
-  cursor: pointer;
+  background: #fff;
+  z-index: 5;
+  box-sizing: border-box;
+  width: 320px;
 }
-.field__input:hover, .field__input:focus {
-  border: 1px solid rgba(31, 32, 65, 0.5);
+.air-datepicker--navigation {
+  padding-bottom: 27px;
 }
-.field__dropdown {
-  position: relative;
+.air-datepicker--pointer {
+  display: none;
 }
-.field__dropdown::after {
-  font-family: "Material Icons";
-  content: "expand_more";
-  font-size: 24px;
-  line-height: 24px;
-  position: absolute;
-  top: 30px;
-  right: 10px;
-  cursor: pointer;
+.air-datepicker-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
-.field__arrow {
-  position: relative;
-}
-.field__arrow::after {
-  font-family: "Material Icons";
-  content: "arrow_forward";
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 24px;
-  line-height: 24px;
-  position: absolute;
-  bottom: -2px;
-  right: 10px;
-  cursor: pointer;
-}
-
-.footer {
-  margin: 0 auto;
-  width: 80.5%;
-}
-@media screen and (max-width: 1250px) {
-  .footer {
-    width: 88%;
-  }
-}
-.footer__main {
-  margin: 100px 0;
-  display: grid;
-  grid-template-columns: 0.9fr 2fr 0.9fr;
-}
-@media screen and (max-width: 996px) {
-  .footer__main {
-    display: block;
-    justify-content: center;
-    margin: 100px 140px 0 140px;
-  }
-}
-.footer__nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 38px;
-  padding: 0 22px 0 25px;
-}
-@media screen and (max-width: 996px) {
-  .footer__nav {
-    display: none;
-  }
-}
-.footer__description {
-  margin-top: -5px;
-}
-@media screen and (max-width: 996px) {
-  .footer__description {
-    text-align: center;
-    margin: 0;
-  }
-}
-.footer__link {
-  color: rgba(31, 32, 65, 0.5);
-}
-.footer__link:hover {
-  color: rgba(31, 32, 65, 0.75);
-}
-.footer__title {
+.air-datepicker-button {
   color: #1F2041;
   line-height: 14.63px;
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  margin-bottom: 19px;
+  color: #BC9CFF;
 }
-.footer__item {
-  margin-bottom: 14px;
+.air-datepicker-button:hover {
+  color: rgba(31, 32, 65, 0.5);
 }
-.footer__subscription {
-  margin-left: 15px;
+.air-datepicker-nav--title {
+  color: #1F2041;
+  line-height: 23.16px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #1F2041;
 }
-@media screen and (max-width: 996px) {
-  .footer__subscription {
-    display: none;
-  }
+.air-datepicker-nav--title i {
+  color: #1F2041;
 }
-.footer__container {
-  margin: 0 auto;
-  width: 80.5%;
+.air-datepicker-nav--action {
+  color: #BC9CFF;
 }
-.footer__text {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 22px;
+.air-datepicker-body--cells.-days- {
+  grid-template-columns: repeat(7, 40px);
+  grid-auto-rows: 40px;
 }
-@media screen and (max-width: 996px) {
-  .footer__text {
-    display: none;
-  }
+.air-datepicker-body--day-names {
+  margin: 8px 0 11px;
 }
-.footer__img {
-  margin-bottom: 19px;
+.air-datepicker-body--day-name {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-transform: none;
+  color: #BC9CFF;
 }
-@media screen and (max-width: 996px) {
-  .footer__img-link {
-    display: flex;
-    justify-content: center;
-  }
+.air-datepicker-cell {
+  font-size: 12px;
+  color: rgba(31, 32, 65, 0.5);
 }
-.footer__sub {
-  margin: 105px 0;
+.air-datepicker-cell.-day-.-range-from-, .air-datepicker-cell.-day-.-range-to- {
+  border: none;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: #FFFFFF;
+}
+.air-datepicker-cell.-focus- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #fff;
+  border-radius: 22px;
+}
+.air-datepicker-cell.-focus-.-in-range- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.air-datepicker-cell.-selected- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}
+.air-datepicker-cell.-selected-.-focus- {
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+.air-datepicker-cell.-current-, .air-datepicker-cell.-current-.-in-range- {
+  background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+  border-radius: 22px;
+  color: #FFFFFF;
+}
+.air-datepicker-cell:active {
+  font-weight: bold;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  color: white;
+}
+.air-datepicker-cell.-in-range- {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.25), rgba(139, 164, 249, 0.25));
+}
+
+.cards__img {
+  margin: 15px 0 72px 45px;
+}
+.cards__container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 1130px;
 }
-@media screen and (max-width: 996px) {
-  .footer__sub {
-    margin: 0 0 100px 0;
-    flex-direction: column;
-    text-align: center;
-  }
+.cards__column-with-calendar {
+  width: 320px;
 }
-.footer__social-list {
-  display: flex;
-  align-items: center;
+
+.calendar {
+  width: 100%;
 }
-.footer__social-list-item {
-  margin-left: 22px;
+
+.booking__container {
+  width: 380px;
 }
-@media screen and (max-width: 996px) {
-  .footer__social-list-item {
-    margin-left: 0;
-  }
-  .footer__social-list-item:nth-child(2) {
-    margin: 20px 20px;
-  }
-}
-.footer-small__main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-}
-.footer-small__social-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.footer-small__social-list-item {
-  margin-left: 20px;
-}
-.footer-small__description {
-  margin-bottom: 20px;
+
+.room-info__item {
+  width: 270px;
 }
 /*!********************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/find-room/find-room.scss ***!
@@ -962,8 +533,6 @@ header {
 
 .button-with-background {
   display: flex;
-  height: 44px;
-  width: 100%;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   cursor: pointer;
@@ -988,30 +557,28 @@ header {
 }
 
 .button-with-border {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 2px;
-  border-radius: 22px;
-}
-.button-with-border__text {
   display: flex;
-  padding: 8px 18px;
-  width: 100%;
+  justify-content: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 2px 2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button-with-border__wrapper {
   color: #1F2041;
   line-height: 14.63px;
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #BC9CFF;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: #FFFFFF;
+  padding: 8px 18px 8px 19px;
   border-radius: 22px;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
 }
-.button-with-border__text_small {
-  padding: 8px 18px;
+.button-with-border__text {
+  color: #BC9CFF;
 }
 .button-with-border:hover {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
@@ -1026,7 +593,6 @@ header {
   text-transform: uppercase;
   color: #BC9CFF;
   cursor: pointer;
-  max-width: 61px;
 }
 .button-without-background:hover {
   color: rgba(31, 32, 65, 0.5);
@@ -1035,8 +601,6 @@ header {
 .button-with-arrow {
   display: flex;
   color: #FFFFFF;
-  height: 44px;
-  max-width: 320px;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   align-items: center;
@@ -1052,6 +616,7 @@ header {
   font-style: normal;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 15px 19px;
 }
 .button-with-arrow:hover {
   opacity: 50%;
@@ -1106,6 +671,1017 @@ header {
 }
 .find-room__dropdown {
   margin-bottom: 31px;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/sign-up/sign-up.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+.field__title {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.field__input {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.field__input:hover, .field__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.field__dropdown {
+  position: relative;
+}
+.field__dropdown::after {
+  font-family: "Material Icons";
+  content: "expand_more";
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  cursor: pointer;
+}
+.field__arrow {
+  position: relative;
+}
+.field__arrow::after {
+  font-family: "Material Icons";
+  content: "arrow_forward";
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  bottom: -2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+  cursor: pointer;
+  color: rgba(31, 32, 65, 0.75);
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.toggle__input {
+  -webkit-appearance: none;
+}
+.toggle__input::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 0;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.toggle__input::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 10px;
+  background: rgba(31, 32, 65, 0.25);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.toggle__input:checked::before {
+  border: 1px solid #BC9CFF;
+}
+.toggle__input:checked::after {
+  left: 24px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+.radio {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  padding-left: 30px;
+  cursor: pointer;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.radio__input {
+  -webkit-appearance: none;
+}
+.radio__input::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.radio__input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 7px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
+}
+.radio__input:checked::before {
+  border: 1px solid #BC9CFF;
+}
+.radio__input:checked::after {
+  display: block;
+}
+.radio__input:checked + .radio__description {
+  color: #1F2041;
+}
+
+.button-with-background {
+  display: flex;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.button-with-background_small {
+  height: 35px;
+}
+.button-with-background__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-background:hover {
+  opacity: 50%;
+}
+
+.button-with-border {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 2px 2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button-with-border__wrapper {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 8px 18px 8px 19px;
+  border-radius: 22px;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+.button-with-border__text {
+  color: #BC9CFF;
+}
+.button-with-border:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+}
+
+.button-without-background {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  cursor: pointer;
+}
+.button-without-background:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.button-with-arrow {
+  display: flex;
+  color: #FFFFFF;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.button-with-arrow__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-arrow:hover {
+  opacity: 50%;
+}
+.button-with-arrow::after {
+  font-family: "Material Icons";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  content: "arrow_forward";
+  text-transform: none;
+  right: 10px;
+  top: 10px;
+}
+
+.sign-up {
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2857rem;
+  background: white;
+}
+.sign-up__title {
+  color: #1F2041;
+  line-height: 29.26px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.sign-up__name {
+  margin-bottom: 10px;
+}
+.sign-up__surname {
+  margin-bottom: 10px;
+}
+.sign-up__gender {
+  margin-bottom: 23.56px;
+}
+.sign-up__date {
+  margin-bottom: 20px;
+}
+.sign-up__email {
+  margin-bottom: 10px;
+}
+.sign-up__password {
+  margin-bottom: 8px;
+}
+.sign-up__toggle {
+  margin-bottom: 24px;
+}
+.sign-up__button {
+  margin-bottom: 30px;
+}
+.sign-up__sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #1F2041;
+}
+/*!**************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/log-in/log-in.scss ***!
+  \**************************************************************************************************************************************************************************************************/
+.field__title {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.field__input {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.field__input:hover, .field__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.field__dropdown {
+  position: relative;
+}
+.field__dropdown::after {
+  font-family: "Material Icons";
+  content: "expand_more";
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  cursor: pointer;
+}
+.field__arrow {
+  position: relative;
+}
+.field__arrow::after {
+  font-family: "Material Icons";
+  content: "arrow_forward";
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  bottom: -2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.button-with-background {
+  display: flex;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.button-with-background_small {
+  height: 35px;
+}
+.button-with-background__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-background:hover {
+  opacity: 50%;
+}
+
+.button-with-border {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 2px 2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button-with-border__wrapper {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 8px 18px 8px 19px;
+  border-radius: 22px;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+.button-with-border__text {
+  color: #BC9CFF;
+}
+.button-with-border:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+}
+
+.button-without-background {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  cursor: pointer;
+}
+.button-without-background:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.button-with-arrow {
+  display: flex;
+  color: #FFFFFF;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.button-with-arrow__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-arrow:hover {
+  opacity: 50%;
+}
+.button-with-arrow::after {
+  font-family: "Material Icons";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  content: "arrow_forward";
+  text-transform: none;
+  right: 10px;
+  top: 10px;
+}
+
+.log-in {
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2857rem;
+  background: white;
+}
+.log-in__title {
+  color: #1F2041;
+  line-height: 29.26px;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.log-in__email {
+  margin-bottom: 10px;
+}
+.log-in__password {
+  margin-bottom: 20px;
+}
+.log-in__button {
+  margin-bottom: 30px;
+}
+.log-in__sign-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #1F2041;
+}
+/*!****************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/booking/booking.scss ***!
+  \****************************************************************************************************************************************************************************************************/
+.field__title {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.field__input {
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 4px;
+  width: 100%;
+  height: 44px;
+  padding-left: 15px;
+  cursor: pointer;
+}
+.field__input:hover, .field__input:focus {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+}
+.field__dropdown {
+  position: relative;
+}
+.field__dropdown::after {
+  font-family: "Material Icons";
+  content: "expand_more";
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  cursor: pointer;
+}
+.field__arrow {
+  position: relative;
+}
+.field__arrow::after {
+  font-family: "Material Icons";
+  content: "arrow_forward";
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  bottom: -2px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.button-with-background {
+  display: flex;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+.button-with-background_small {
+  height: 35px;
+}
+.button-with-background__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-background:hover {
+  opacity: 50%;
+}
+
+.button-with-border {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 2px 2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button-with-border__wrapper {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  padding: 8px 18px 8px 19px;
+  border-radius: 22px;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+}
+.button-with-border__text {
+  color: #BC9CFF;
+}
+.button-with-border:hover {
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
+}
+
+.button-without-background {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  cursor: pointer;
+}
+.button-without-background:hover {
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.button-with-arrow {
+  display: flex;
+  color: #FFFFFF;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+.button-with-arrow__text {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 15px 19px;
+}
+.button-with-arrow:hover {
+  opacity: 50%;
+}
+.button-with-arrow::after {
+  font-family: "Material Icons";
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  position: absolute;
+  content: "arrow_forward";
+  text-transform: none;
+  right: 10px;
+  top: 10px;
+}
+
+.iqdropdown {
+  height: 44px;
+}
+.iqdropdown-selection {
+  font-family: Montserrat, sans-serif, Arial !important;
+  font-size: 14px !important;
+}
+.iqdropdown-menu {
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  top: 44px !important;
+}
+.iqdropdown-menu-option {
+  height: 30px !important;
+  margin: 7px 0;
+  padding: 0 7px 0 15px !important;
+}
+.iqdropdown-item {
+  font-family: Montserrat, sans-serif, Arial !important;
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.iqdropdown .iqdropdown-item-controls button {
+  border: none;
+  padding: 0px;
+}
+
+.button-decrement {
+  border: 1px solid rgba(31,32,65,0.25098);
+}
+
+.iqdropdown .iqdropdown-item-controls button.button-decrement {
+  border: 1px solid rgba(31,32,65,0.25098);
+  border-radius: 22px;
+  width: 30px;
+  height: 30px;
+}
+
+.iqdropdown .iqdropdown-item-controls button.button-increment {
+  border: 1px solid rgba(31,32,65,0.25098);
+  border-radius: 22px;
+  width: 30px;
+  height: 30px;
+}
+
+.iqdropdown .iqdropdown-item-controls .counter {
+  padding: 0px 11px 0 13px;
+  font-family: Montserrat, sans-serif, Arial;
+  font-size: 12px;
+  font-weight: 700;
+  border: none;
+}
+
+.iqdropdown .iqdropdown-item-controls {
+  align-items: center;
+}
+
+.rooms, .guests {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  font-family: Montserrat, sans-serif, Arial;
+  border-radius: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.iqdropdown .icon-decrement::after {
+  content: "-";
+  background: none;
+  top: -4px;
+  right: 1px;
+  font-family: Montserrat, sans-serif, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.iqdropdown .icon-decrement.icon-increment::before {
+  content: "+";
+  font-style: normal;
+  font-family: Montserrat, sans-serif, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  background: none;
+  top: 6px;
+  left: 9px;
+}
+
+.iqdropdown .icon-decrement.icon-increment::after {
+  content: "";
+  font-style: normal;
+}
+
+.iqdropdown.menu-open {
+  border-color: rgba(31, 32, 65, 0.5);
+}
+
+.iqdropdown.menu-open .iqdropdown-selection::after, .iqdropdown .iqdropdown-selection::after {
+  background: none;
+  font-family: "Material Icons";
+  content: "expand_more";
+  font-size: 24px;
+  line-height: 24px;
+  position: absolute;
+  color: rgba(31, 32, 65, 0.5);
+  right: 5px;
+  top: 0;
+}
+
+.dropdown__title {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.booking {
+  max-width: 380px;
+  padding: 40px 30px 30px 30px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.2857rem;
+  background: white;
+  margin-bottom: 38px;
+}
+@media screen and (max-width: 380px) {
+  .booking {
+    padding: 40px 10px;
+  }
+}
+.booking__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 17px;
+}
+.booking__number {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.booking__number-icon {
+  font-size: 14px;
+  line-height: 29.26px;
+  margin-right: 5px;
+}
+.booking__number-value {
+  font-size: 24px;
+  line-height: 17.07px;
+  margin-right: 8px;
+}
+.booking__number-text {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #BC9CFF;
+}
+.booking__price-per-day {
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 30px;
+}
+.booking__cost {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.booking__date {
+  font-size: 12px;
+}
+.booking__calendar {
+  margin-bottom: 22px;
+}
+.booking__calendar-arrive {
+  padding-right: 20px;
+}
+.booking__dropdown {
+  margin-bottom: 20px;
+}
+.booking__calendar {
+  display: flex;
+}
+.booking__service {
+  color: rgba(31, 32, 65, 0.75);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.booking__total {
+  display: flex;
+  justify-content: space-between;
+  color: #1F2041;
+  line-height: 23.16px;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  align-items: baseline;
+}
+.booking__total-line {
+  border-bottom: 0.0625rem dotted rgba(31, 32, 65, 0.25);
+  height: 1px;
+  width: 170px;
+}
+@media screen and (max-width: 380px) {
+  .booking__total-line {
+    width: 150px;
+  }
+}
+.booking__items {
+  margin-bottom: 30px;
+}
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./src/components/room-info/room-info.scss ***!
+  \********************************************************************************************************************************************************************************************************/
+.rate {
+  display: inline-block;
+}
+.rate__star {
+  cursor: default;
+  display: inline-block;
+  color: #BC9CFF;
+  height: 24px;
+  width: 24px;
+  background: url(assets/5a1fce0bd521840614e1.svg) no-repeat;
+}
+.rate__star_outline {
+  background: url(assets/d6f803db6e2d4c949d36.svg) no-repeat;
+}
+
+.room-info {
+  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+  background: #FFFFFF;
+}
+.room-info__filter-btn {
+  background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: solid;
+  border-radius: 5px;
+}
+.room-info__img {
+  width: 100%;
+}
+.room-info__title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 16px 0;
+  border-bottom: 1px dotted rgba(31, 32, 65, 0.1);
+  align-items: baseline;
+}
+.room-info__move {
+  position: relative;
+  margin-bottom: 20px;
+}
+.room-info__stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.room-info__button-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.room-info__buttons {
+  opacity: 0;
+}
+.room-info__buttons:hover {
+  opacity: 1;
+}
+.room-info__fogging {
+  position: absolute;
+  width: 42px;
+  height: 151px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+  display: flex;
+  align-items: center;
+}
+.room-info__fogging_left {
+  left: 0;
+  top: 0;
+}
+.room-info__fogging_right {
+  right: 0px;
+  top: 0;
+  transform: rotate(180deg);
+}
+.room-info__button_left {
+  position: absolute;
+  transform: rotate(90deg);
+  color: #FFFFFF;
+  background: none;
+  left: 10px;
+}
+.room-info__container {
+  padding: 10px;
+}
+.room-info__button_right {
+  position: absolute;
+  transform: rotate(90deg);
+  color: #FFFFFF;
+  background: none;
+  right: 10px;
+}
+.room-info__number {
+  color: #1F2041;
+  line-height: 14.63px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.room-info__number_icon {
+  font-size: 14px;
+  line-height: 29.26px;
+  margin-right: 5px;
+}
+.room-info__number_value {
+  font-size: 19px;
+  line-height: 17.07px;
+}
+.room-info__number_text {
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #BC9CFF;
+}
+.room-info__price {
+  color: rgba(31, 32, 65, 0.5);
+  line-height: 18px;
+}
+.room-info__price_cost {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.room-info__price_date {
+  font-size: 12px;
+}
+.room-info__value {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.room-info__total-reviews {
+  line-height: 18px;
+  padding-bottom: 10px;
 }
 /*!***************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/air-datepicker/air-datepicker.css ***!

@@ -846,8 +846,6 @@ header {
   \**************************************************************************************************************************************************************************************************/
 .button-with-background {
   display: flex;
-  height: 44px;
-  width: 100%;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   cursor: pointer;
@@ -872,30 +870,28 @@ header {
 }
 
 .button-with-border {
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-  padding: 2px;
-  border-radius: 22px;
-}
-.button-with-border__text {
   display: flex;
-  padding: 8px 18px;
-  width: 100%;
+  justify-content: center;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  padding: 2px 2px;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button-with-border__wrapper {
   color: #1F2041;
   line-height: 14.63px;
   font-size: 12px;
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  color: #BC9CFF;
-  cursor: pointer;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  background: #FFFFFF;
+  padding: 8px 18px 8px 19px;
   border-radius: 22px;
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 100%;
 }
-.button-with-border__text_small {
-  padding: 8px 18px;
+.button-with-border__text {
+  color: #BC9CFF;
 }
 .button-with-border:hover {
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5));
@@ -910,7 +906,6 @@ header {
   text-transform: uppercase;
   color: #BC9CFF;
   cursor: pointer;
-  max-width: 61px;
 }
 .button-without-background:hover {
   color: rgba(31, 32, 65, 0.5);
@@ -919,8 +914,6 @@ header {
 .button-with-arrow {
   display: flex;
   color: #FFFFFF;
-  height: 44px;
-  max-width: 320px;
   border-radius: 22px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   align-items: center;
@@ -936,6 +929,7 @@ header {
   font-style: normal;
   text-transform: uppercase;
   color: #FFFFFF;
+  padding: 15px 19px;
 }
 .button-with-arrow:hover {
   opacity: 50%;
