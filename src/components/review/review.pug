@@ -1,11 +1,11 @@
 include ../like/like
 
-mixin review({url,username,date,text,likes,theme})
+mixin review({url,username,date,text,likes,theme,classes})
     .review
         .review__dynamic
             img.review__img(src=url)
             .review__like
-                +like({likes,theme})
+                +like({likes,theme, classes})
         .review__description
             .review__user-name=username
             .review__date=date
