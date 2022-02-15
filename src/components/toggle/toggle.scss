@@ -8,6 +8,11 @@
     cursor: pointer;
     color: $dark75;
     @include body;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none; 
 
     &__input {
         -webkit-appearance: none;
