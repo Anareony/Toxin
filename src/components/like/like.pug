@@ -1,12 +1,12 @@
 mixin like({likes,theme, classes})
     case theme
         default
-            .like(class=classes)
-                span(class=classes).like__icon.material-icons favorite_border
-                span(class=classes).like__count=likes
+            .like
+                span.like__icon.material-icons favorite_border
+                span.like__count=likes
         when "checked"
-            .like.like__checked(class=classes)
-                span.like__icon.like__icon_checked.material-icons(class=classes) favorite
-                span(class=classes).like__count=likes
+            .like.like__checked
+                span.like__icon.material-icons favorite
+                span.like__count=likes
         
     

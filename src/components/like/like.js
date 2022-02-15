@@ -1,36 +1,31 @@
 class Like {
 
-    constructor({anchor}){
-        this.anchor = anchor;
+    constructor(){
         this.addEventListeners();
-    }
+    };
 
     toggle(e) {
-        const likeIcon = document.querySelector('.like__icon')
-        const likes = document.querySelector('.like')
-        const likeCounter = document.querySelector('.like__count')
-        const number = parseInt(likeCounter.innerHTML)
 
-        if(e.target.classList.contains('like__checked')) {
-            e.target.firstChild.classList.remove('like__icon_checked')
-            e.target.classList.remove('like__checked')
-            e.target.firstChild.innerHTML = "favorite_border"
+        e.preventDefault();
 
-            likeCounter.innerHTML = number - 1
+        const number = parseInt(e.currentTarget.lastChild.innerHTML);
+
+        e.currentTarget.classList.toggle('like__checked');
+
+        if(e.currentTarget.classList.contains('like__checked')) {
+            e.currentTarget.firstChild.innerHTML = "favorite";
+            e.currentTarget.lastChild.innerHTML = number + 1;
         } else {
-            e.target.classList.add('like__checked')
-            e.target.firstChild.innerHTML = "favorite"
-            e.target.firstChild.classList.add('like__icon_checked')
-
-            e.target.innerHTML = number + 1
-        }
-    }
+            e.currentTarget.firstChild.innerHTML = "favorite_border";
+            e.currentTarget.lastChild.innerHTML = number - 1;
+        }; 
+    };
 
     addEventListeners() {
-        this.anchor.addEventListener('click', this.toggle);
-    }
-}
+        document.querySelectorAll('.like').forEach( item => item.addEventListener('click', this.toggle.bind(this)));
+    };
+};
+ const like = new Like();
 
-export { Like };    
 
 

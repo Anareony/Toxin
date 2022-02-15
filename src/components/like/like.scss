@@ -11,6 +11,11 @@
     display: inline-flex;
     align-items: center;
     color: $dark25;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;       
+    user-select: none; 
 
     &__icon{
         font-size: 10px;
