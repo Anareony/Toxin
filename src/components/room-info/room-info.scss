@@ -4,8 +4,15 @@
 @import '../rate/rate.scss';
 
 .room-info{
-    box-shadow: 0px 10px 20px 0px $dark5;
-    background: #FFFFFF;
+    $root: &;
+
+    &__wrapper{
+        box-shadow: 0 0 1.5625rem $dark25;
+        background: #FFFFFF;
+        text-decoration: none;
+        -webkit-box-shadow: 0 0 1.5625rem $dark25;
+        border-radius: 5px;
+    }
 
     &__filter-btn{
         background-image: $gradient-purple;
@@ -15,6 +22,7 @@
 
     &__img{
         width: 100%;
+        border-radius: 5px 5px 0 0;
     }
 
     &__title{
@@ -27,7 +35,14 @@
 
     &__move{
         position: relative;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+
+        &:hover{
+            #{$root}__buttons {
+                opacity: 1;
+            }
+        }
+        
     }
 
     &__stats{
@@ -41,33 +56,33 @@
         display: flex;
         align-items: center;
         overflow: hidden;        
-        border-top-left-radius: 4px;
-        border-top-right-radius: 4px;
     }
+
     &__buttons{
         opacity: 0;
-
-        &:hover{
-            opacity: 1;
-        }
+        transition: opacity .3s ease-in ;
     }
+
     &__fogging{
         position: absolute;
         width: 42px;
-        height: 151px;
+        height: 100%;
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
         display: flex;
         align-items: center;
+        
 
         &_left{
             left:0;
             top: 0;
+            border-top-left-radius: 5px;
         }
 
         &_right{
             right: 0px;
             top: 0;
             transform: rotate(180deg);
+            border-bottom-left-radius: 5px;
         }
     }
 
@@ -80,7 +95,7 @@
     }
 
     &__container{
-        padding: 10px;
+        padding: 10px 20px;
     }
 
     &__button_right{
@@ -110,6 +125,7 @@
             font-size: 12px;
             line-height: 14.63px;
             color: $purple;
+            margin-left: 10px;
         }
     }
     &__price{
@@ -134,5 +150,10 @@
     &__total-reviews{
         line-height: 18px;
         padding-bottom: 10px;
+        color: $dark50;
+    }
+
+    &__rating{
+        margin-left: 5px;
     }
 }
