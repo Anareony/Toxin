@@ -1,10 +1,10 @@
-mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonly})
+mixin field({theme,title,type,name,placeholder,value,disabled,id,classes,readonly,required,pattern})
     case theme
         default
-            .field(class = classes)
+            .field
                 label.field__container
                     h3.field__title=title 
-                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled)
+                    input.field__input(type=type,name=name,placeholder=placeholder,value=value,id=id,disabled=disabled,required=required,pattern=pattern,readonly=readonly,class = classes)
                     
         when "with-dropdown"
             .field

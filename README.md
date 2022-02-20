@@ -35,7 +35,5 @@
 * [Material Design Icons](http://google.github.io/material-design-icons/)
 
 ### TODO:
-1. Fix filter button.
-2. Custom dropdown.
-3. Like button and pagination.
-4. Mask for input.
+1. Custom dropdown.
+2. Pagination.

@@ -8,22 +8,22 @@ mixin sign-up({title})
     form.sign-up
         h1.sign-up__title=title
         .sign-up__name
-            +field({placeholder:"Имя"})
+            +field({placeholder:"Имя",required:"required"})
         .sign-up__surname
-            +field({placeholder:"Фамилия"})
+            +field({placeholder:"Фамилия",required:"required"})
         .sign-up__gender
             +radio({name:"gender",description:"Мужчина",checked:"checked"})
             +radio({name:"gender",description:"Женщина"})
         .sign-up__date
-            +field({title:"Дата Рождения",placeholder:"ДД.ММ.ГГГГ"})
+            +field({title:"Дата Рождения",placeholder:"ДД.ММ.ГГГГ",readonly:"readonly",classes:"birth-date"})
         .sign-up__email
-            +field({title:"Данные для входа в сервис",placeholder:"Email"})
+            +field({title:"Данные для входа в сервис",placeholder:"Email",required:"required",pattern:".+@globex\."})
         .sign-up__password
-            +field({placeholder:"Пароль",type:"password"})
+            +field({placeholder:"Пароль",type:"password",required:"required"})
         .sign-up__toggle
             +toggle({text:"Получать спецпредложения"})
         .sign-up__button
-            +button({theme:"with-arrow",text:"Перейти к оплате"})
+            +button({theme:"with-arrow",text:"Зарегистрироваться"})
         .sign-up__sign-in
             p.sign-up__text Уже есть аккаунт на Toxin?
             +button({theme:"with-border",text:"Войти", href:"sign-in.html"})

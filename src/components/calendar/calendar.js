@@ -46,3 +46,13 @@ new AirDatepicker('.filter-date', {
     prevHtml: '<span class="material-icons">arrow_back</span>',
     nextHtml: '<span class="material-icons">arrow_forward</span>'
 })
+
+new AirDatepicker('.birth-date', {
+    
+    navTitles: {
+        days: '<strong>MMMM</strong> <i>yyyy</i>',
+    },    
+    buttons: ['clear',submitButton],
+    prevHtml: '<span class="material-icons">arrow_back</span>',
+    nextHtml: '<span class="material-icons">arrow_forward</span>'
+})

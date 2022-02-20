@@ -13,5 +13,5 @@ mixin button({theme,text,href,classes})
             a.button-without-background=text
             
         when "with-arrow"
-            a.button-with-arrow(href=href)
+            a.button-with-arrow(href=href,class=classes)
                 .button-with-arrow__text=text
