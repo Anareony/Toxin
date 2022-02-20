@@ -449,6 +449,11 @@ header {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .toggle__input {
   -webkit-appearance: none;
@@ -626,6 +631,11 @@ header {
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .radio__input {
   -webkit-appearance: none;
@@ -676,6 +686,11 @@ header {
   display: inline-flex;
   align-items: center;
   color: rgba(31, 32, 65, 0.25);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .like__icon {
   font-size: 10px;
@@ -729,6 +744,11 @@ header {
   display: inline-flex;
   align-items: center;
   color: rgba(31, 32, 65, 0.25);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .like__icon {
   font-size: 10px;
@@ -968,6 +988,12 @@ header {
   justify-content: center;
   width: 40px;
   height: 40px;
+}
+.pagination__item:hover {
+  color: #ffffff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 75%;
+  border-radius: 22px;
 }
 .pagination__item_selected {
   color: #ffffff;

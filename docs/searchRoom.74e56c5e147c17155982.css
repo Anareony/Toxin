@@ -630,9 +630,12 @@ header {
   background: url(assets/d6f803db6e2d4c949d36.svg) no-repeat;
 }
 
-.room-info {
-  box-shadow: 0px 10px 20px 0px rgba(31, 32, 65, 0.05);
+.room-info__wrapper {
+  box-shadow: 0 0 1.5625rem rgba(31, 32, 65, 0.25);
   background: #FFFFFF;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0 1.5625rem rgba(31, 32, 65, 0.25);
+  border-radius: 5px;
 }
 .room-info__filter-btn {
   background-image: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
@@ -641,6 +644,7 @@ header {
 }
 .room-info__img {
   width: 100%;
+  border-radius: 5px 5px 0 0;
 }
 .room-info__title {
   display: flex;
@@ -651,7 +655,10 @@ header {
 }
 .room-info__move {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+.room-info__move:hover .room-info__buttons {
+  opacity: 1;
 }
 .room-info__stats {
   display: flex;
@@ -663,19 +670,15 @@ header {
   display: flex;
   align-items: center;
   overflow: hidden;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
 }
 .room-info__buttons {
   opacity: 0;
-}
-.room-info__buttons:hover {
-  opacity: 1;
+  transition: opacity 0.3s ease-in;
 }
 .room-info__fogging {
   position: absolute;
   width: 42px;
-  height: 151px;
+  height: 100%;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
   display: flex;
   align-items: center;
@@ -683,11 +686,13 @@ header {
 .room-info__fogging_left {
   left: 0;
   top: 0;
+  border-top-left-radius: 5px;
 }
 .room-info__fogging_right {
   right: 0px;
   top: 0;
   transform: rotate(180deg);
+  border-bottom-left-radius: 5px;
 }
 .room-info__button_left {
   position: absolute;
@@ -697,7 +702,7 @@ header {
   left: 10px;
 }
 .room-info__container {
-  padding: 10px;
+  padding: 10px 20px;
 }
 .room-info__button_right {
   position: absolute;
@@ -727,6 +732,7 @@ header {
   font-size: 12px;
   line-height: 14.63px;
   color: #BC9CFF;
+  margin-left: 10px;
 }
 .room-info__price {
   color: rgba(31, 32, 65, 0.5);
@@ -746,6 +752,10 @@ header {
 .room-info__total-reviews {
   line-height: 18px;
   padding-bottom: 10px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.room-info__rating {
+  margin-left: 5px;
 }
 
 .iqdropdown {
@@ -949,6 +959,12 @@ header {
   justify-content: center;
   width: 40px;
   height: 40px;
+}
+.pagination__item:hover {
+  color: #ffffff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  opacity: 75%;
+  border-radius: 22px;
 }
 .pagination__item_selected {
   color: #ffffff;

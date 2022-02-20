@@ -30,16 +30,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("/* provided dependency */ var jQuery = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n!function(t,n){ true?module.exports=n():0}(window,function(){return function(t){var n={};function e(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return t[o].call(r.exports,r,r.exports,e),r.l=!0,r.exports}return e.m=t,e.c=n,e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{enumerable:!0,get:o})},e.r=function(t){\"undefined\"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:\"Module\"}),Object.defineProperty(t,\"__esModule\",{value:!0})},e.t=function(t,n){if(1&n&&(t=e(t)),8&n)return t;if(4&n&&\"object\"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(e.r(o),Object.defineProperty(o,\"default\",{enumerable:!0,value:t}),2&n&&\"string\"!=typeof t)for(var r in t)e.d(o,r,function(n){return t[n]}.bind(null,r));return o},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,\"a\",n),n},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e.p=\"\",e(e.s=0)}([function(t,n,e){\"use strict\";e.r(n);e(1);!function(t){var n={maxItems:1/0,minItems:0,selectionText:\"item\",textPlural:\"items\",controls:{position:\"right\",displayCls:\"iqdropdown-content\",controlsCls:\"iqdropdown-item-controls\",counterCls:\"counter\"},items:{},onChange:function(){},beforeDecrement:function(){return!0},beforeIncrement:function(){return!0},setSelectionText:function(t,n){var e=1!==n&&this.textPlural.length>0?this.textPlural:this.selectionText;return\"\".concat(n,\" \").concat(e)}};t.fn.iqDropdown=function(e){return this.each(function(){var o=t(this),r=o.find(\"p.iqdropdown-selection\").last(),i=o.find(\"div.iqdropdown-menu\").find(\"div.iqdropdown-menu-option\"),u={selectionText:r.data(\"selection-text\"),textPlural:r.data(\"text-plural\")},c=t.extend(!0,{},n,u,e),a={},l=0;function s(){r.html(c.setSelectionText(a,l))}o.click(function(){o.toggleClass(\"menu-open\")}),i.each(function(){var n=t(this),e=n.data(\"id\"),o=Number(n.data(\"defaultcount\")||\"0\");a[e]=o,l+=o,function(t,n){var e=Number(n.data(\"mincount\")),o=Number(n.data(\"maxcount\"));c.items[t]={minCount:Number.isNaN(Number(e))?0:e,maxCount:Number.isNaN(Number(o))?1/0:o}}(e,n),function(n,e){var o=t(\"<div />\").addClass(c.controls.controlsCls),r=t('\\n          <button class=\"button-decrement\">\\n            <i class=\"icon-decrement\"></i>\\n          </button>\\n        '),i=t('\\n          <button class=\"button-increment\">\\n            <i class=\"icon-decrement icon-increment\"></i>\\n          </button>\\n        '),u=t(\"<span>\".concat(a[n],\"</span>\")).addClass(c.controls.counterCls);e.children(\"div\").addClass(c.controls.displayCls),o.append(r,u,i),\"right\"===c.controls.position?e.append(o):e.prepend(o),r.click(function(t){var e=c.items,o=c.minItems,r=c.beforeDecrement,i=c.onChange;r(n,a)&&l>o&&a[n]>e[n].minCount&&(a[n]-=1,l-=1,u.html(a[n]),s(),i(n,a[n],l)),t.preventDefault()}),i.click(function(t){var e=c.items,o=c.maxItems,r=c.beforeIncrement,i=c.onChange;r(n,a)&&l<o&&a[n]<e[n].maxCount&&(a[n]+=1,l+=1,u.html(a[n]),s(),i(n,a[n],l)),t.preventDefault()}),e.click(function(t){return t.stopPropagation()})}(e,n)}),s()}),this}}(jQuery)},function(t,n,e){}])});\n//# sourceMappingURL=item-quantity-dropdown.min.js.map\n\n//# sourceURL=webpack://toxin/./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js?");
-
-/***/ }),
-
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -61,28 +51,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css":
-/*!********************************************************************************!*\
-  !*** ./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css ***!
-  \********************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css?");
-
-/***/ }),
-
-/***/ "./src/components/booking/booking.scss":
-/*!*********************************************!*\
-  !*** ./src/components/booking/booking.scss ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/booking/booking.scss?");
-
-/***/ }),
-
 /***/ "./src/components/calendar/calendar.scss":
 /*!***********************************************!*\
   !*** ./src/components/calendar/calendar.scss ***!
@@ -94,47 +62,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/components/dropdown/dropdown.scss":
-/*!***********************************************!*\
-  !*** ./src/components/dropdown/dropdown.scss ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/dropdown/dropdown.scss?");
-
-/***/ }),
-
-/***/ "./src/components/find-room/find-room.scss":
-/*!*************************************************!*\
-  !*** ./src/components/find-room/find-room.scss ***!
-  \*************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/find-room/find-room.scss?");
-
-/***/ }),
-
-/***/ "./src/components/log-in/log-in.scss":
+/***/ "./src/components/footer/footer.scss":
 /*!*******************************************!*\
-  !*** ./src/components/log-in/log-in.scss ***!
+  !*** ./src/components/footer/footer.scss ***!
   \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/log-in/log-in.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/footer/footer.scss?");
 
 /***/ }),
 
-/***/ "./src/components/room-info/room-info.scss":
-/*!*************************************************!*\
-  !*** ./src/components/room-info/room-info.scss ***!
-  \*************************************************/
+/***/ "./src/components/header/header.scss":
+/*!*******************************************!*\
+  !*** ./src/components/header/header.scss ***!
+  \*******************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/room-info/room-info.scss?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/components/header/header.scss?");
 
 /***/ }),
 
@@ -149,25 +95,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
-/***/ "./src/pages/cards/cards.scss":
-/*!************************************!*\
-  !*** ./src/pages/cards/cards.scss ***!
-  \************************************/
+/***/ "./src/pages/registration/registration.scss":
+/*!**************************************************!*\
+  !*** ./src/pages/registration/registration.scss ***!
+  \**************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/cards/cards.scss?");
-
-/***/ }),
-
-/***/ "./src/components/booking/booking.js":
-/*!*******************************************!*\
-  !*** ./src/components/booking/booking.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/booking/booking.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://toxin/./src/pages/registration/registration.scss?");
 
 /***/ }),
 
@@ -178,40 +113,28 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cal
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var _calendar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calendar.scss */ \"./src/components/calendar/calendar.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\nlet submitButton = {\r\n    content: 'Применить',\r\n    onClick: (dp) => {\r\n        dp.hide()\r\n    }\r\n}\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.calendar', {\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.arrival', {\r\n    range: true,\r\n    dateFormat: 'dd.MM.yyyy',\r\n    multipleDates: 2,\r\n    showEvent: 'click',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>',\r\n    onSelect({date, formattedDate, datepicker}) {\r\n        $('.arrival').val(formattedDate[0])\r\n        $('.departure').val(formattedDate[1])\r\n    }\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.filter-date', {\r\n    range: true,\r\n    multipleDatesSeparator: ' - ',\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\n\n//# sourceURL=webpack://toxin/./src/components/calendar/calendar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var air_datepicker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! air-datepicker */ \"./node_modules/air-datepicker/index.es.js\");\n/* harmony import */ var air_datepicker_air_datepicker_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! air-datepicker/air-datepicker.css */ \"./node_modules/air-datepicker/air-datepicker.css\");\n/* harmony import */ var _calendar_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calendar.scss */ \"./src/components/calendar/calendar.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\nlet submitButton = {\r\n    content: 'Применить',\r\n    onClick: (dp) => {\r\n        dp.hide()\r\n    }\r\n}\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.calendar', {\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.arrival', {\r\n    range: true,\r\n    dateFormat: 'dd.MM.yyyy',\r\n    multipleDates: 2,\r\n    showEvent: 'click',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>',\r\n    onSelect({date, formattedDate, datepicker}) {\r\n        $('.arrival').val(formattedDate[0])\r\n        $('.departure').val(formattedDate[1])\r\n    }\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.filter-date', {\r\n    range: true,\r\n    multipleDatesSeparator: ' - ',\r\n    dateFormat: 'dd MMM',\r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\r\nnew air_datepicker__WEBPACK_IMPORTED_MODULE_0__[\"default\"]('.birth-date', {\r\n    \r\n    navTitles: {\r\n        days: '<strong>MMMM</strong> <i>yyyy</i>',\r\n    },    \r\n    buttons: ['clear',submitButton],\r\n    prevHtml: '<span class=\"material-icons\">arrow_back</span>',\r\n    nextHtml: '<span class=\"material-icons\">arrow_forward</span>'\r\n})\r\n\n\n//# sourceURL=webpack://toxin/./src/components/calendar/calendar.js?");
 
 /***/ }),
 
-/***/ "./src/components/dropdown/dropdown.js":
-/*!*********************************************!*\
-  !*** ./src/components/dropdown/dropdown.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/components/header/header.js":
+/*!*****************************************!*\
+  !*** ./src/components/header/header.js ***!
+  \*****************************************/
+/***/ (() => {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.js */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.js\");\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(item_quantity_dropdown_lib_item_quantity_dropdown_min_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var item_quantity_dropdown_lib_item_quantity_dropdown_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! item-quantity-dropdown/lib/item-quantity-dropdown.min.css */ \"./node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css\");\n/* harmony import */ var _dropdown_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dropdown.scss */ \"./src/components/dropdown/dropdown.scss\");\n/* provided dependency */ var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n\r\n\r\n\r\n\r\n$(document).ready(function() {\r\n    $(\".rooms\").iqDropdown({\r\n        selectionText: \"комната\",\r\n        textPlural: \"комнат\",\r\n    });\r\n    $(\".guests\").iqDropdown({\r\n        selectionText: \"гость\",\r\n        textPlural: \"гостей\",\r\n    });\r\n});\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/dropdown/dropdown.js?");
-
-/***/ }),
-
-/***/ "./src/components/find-room/find-room.js":
-/*!***********************************************!*\
-  !*** ./src/components/find-room/find-room.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _calendar_calendar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _dropdown_dropdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dropdown/dropdown */ \"./src/components/dropdown/dropdown.js\");\n\r\n\n\n//# sourceURL=webpack://toxin/./src/components/find-room/find-room.js?");
+eval("const burger = document.querySelector('.js-header__burger')\r\n\r\nfunction openBurger() {\r\n    const burger = document.querySelector('.js-header__burger')\r\n    const nav = document.querySelector('.header__nav');\r\n\r\n    burger.classList.toggle(\".js-header__burger_opened\")\r\n    \r\n    if(burger.classList.contains(\".js-header__burger_opened\")) {\r\n        burger.innerHTML = \"close\";\r\n    } else {\r\n        burger.innerHTML = \"menu\";\r\n    }\r\n    \r\n    nav.style.display = \"flex\";\r\n\r\n    if(!burger.classList.contains(\".js-header__burger_opened\")) {\r\n        nav.style.display = \"\";\r\n    }\r\n}\r\n\r\nburger.addEventListener('click', openBurger)\n\n//# sourceURL=webpack://toxin/./src/components/header/header.js?");
 
 /***/ }),
 
-/***/ "./src/pages/cards/cards.js":
-/*!**********************************!*\
-  !*** ./src/pages/cards/cards.js ***!
-  \**********************************/
+/***/ "./src/pages/registration/registration.js":
+/*!************************************************!*\
+  !*** ./src/pages/registration/registration.js ***!
+  \************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _cards_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards.scss */ \"./src/pages/cards/cards.scss\");\n/* harmony import */ var _components_find_room_find_room_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/find-room/find-room.scss */ \"./src/components/find-room/find-room.scss\");\n/* harmony import */ var _components_sign_up_sign_up_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/sign-up/sign-up.scss */ \"./src/components/sign-up/sign-up.scss\");\n/* harmony import */ var _components_log_in_log_in_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/log-in/log-in.scss */ \"./src/components/log-in/log-in.scss\");\n/* harmony import */ var _components_booking_booking_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/booking/booking.scss */ \"./src/components/booking/booking.scss\");\n/* harmony import */ var _components_room_info_room_info_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/room-info/room-info.scss */ \"./src/components/room-info/room-info.scss\");\n/* harmony import */ var _components_find_room_find_room__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../components/find-room/find-room */ \"./src/components/find-room/find-room.js\");\n/* harmony import */ var _components_booking_booking__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../components/booking/booking */ \"./src/components/booking/booking.js\");\n/* harmony import */ var _components_calendar_calendar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../components/calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _components_calendar_calendar_scss__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../components/calendar/calendar.scss */ \"./src/components/calendar/calendar.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/cards/cards.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _registration_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./registration.scss */ \"./src/pages/registration/registration.scss\");\n/* harmony import */ var _components_header_header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/header/header.scss */ \"./src/components/header/header.scss\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/header/header */ \"./src/components/header/header.js\");\n/* harmony import */ var _components_header_header__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_header_header__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _components_calendar_calendar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/calendar/calendar */ \"./src/components/calendar/calendar.js\");\n/* harmony import */ var _components_footer_footer_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../components/footer/footer.scss */ \"./src/components/footer/footer.scss\");\n/* harmony import */ var _components_sign_up_sign_up_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/sign-up/sign-up.scss */ \"./src/components/sign-up/sign-up.scss\");\n\r\n\r\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://toxin/./src/pages/registration/registration.js?");
 
 /***/ })
 
@@ -287,7 +210,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/cards/cards.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/pages/registration/registration.js");
 /******/ 	
 /******/ })()
 ;
